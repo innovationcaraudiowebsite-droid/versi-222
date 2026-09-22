@@ -86,6 +86,36 @@ export interface SessionPayload {
  */
 export async function login(email: string, password: string): Promise<SessionPayload | null> {
   try {
+    // === MOCK LOGIN MODE ===
+    // When Supabase is NOT configured (env vars empty), bypass Supabase Auth
+    // and check credentials against env vars directly.
+    // This enables local dev / UI testing without live Supabase project.
+    const supabaseUrl = process.env.SUPABASE_URL || ''
+    const supabaseKey = process.env.SUPABASE_SECRET_KEY || ''
+    const isMockMode =
+      !supabaseUrl ||
+      supabaseUrl === 'https://your-project-ref.supabase.co' ||
+      supabaseUrl.includes('your-project-ref') ||
+      !supabaseKey ||
+      supabaseKey.startsWith('sb_secret_dummy')
+
+    if (isMockMode) {
+      const adminEmail = (process.env.ADMIN_EMAIL || '').trim().toLowerCase()
+      const adminPassword = process.env.ADMIN_PASSWORD || ''
+      const inputEmail = email.trim().toLowerCase()
+
+      if (inputEmail !== adminEmail || password !== adminPassword) {
+        console.error('[auth] mock login failed: email/password mismatch')
+        return null
+      }
+
+      console.warn('[auth] MOCK LOGIN MODE — using env credentials, no Supabase')
+      // Generate fake userId for mock session
+      const mockUserId = 'mock-admin-' + Buffer.from(adminEmail).toString('hex').slice(0, 12)
+      return makePayload(mockUserId, adminEmail, 'admin')
+    }
+
+    // === REAL SUPABASE AUTH ===
     // Client 1: for auth verification only
     const authClient = getSupabaseAdmin()
     const { data, error } = await authClient.auth.signInWithPassword({

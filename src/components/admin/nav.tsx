@@ -19,6 +19,8 @@ import {
   UserCircle,
   ChevronDown,
   Package,
+  Layers,
+  BarChart3,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -84,7 +86,18 @@ export const navSections: NavSection[] = [
         roles: ['admin'],
         children: [
           { label: 'Semua Produk', href: '/admin/products', icon: List },
-          { label: 'Tambah Baru', href: '/admin/products/new', icon: Plus, exact: true },
+          { label: 'Tambah Produk', href: '/admin/products/new', icon: Plus, exact: true },
+          { label: 'Statistik', href: '/admin/products/statistics', icon: BarChart3, exact: true },
+        ],
+      },
+      {
+        label: 'Varian Produk',
+        href: '/admin/variants',
+        icon: Layers,
+        roles: ['admin'],
+        children: [
+          { label: 'Semua Varian', href: '/admin/variants', icon: List },
+          { label: 'Tambah Varian', href: '/admin/variants/new', icon: Plus, exact: true },
         ],
       },
     ],

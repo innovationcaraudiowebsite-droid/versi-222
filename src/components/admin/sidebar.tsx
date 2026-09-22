@@ -72,6 +72,8 @@ export function SidebarContent({
     if (!q) {
       router.push('/admin/articles')
     } else {
+      // Global search: redirect to articles with query (existing behavior)
+      // TODO: implementasi global search page /admin/search?q=... kalau perlu
       router.push(`/admin/articles?q=${encodeURIComponent(q)}`)
     }
     onNavigate?.()
@@ -160,18 +162,24 @@ export function SidebarContent({
         </div>
       </div>
 
-      {/* Quick action — Tambah Artikel */}
+      {/* Quick action — Tambah Artikel + Tambah Produk */}
       {!isCollapsed ? (
-        <div className="px-3 py-3">
+        <div className="px-3 py-3 space-y-2">
           <Button asChild className="w-full bg-amber-500 text-white shadow-md hover:bg-amber-600">
             <Link href="/admin/articles/new" onClick={onNavigate}>
               <Plus className="h-4 w-4" />
               <span>Tambah Artikel</span>
             </Link>
           </Button>
+          <Button asChild variant="outline" className="w-full border-slate-700 bg-slate-900 text-slate-200 hover:bg-slate-800 hover:text-white">
+            <Link href="/admin/products/new" onClick={onNavigate}>
+              <Plus className="h-4 w-4" />
+              <span>Tambah Produk</span>
+            </Link>
+          </Button>
         </div>
       ) : (
-        <div className="px-2 py-3">
+        <div className="px-2 py-3 space-y-2">
           <Tooltip>
             <TooltipTrigger asChild>
               <Button
@@ -188,6 +196,23 @@ export function SidebarContent({
               Tambah Artikel
             </TooltipContent>
           </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                asChild
+                size="icon"
+                variant="outline"
+                className="w-9 border-slate-700 bg-slate-900 text-slate-200 hover:bg-slate-800 hover:text-white"
+              >
+                <Link href="/admin/products/new" onClick={onNavigate} aria-label="Tambah Produk">
+                  <Plus className="h-4 w-4" />
+                </Link>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent side="right" className="bg-slate-900 text-slate-100 border-slate-700">
+              Tambah Produk
+            </TooltipContent>
+          </Tooltip>
         </div>
       )}
 
@@ -198,11 +223,11 @@ export function SidebarContent({
             <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />
             <Input
               type="search"
-              placeholder="Cari artikel…"
+              placeholder="Cari artikel, produk, varian…"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="h-9 border-slate-700 bg-slate-900 pl-8 pr-3 text-sm text-slate-200 placeholder:text-slate-500 focus-visible:border-amber-500 focus-visible:ring-amber-500/30"
-              aria-label="Cari artikel"
+              aria-label="Cari global"
             />
           </div>
         </form>
