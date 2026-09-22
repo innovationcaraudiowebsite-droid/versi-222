@@ -1,4 +1,5 @@
 import type { ProductVariantSection, ProductVariantSubsection } from '@/lib/types'
+import { Check } from 'lucide-react'
 
 /**
  * ProductContent — render structured sections dari variant.sections JSON.
@@ -8,9 +9,10 @@ import type { ProductVariantSection, ProductVariantSubsection } from '@/lib/type
  *  - list        → bullet list (ul + li)
  *  - subsections → section dengan sub-sections (nested h3 + paragraphs)
  *
- * Markdown parsing sangat minimal — hanya split paragraf dan bold (**text**).
- * Untuk rich markdown (headings, code blocks, dll), gunakan react-markdown.
- * Tapi untuk konten variant yang sudah terstruktur, ini cukup.
+ * SPECIAL HANDLING:
+ *  - Section dengan title mengandung "KEUNGGULAN" → render dengan ✓ prefix (bukan bullet)
+ *  - List item yang diawali "=== HEADER ===" atau format "TEXT:" (header pattern)
+ *    → render sebagai sub-group header (bold, tanpa bullet/✓)
  */
 
 interface ProductContentProps {
@@ -90,17 +92,49 @@ function SectionBlock({ section }: { section: ProductVariantSection }) {
       )}
 
       {section.type === 'list' && section.items && section.items.length > 0 && (
-        <ul className="space-y-2 mt-3">
-          {section.items.map((item, idx) => (
-            <li
-              key={idx}
-              className="flex items-start gap-2 text-sm sm:text-base text-foreground/90"
-            >
-              <span className="mt-2 shrink-0 size-1.5 rounded-full bg-brand" aria-hidden="true" />
-              <span>{renderInlineMarkdown(item)}</span>
-            </li>
-          ))}
-        </ul>
+        (() => {
+          // Detect jika section title mengandung "KEUNGGULAN" → pakai ✓ prefix
+          const isKeunggulan = section.title.toUpperCase().includes('KEUNGGULAN')
+
+          return (
+            <ul className="space-y-2 mt-3">
+              {section.items.map((item, idx) => {
+                // Detect sub-group header pattern:
+                // - Item yang diakhiri ":" (mis. "BOX:", "KABEL POWER:")
+                // - Atau item yang diawali "===" atau semua kapital + ":"
+                const isHeader =
+                  /^.+:\s*$/.test(item) ||
+                  /^[A-Z][A-Z\s&\-]+:\s*$/.test(item.trim())
+
+                if (isHeader) {
+                  // Render sebagai sub-group header (bold, no bullet)
+                  return (
+                    <li
+                      key={idx}
+                      className="pt-3 first:pt-0 text-xs font-bold uppercase tracking-wide text-muted-foreground"
+                    >
+                      {item.replace(/:\s*$/, '')}
+                    </li>
+                  )
+                }
+
+                return (
+                  <li
+                    key={idx}
+                    className="flex items-start gap-2 text-sm sm:text-base text-foreground/90"
+                  >
+                    {isKeunggulan ? (
+                      <Check className="mt-0.5 shrink-0 size-4 text-emerald-500" aria-hidden="true" />
+                    ) : (
+                      <span className="mt-2 shrink-0 size-1.5 rounded-full bg-brand" aria-hidden="true" />
+                    )}
+                    <span>{renderInlineMarkdown(item)}</span>
+                  </li>
+                )
+              })}
+            </ul>
+          )
+        })()
       )}
 
       {section.type === 'subsections' && section.subsections && (
