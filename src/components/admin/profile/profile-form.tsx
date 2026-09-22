@@ -86,7 +86,7 @@ export function ProfileForm({ profile }: { profile: ProfileData }) {
       <div className="md:col-span-1">
         <div className="rounded-lg border border-border bg-card p-6 shadow-sm">
           <div className="flex flex-col items-center text-center gap-3">
-            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-amber-500 to-orange-600 text-xl font-bold text-white">
+            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-red-700 text-xl font-bold text-white">
               {profile.email.slice(0, 2).toUpperCase()}
             </div>
             <div>

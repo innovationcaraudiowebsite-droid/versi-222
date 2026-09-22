@@ -323,7 +323,7 @@ function SectionCard({
     <Card>
       <CardHeader className="flex flex-row items-start gap-3">
         <div
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-amber-500/10 text-amber-600 dark:text-amber-400"
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-amber-500/10 text-red-600 dark:text-amber-400"
           aria-hidden
         >
           <Icon className="h-5 w-5" />
@@ -707,7 +707,7 @@ export function SettingsForm({ initial }: SettingsFormProps) {
         <Button
           type="submit"
           disabled={isSaving || !isDirty}
-          className="bg-gradient-to-r from-amber-500 to-orange-600 text-white hover:from-amber-600 hover:to-orange-700"
+          className="bg-gradient-to-r from-red-500 to-red-700 text-white hover:from-red-600 hover:to-red-800"
         >
           {isSaving ? (
             <>

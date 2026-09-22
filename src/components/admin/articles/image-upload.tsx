@@ -143,7 +143,7 @@ export function ImageUpload({
             </>
           ) : (
             <>
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-amber-500/10 text-amber-600">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-amber-500/10 text-red-600">
                 <ImagePlus className="h-6 w-6" />
               </div>
               <p className="text-sm font-medium">Klik untuk pilih gambar</p>

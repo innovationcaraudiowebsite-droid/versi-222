@@ -180,7 +180,7 @@ function FaqForm({ mode, faq, defaultOrder = 1, onClose }: FaqFormProps) {
         <Button
           type="submit"
           disabled={isPending}
-          className="bg-gradient-to-r from-amber-500 to-orange-600 text-white hover:from-amber-600 hover:to-orange-700"
+          className="bg-gradient-to-r from-red-500 to-red-700 text-white hover:from-red-600 hover:to-red-800"
         >
           {isPending ? (
             <>
@@ -223,7 +223,7 @@ export function FaqDialog({ mode, faq, defaultOrder, trigger }: FaqDialogProps) 
 
   const defaultTrigger =
     mode === 'create' ? (
-      <Button className="bg-gradient-to-r from-amber-500 to-orange-600 text-white hover:from-amber-600 hover:to-orange-700">
+      <Button className="bg-gradient-to-r from-red-500 to-red-700 text-white hover:from-red-600 hover:to-red-800">
         <Plus className="h-4 w-4" />
         FAQ Baru
       </Button>

@@ -248,7 +248,7 @@ function FilterBar({
             <SelectItem value="title-asc">Judul A-Z</SelectItem>
           </SelectContent>
         </Select>
-        <Button asChild className="bg-gradient-to-r from-amber-500 to-orange-600 text-white hover:from-amber-600 hover:to-orange-700">
+        <Button asChild className="bg-gradient-to-r from-red-500 to-red-700 text-white hover:from-red-600 hover:to-red-800">
           <Link href="/admin/articles/new">
             <Plus className="h-4 w-4" />
             <span className="hidden sm:inline">Artikel Baru</span>
@@ -642,7 +642,7 @@ function EmptyState({ q }: { q: string }) {
           ? 'Coba ubah kata kunci pencarian atau filter.'
           : 'Mulai dengan menambahkan artikel pertama Anda.'}
       </p>
-      <Button asChild className="mt-3 bg-gradient-to-r from-amber-500 to-orange-600 text-white hover:from-amber-600 hover:to-orange-700">
+      <Button asChild className="mt-3 bg-gradient-to-r from-red-500 to-red-700 text-white hover:from-red-600 hover:to-red-800">
         <Link href="/admin/articles/new">
           <Plus className="h-4 w-4" />
           Artikel Baru
@@ -754,7 +754,7 @@ export function ArticlesTable({
                     <div className="flex flex-col gap-1">
                       <Link
                         href={`/admin/articles/${row.id}/edit`}
-                        className="line-clamp-2 font-medium text-foreground hover:text-amber-600 hover:underline"
+                        className="line-clamp-2 font-medium text-foreground hover:text-red-600 hover:underline"
                       >
                         {row.title}
                       </Link>

@@ -227,7 +227,7 @@ export function StatisticsView({ products, variants }: StatisticsViewProps) {
       {/* Mock mode notice */}
       <div className="rounded-md border border-amber-200 bg-amber-50 dark:border-amber-900 dark:bg-amber-950/30 p-4">
         <div className="flex items-start gap-3">
-          <Activity className="size-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+          <Activity className="size-5 text-red-600 dark:text-amber-400 shrink-0 mt-0.5" />
           <div className="text-sm">
             <div className="font-semibold text-amber-800 dark:text-amber-300">Mock Mode Aktif</div>
             <p className="mt-1 text-amber-700 dark:text-amber-400">

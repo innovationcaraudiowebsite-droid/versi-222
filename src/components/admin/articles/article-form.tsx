@@ -636,7 +636,7 @@ export function ArticleForm({
               size="sm"
               onClick={publish}
               disabled={busy !== null}
-              className="bg-gradient-to-r from-amber-500 to-orange-600 text-white hover:from-amber-600 hover:to-orange-700"
+              className="bg-gradient-to-r from-red-500 to-red-700 text-white hover:from-red-600 hover:to-red-800"
             >
               {busy === 'publish' ? (
                 <Loader2 className="h-4 w-4 animate-spin" />

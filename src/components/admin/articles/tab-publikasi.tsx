@@ -557,7 +557,7 @@ export function TabPublikasi({
             href={`/admin/articles/${articleId}/preview`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-amber-600 hover:underline"
+            className="inline-flex items-center gap-1.5 text-sm text-red-600 hover:underline"
           >
             <ExternalLink className="h-4 w-4" />
             Buka halaman preview (tab baru)

@@ -527,14 +527,14 @@ export function SubscribersTable({
               {rows.length} subscriber ditampilkan ·{' '}
               <a
                 href="/api/admin/subscribers/export?status=active"
-                className="font-medium text-amber-600 hover:underline dark:text-amber-400"
+                className="font-medium text-red-600 hover:underline dark:text-amber-400"
               >
                 Export Active CSV
               </a>
               {' · '}
               <a
                 href="/api/admin/subscribers/export?status=all"
-                className="font-medium text-amber-600 hover:underline dark:text-amber-400"
+                className="font-medium text-red-600 hover:underline dark:text-amber-400"
               >
                 Export Semua
               </a>

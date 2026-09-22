@@ -95,7 +95,7 @@ export function SidebarContent({
           )}
           aria-label="Dashboard Admin"
         >
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-amber-400 to-orange-600 shadow-md ring-1 ring-amber-300/40">
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-red-500 to-red-700 shadow-md ring-1 ring-red-300/40">
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -165,7 +165,7 @@ export function SidebarContent({
       {/* Quick action — Tambah Artikel + Tambah Produk */}
       {!isCollapsed ? (
         <div className="px-3 py-3 space-y-2">
-          <Button asChild className="w-full bg-amber-500 text-white shadow-md hover:bg-amber-600">
+          <Button asChild className="w-full bg-red-600 text-white shadow-md hover:bg-red-700">
             <Link href="/admin/articles/new" onClick={onNavigate}>
               <Plus className="h-4 w-4" />
               <span>Tambah Artikel</span>
@@ -185,7 +185,7 @@ export function SidebarContent({
               <Button
                 asChild
                 size="icon"
-                className="w-9 bg-amber-500 text-white shadow-md hover:bg-amber-600"
+                className="w-9 bg-red-600 text-white shadow-md hover:bg-red-700"
               >
                 <Link href="/admin/articles/new" onClick={onNavigate} aria-label="Tambah Artikel">
                   <Plus className="h-4 w-4" />
@@ -226,7 +226,7 @@ export function SidebarContent({
               placeholder="Cari artikel, produk, varian…"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="h-9 border-slate-700 bg-slate-900 pl-8 pr-3 text-sm text-slate-200 placeholder:text-slate-500 focus-visible:border-amber-500 focus-visible:ring-amber-500/30"
+              className="h-9 border-slate-700 bg-slate-900 pl-8 pr-3 text-sm text-slate-200 placeholder:text-slate-500 focus-visible:border-red-500 focus-visible:ring-red-500/30"
               aria-label="Cari global"
             />
           </div>

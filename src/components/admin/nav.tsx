@@ -227,7 +227,7 @@ export function NavLink({ item, onNavigate, isCollapsedOverride }: NavLinkProps)
   const baseLink = cn(
     'group relative flex items-center gap-3 rounded-md text-sm font-medium transition-colors -ml-px border-l-2',
     active
-      ? 'border-amber-500 bg-amber-500/10 text-amber-300'
+      ? 'border-red-500 bg-red-500/10 text-red-300'
       : 'border-transparent text-slate-300 hover:bg-slate-800/80 hover:text-white',
     // collapsed vs expanded padding/sizing
     isCollapsed ? 'h-10 w-10 justify-center' : 'px-3 py-2',
@@ -248,7 +248,7 @@ export function NavLink({ item, onNavigate, isCollapsedOverride }: NavLinkProps)
             <Icon
               className={cn(
                 'h-4 w-4 shrink-0 transition-colors',
-                active ? 'text-amber-400' : 'text-slate-400 group-hover:text-slate-200',
+                active ? 'text-red-400' : 'text-slate-400 group-hover:text-slate-200',
               )}
             />
             {item.badge ? <BadgeBubble count={item.badge} className="absolute -top-0.5 -right-0.5" /> : null}
@@ -277,7 +277,7 @@ export function NavLink({ item, onNavigate, isCollapsedOverride }: NavLinkProps)
           <Icon
             className={cn(
               'h-4 w-4 shrink-0 transition-colors',
-              active ? 'text-amber-400' : 'text-slate-400 group-hover:text-slate-200',
+              active ? 'text-red-400' : 'text-slate-400 group-hover:text-slate-200',
             )}
           />
           <span className="truncate">{item.label}</span>
@@ -300,7 +300,7 @@ export function NavLink({ item, onNavigate, isCollapsedOverride }: NavLinkProps)
           <Icon
             className={cn(
               'h-4 w-4 shrink-0 transition-colors',
-              active ? 'text-amber-400' : 'text-slate-400 group-hover:text-slate-200',
+              active ? 'text-red-400' : 'text-slate-400 group-hover:text-slate-200',
             )}
           />
           <span className="truncate">{item.label}</span>
@@ -323,7 +323,7 @@ export function NavLink({ item, onNavigate, isCollapsedOverride }: NavLinkProps)
                 className={cn(
                   'flex items-center gap-2 rounded-md px-3 py-1.5 text-[13px] transition-colors',
                   childActive
-                    ? 'bg-amber-500/10 text-amber-300'
+                    ? 'bg-red-500/10 text-red-300'
                     : 'text-slate-400 hover:bg-slate-800/60 hover:text-slate-200',
                 )}
               >

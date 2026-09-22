@@ -45,7 +45,7 @@ export function TabKonten({
     excerptLen > EXCERPT_MAX
       ? 'text-destructive'
       : excerptLen > EXCERPT_MAX - 20
-        ? 'text-amber-600'
+        ? 'text-red-600'
         : 'text-muted-foreground'
 
   return (

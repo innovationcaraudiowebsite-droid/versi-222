@@ -20,7 +20,7 @@ export function GooglePreview({
   return (
     <div className="rounded-lg border bg-white p-4 shadow-sm dark:bg-slate-900">
       <div className="flex items-center gap-2">
-        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-amber-400 to-orange-600 text-[10px] font-bold text-white">
+        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-red-700 text-[10px] font-bold text-white">
           P
         </div>
         <div className="flex flex-col">

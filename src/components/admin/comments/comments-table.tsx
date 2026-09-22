@@ -586,7 +586,7 @@ export function CommentsTable({
           label="Total Komentar"
           value={total}
           icon={MessageSquare}
-          gradient="bg-gradient-to-br from-amber-400 to-orange-600"
+          gradient="bg-gradient-to-br from-red-500 to-red-700"
           iconColor="text-white"
         />
         <StatCard
