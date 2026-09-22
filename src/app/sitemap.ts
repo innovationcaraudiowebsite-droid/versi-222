@@ -89,5 +89,31 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // DB not ready — skip tags.
   }
 
-  return [...staticPages, ...categoryUrls, ...articleUrls, ...tagUrls]
+  // ----- Product Variants (/produk/[slug]) -----
+  let productVariantUrls: MetadataRoute.Sitemap = []
+  try {
+    const variants = await db.productVariant.findMany({
+      where: { isActive: true },
+      orderBy: [{ sortOrder: 'asc' }, { createdAt: 'desc' }],
+      select: { slug: true, updatedAt: true, tier: true },
+    })
+    productVariantUrls = variants.map((v) => ({
+      url: `${baseUrl}/produk/${v.slug}`,
+      lastModified: v.updatedAt,
+      changeFrequency: 'monthly' as const,
+      // Recommended & Best Buy variants get higher priority for SEO
+      priority:
+        v.tier === 'recommended'
+          ? 0.9
+          : v.tier === 'best_buy'
+            ? 0.85
+            : v.tier === 'normal'
+              ? 0.7
+              : 0.6,
+    }))
+  } catch {
+    // DB not ready — skip product variants.
+  }
+
+  return [...staticPages, ...categoryUrls, ...articleUrls, ...tagUrls, ...productVariantUrls]
 }

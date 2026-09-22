@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState, useCallback } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight, CheckCircle2 } from 'lucide-react'
 
@@ -12,12 +13,13 @@ import { ChevronLeft, ChevronRight, CheckCircle2 } from 'lucide-react'
  *  - Tampil 4 card per batch (1 col mobile / 2x2 desktop)
  *  - Saat scroll/swipe = MENGGESER varian selanjutnya (slide animation)
  *
- * CARD LAYOUT:
+ * CARD LAYOUT (REVISI — no mini carousel, clickable):
+ *  - 1 gambar utama saja (imageUrl atau galleryImages[0])
  *  - Ribbon/badge di pojok kanan atas (warna sesuai tier)
- *  - Mini image carousel (4+ gambar per varian, swipeable)
  *  - Card title (konfigurasi)
  *  - Card description (2-line)
  *  - Price + tier label
+ *  - Card clickable → link ke /produk/[slug] (detail page)
  *
  * RIBBON COLOR MAP (sesuai tier):
  *  - basic       → slate (gray)
@@ -89,207 +91,83 @@ function getRibbonStyle(color: string | null) {
 }
 
 // ============================================================
-// Mini Image Carousel — untuk gallery di dalam card
-// ============================================================
-function MiniImageCarousel({
-  images,
-  alt,
-  variantId,
-}: {
-  images: string[]
-  alt: string
-  variantId: string
-}) {
-  const [currentIdx, setCurrentIdx] = useState(0)
-  const total = images.length
-
-  const next = useCallback(() => {
-    setCurrentIdx((prev) => (prev + 1) % total)
-  }, [total])
-
-  const prev = useCallback(() => {
-    setCurrentIdx((prev) => (prev - 1 + total) % total)
-  }, [total])
-
-  // Touch swipe untuk mobile
-  const onTouchStart = (e: React.TouchEvent) => {
-    ;(e.currentTarget as HTMLElement).dataset.touchStartY = String(e.touches[0].clientY)
-    ;(e.currentTarget as HTMLElement).dataset.touchStartX = String(e.touches[0].clientX)
-  }
-  const onTouchEnd = (e: React.TouchEvent) => {
-    const el = e.currentTarget as HTMLElement
-    const startX = Number(el.dataset.touchStartX || 0)
-    const startY = Number(el.dataset.touchStartY || 0)
-    const endX = e.changedTouches[0].clientX
-    const endY = e.changedTouches[0].clientY
-    const deltaX = startX - endX
-    const deltaY = startY - endY
-    // Hanya trigger kalau swipe lebih horizontal dari vertikal
-    if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 30) {
-      if (deltaX > 0) next()
-      else prev()
-    }
-  }
-
-  if (total === 0) {
-    return (
-      <div className="relative w-full aspect-video bg-gradient-to-br from-brand/30 to-brand-dark/40 grid place-items-center">
-        <span className="text-[10px] font-semibold uppercase tracking-wider text-white/80">
-          Peredam Mobil
-        </span>
-      </div>
-    )
-  }
-
-  return (
-    <div
-      className="relative w-full aspect-video bg-muted overflow-hidden group/img"
-      onTouchStart={onTouchStart}
-      onTouchEnd={onTouchEnd}
-    >
-      {/* Image track (transform translateX) */}
-      <div
-        className="flex transition-transform duration-300 ease-out h-full"
-        style={{ transform: `translateX(-${currentIdx * 100}%)` }}
-      >
-        {images.map((img, idx) => (
-          <div key={idx} className="relative w-full h-full shrink-0">
-            <Image
-              src={img}
-              alt={`${alt} - ${idx + 1}`}
-              fill
-              sizes="(max-width: 640px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-        ))}
-      </div>
-
-      {/* Arrow buttons (desktop hover) */}
-      {total > 1 && (
-        <>
-          <button
-            type="button"
-            onClick={(e) => {
-              e.stopPropagation()
-              prev()
-            }}
-            className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 hover:bg-black/60 text-white p-1.5 opacity-0 group-hover/img:opacity-100 transition-opacity"
-            aria-label="Gambar sebelumnya"
-          >
-            <ChevronLeft className="size-3.5" />
-          </button>
-          <button
-            type="button"
-            onClick={(e) => {
-              e.stopPropagation()
-              next()
-            }}
-            className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 hover:bg-black/60 text-white p-1.5 opacity-0 group-hover/img:opacity-100 transition-opacity"
-            aria-label="Gambar berikutnya"
-          >
-            <ChevronRight className="size-3.5" />
-          </button>
-        </>
-      )}
-
-      {/* Dots indicator */}
-      {total > 1 && (
-        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
-          {images.map((_, idx) => (
-            <button
-              key={idx}
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation()
-                setCurrentIdx(idx)
-              }}
-              className={`h-1.5 rounded-full transition-all ${
-                idx === currentIdx
-                  ? 'w-4 bg-white'
-                  : 'w-1.5 bg-white/50 hover:bg-white/80'
-              }`}
-              aria-label={`Gambar ${idx + 1}`}
-            />
-          ))}
-        </div>
-      )}
-
-      {/* Counter "1/4" di pojok kanan atas (di bawah ribbon) */}
-      {total > 1 && (
-        <div className="absolute top-2 right-2 rounded-full bg-black/50 text-white text-[10px] font-medium px-2 py-0.5 pointer-events-none">
-          {currentIdx + 1}/{total}
-        </div>
-      )}
-    </div>
-  )
-}
-
-// ============================================================
-// ProductVariant Card
+// ProductVariant Card (clickable → /produk/[slug])
 // ============================================================
 function ProductVariantCard({ v }: { v: ProductVariantItem }) {
   const ribbon = getRibbonStyle(v.ribbonColor)
   const displayTitle = v.cardTitle || v.name
   const displayImage = v.imageUrl || v.galleryImages[0] || null
-  const gallery = v.galleryImages.length > 0 ? v.galleryImages : displayImage ? [displayImage] : []
+  const href = `/produk/${v.slug}`
 
   return (
-    <li className="rounded-xl border border-border bg-card overflow-hidden transition-all duration-200 hover:shadow-md hover:border-brand/40 flex flex-col relative">
-      {/* Ribbon badge — pojok kanan atas (absolute, di atas image) */}
-      {v.ribbonLabel && (
-        <div className={`absolute top-3 right-3 z-10 inline-flex items-center rounded-full border px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider shadow-sm ${ribbon.bg} ${ribbon.text} ${ribbon.border}`}>
-          {v.ribbonLabel}
-        </div>
-      )}
-
-      {/* Mini Image Carousel (gallery) */}
-      <MiniImageCarousel
-        images={gallery}
-        alt={v.imageAlt || displayTitle}
-        variantId={v.id}
-      />
-
-      {/* Konten bawah */}
-      <div className="p-3 sm:p-4 flex-1 flex flex-col">
-        {/* Parent product name (kecil di atas) */}
-        {v.parentName && (
-          <div className="text-[10px] uppercase tracking-wide text-muted-foreground font-medium">
-            {v.parentName}
-          </div>
-        )}
-
-        {/* Card title (konfigurasi) */}
-        <h3 className="mt-1 text-sm sm:text-base font-bold leading-snug line-clamp-2">
-          {displayTitle}
-        </h3>
-
-        {/* Card description */}
-        {v.cardDescription && (
-          <p className="mt-1.5 text-xs sm:text-sm text-muted-foreground leading-relaxed line-clamp-2 flex-1">
-            {v.cardDescription}
-          </p>
-        )}
-
-        {/* Footer card: price + tier label */}
-        <div className="mt-3 pt-3 border-t border-border flex items-center justify-between gap-2">
-          <div className="min-w-0">
-            <div className="text-xs text-muted-foreground line-through opacity-0 hidden">placeholder</div>
-            <div className="text-sm sm:text-base font-bold text-brand dark:text-brand-light truncate">
-              {v.price}
+    <li className="rounded-xl border border-border bg-card overflow-hidden transition-all duration-200 hover:shadow-md hover:border-brand/40 flex flex-col relative group">
+      <Link href={href} className="flex flex-col h-full" aria-label={`${v.parentName || ''} ${displayTitle}`}>
+        {/* Gambar utama (1 image, no mini carousel) */}
+        <div className="relative w-full aspect-video bg-muted border-b border-border overflow-hidden">
+          {displayImage ? (
+            <Image
+              src={displayImage}
+              alt={v.imageAlt || displayTitle}
+              fill
+              sizes="(max-width: 640px) 100vw, 50vw"
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+          ) : (
+            <div className="absolute inset-0 grid place-items-center bg-gradient-to-br from-brand/30 to-brand-dark/40">
+              <span className="text-[10px] font-semibold uppercase tracking-wider text-white/80">
+                Peredam Mobil
+              </span>
             </div>
-            {v.priceNote && (
-              <div className="text-[10px] text-muted-foreground truncate mt-0.5">
-                {v.priceNote}
+          )}
+
+          {/* Ribbon badge — pojok kanan atas */}
+          {v.ribbonLabel && (
+            <div className={`absolute top-3 right-3 z-10 inline-flex items-center rounded-full border px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider shadow-sm ${ribbon.bg} ${ribbon.text} ${ribbon.border}`}>
+              {v.ribbonLabel}
+            </div>
+          )}
+        </div>
+
+        {/* Konten bawah */}
+        <div className="p-3 sm:p-4 flex-1 flex flex-col">
+          {/* Parent product name (kecil di atas) */}
+          {v.parentName && (
+            <div className="text-[10px] uppercase tracking-wide text-muted-foreground font-medium">
+              {v.parentName}
+            </div>
+          )}
+
+          {/* Card title (konfigurasi) */}
+          <h3 className="mt-1 text-sm sm:text-base font-bold leading-snug line-clamp-2 group-hover:text-brand dark:group-hover:text-brand-light transition-colors">
+            {displayTitle}
+          </h3>
+
+          {/* Card description */}
+          {v.cardDescription && (
+            <p className="mt-1.5 text-xs sm:text-sm text-muted-foreground leading-relaxed line-clamp-2 flex-1">
+              {v.cardDescription}
+            </p>
+          )}
+
+          {/* Footer card: price + tier label */}
+          <div className="mt-3 pt-3 border-t border-border flex items-center justify-between gap-2">
+            <div className="min-w-0">
+              <div className="text-sm sm:text-base font-bold text-brand dark:text-brand-light truncate">
+                {v.price}
               </div>
-            )}
-          </div>
-          {/* Tier label kecil di kanan */}
-          <div className={`shrink-0 inline-flex items-center rounded px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide ${ribbon.bg} ${ribbon.text}`}>
-            {v.tier.replace('_', ' ')}
+              {v.priceNote && (
+                <div className="text-[10px] text-muted-foreground truncate mt-0.5">
+                  {v.priceNote}
+                </div>
+              )}
+            </div>
+            {/* Tier label kecil di kanan */}
+            <div className={`shrink-0 inline-flex items-center rounded px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide ${ribbon.bg} ${ribbon.text}`}>
+              {v.tier.replace('_', ' ')}
+            </div>
           </div>
         </div>
-      </div>
+      </Link>
     </li>
   )
 }
@@ -380,19 +258,12 @@ export function ProductsList({ variants }: ProductsListProps) {
     }
 
     let touchStartY = 0
-    let touchStartX = 0
     const onTouchStart = (e: TouchEvent) => {
       touchStartY = e.touches[0]?.clientY ?? 0
-      touchStartX = e.touches[0]?.clientX ?? 0
     }
     const onTouchEnd = (e: TouchEvent) => {
       const endY = e.changedTouches[0]?.clientY ?? 0
-      const endX = e.changedTouches[0]?.clientX ?? 0
       const deltaY = touchStartY - endY
-      const deltaX = touchStartX - endX
-      // Hanya trigger kalau swipe lebih vertikal dari horizontal
-      // (horizontal swipe = untuk mini image carousel di card)
-      if (Math.abs(deltaY) < Math.abs(deltaX)) return
       if (Math.abs(deltaY) < TOUCH_THRESHOLD) return
       if (deltaY > 0) tryAdvance('next')
       else tryAdvance('prev')

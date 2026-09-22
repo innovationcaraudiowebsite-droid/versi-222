@@ -597,3 +597,180 @@ export async function getApprovedComments(articleId: string) {
     return []
   }
 }
+
+// ============================================================
+// Product Variant helpers — for /produk/[slug] detail page
+// ============================================================
+
+import type { ProductVariant, Product, ProductVariantSection } from '@/lib/types'
+
+export type PortalVariant = ProductVariant & {
+  parentName?: string
+  parentSlug?: string
+  category?: string
+  waNumber?: string
+}
+
+export type PortalVariantCard = {
+  id: string
+  productId: string
+  name: string
+  slug: string
+  tier: 'basic' | 'normal' | 'best_buy' | 'recommended'
+  sortOrder: number
+  price: string
+  priceValue: number | null
+  ribbonLabel: string | null
+  ribbonColor: string | null
+  cardTitle: string | null
+  cardDescription: string | null
+  imageUrl: string | null
+  imageAlt: string | null
+  parentName?: string
+  parentSlug?: string
+  category?: string
+}
+
+/**
+ * Get single variant by slug + join parent product info.
+ * Returns null if not found or product parent inactive.
+ */
+export async function getVariantBySlug(slug: string): Promise<PortalVariant | null> {
+  try {
+    const variant = (await db.productVariant.findFirst({
+      where: { slug, isActive: true },
+    } as never)) as ProductVariant | null
+
+    if (!variant) return null
+
+    // Fetch parent product
+    const product = (await db.product.findFirst({
+      where: { id: variant.productId, isActive: true },
+    } as never)) as Product | null
+
+    if (!product) return null
+
+    return {
+      ...variant,
+      // Ensure sections is array (defensive)
+      sections: Array.isArray(variant.sections) ? (variant.sections as ProductVariantSection[]) : null,
+      // Ensure galleryImages is array (defensive)
+      galleryImages: Array.isArray(variant.galleryImages) ? variant.galleryImages : [],
+      parentName: product.name,
+      parentSlug: product.slug,
+      category: product.category,
+      waNumber: product.waNumber,
+    }
+  } catch (err) {
+    logDbError('getVariantBySlug', err)
+    return null
+  }
+}
+
+/**
+ * Get all variants from same parent product (siblings).
+ * Used for "Varian Lain dari Produk Ini" section in detail page.
+ */
+export async function getSiblingVariants(
+  productId: string,
+  excludeVariantId?: string,
+): Promise<PortalVariantCard[]> {
+  try {
+    const variants = (await db.productVariant.findMany({
+      where: { productId, isActive: true },
+      orderBy: [{ sortOrder: 'asc' }, { createdAt: 'desc' }],
+    } as never)) as ProductVariant[]
+
+    return variants
+      .filter((v) => v.id !== excludeVariantId)
+      .map((v) => ({
+        id: v.id,
+        productId: v.productId,
+        name: v.name,
+        slug: v.slug,
+        tier: v.tier,
+        sortOrder: v.sortOrder,
+        price: v.price,
+        priceValue: v.priceValue,
+        ribbonLabel: v.ribbonLabel,
+        ribbonColor: v.ribbonColor,
+        cardTitle: v.cardTitle,
+        cardDescription: v.cardDescription,
+        imageUrl: v.imageUrl,
+        imageAlt: v.imageAlt,
+      }))
+  } catch (err) {
+    logDbError('getSiblingVariants', err)
+    return []
+  }
+}
+
+/**
+ * Get related variants from OTHER products (different parent).
+ * Used for "Produk Terkait" section in detail page.
+ * Returns up to `limit` variants (default 4).
+ */
+export async function getRelatedVariants(
+  currentProductId: string,
+  limit = 4,
+): Promise<PortalVariantCard[]> {
+  try {
+    // Get all variants from other products
+    const allVariants = (await db.productVariant.findMany({
+      where: { isActive: true },
+      orderBy: [{ sortOrder: 'asc' }, { createdAt: 'desc' }],
+    } as never)) as ProductVariant[]
+
+    // Filter: different productId
+    const otherVariants = allVariants.filter((v) => v.productId !== currentProductId)
+
+    // Group by productId to ensure diversity (1 variant per product)
+    const seenProducts = new Set<string>()
+    const result: PortalVariantCard[] = []
+
+    for (const v of otherVariants) {
+      if (seenProducts.has(v.productId)) continue
+      seenProducts.add(v.productId)
+      result.push({
+        id: v.id,
+        productId: v.productId,
+        name: v.name,
+        slug: v.slug,
+        tier: v.tier,
+        sortOrder: v.sortOrder,
+        price: v.price,
+        priceValue: v.priceValue,
+        ribbonLabel: v.ribbonLabel,
+        ribbonColor: v.ribbonColor,
+        cardTitle: v.cardTitle,
+        cardDescription: v.cardDescription,
+        imageUrl: v.imageUrl,
+        imageAlt: v.imageAlt,
+      })
+      if (result.length >= limit) break
+    }
+
+    return result
+  } catch (err) {
+    logDbError('getRelatedVariants', err)
+    return []
+  }
+}
+
+/**
+ * Get all active variant slugs — for generateStaticParams & sitemap.
+ */
+export async function getAllVariantSlugs(): Promise<string[]> {
+  try {
+    const variants = (await db.productVariant.findMany({
+      where: { isActive: true },
+      orderBy: [{ sortOrder: 'asc' }, { createdAt: 'desc' }],
+      select: { slug: true },
+    } as never)) as Array<{ slug: string }>
+
+    return variants.map((v) => v.slug).filter(Boolean)
+  } catch (err) {
+    logDbError('getAllVariantSlugs', err)
+    return []
+  }
+}
