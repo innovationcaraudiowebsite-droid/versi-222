@@ -1,50 +1,49 @@
-import Link from 'next/link'
-import Image from 'next/image'
 import { db } from '@/lib/db'
+import { ProductsList, type ProductItem } from '@/components/landing/products-list'
 
 /**
  * Paket Layanan section — section id="paket".
  *
- * DINAMIS dari database (tabel products). Sebelumnya hardcode PACKAGES array,
- * sekarang fetch dari DB supaya admin bisa CRUD produk via dashboard
- * (/admin/products).
+ * CAROUSEL MODE (sama seperti LatestArticles, sesuai brief user revisi):
+ *  - Server fetch ALL produk aktif (limit 50) sekali saja di SSR.
+ *  - Pass ke ProductsList client component yang render semua produk di DOM.
+ *  - Container overflow:hidden, hanya 4 card visible (1 col × 4 row di mobile,
+ *    2 col × 2 row di tablet/desktop).
+ *  - Scroll/swipe → CSS transform translateY → slide ke 4 card berikutnya.
+ *  - NO API reload — pure CSS animation, instant.
  *
- * Layout: horizontal card (gambar kiri 120×120 + konten kanan).
- * Card menampilkan: badge kategori, title, deskripsi.
- * (Harga & tombol CTA WhatsApp per produk dihapus — user request.)
+ * Layout card: VERTICAL (gambar atas aspect-video + konten bawah).
+ *  - Badge kategori
+ *  - Title (line-clamp-1)
+ *  - Description (line-clamp-2)
+ *  - (Harga & CTA WhatsApp per produk dihapus — user request.)
  *
  * Filter: hanya produk dengan isActive=true, urut by sortOrder ASC.
  */
 
-type Product = {
-  id: string
-  name: string
-  description: string | null
-  price: string | null
-  category: string
-  imageUrl: string | null
-  imageAlt: string | null
-  waNumber: string
-  sortOrder: number
-}
+export const dynamic = 'force-dynamic'
 
-async function getActiveProducts(): Promise<Product[]> {
+const MAX_PRODUCTS = 50 // limit supaya tidak berat (kalau DB punya ratusan)
+
+type PaketProduct = ProductItem
+
+async function getActiveProducts(): Promise<PaketProduct[]> {
   try {
     const products = (await db.product.findMany({
       where: { isActive: true },
       orderBy: [{ sortOrder: 'asc' }, { createdAt: 'desc' }],
+      take: MAX_PRODUCTS,
       select: {
         id: true,
         name: true,
         description: true,
-        price: true,
         category: true,
         imageUrl: true,
         imageAlt: true,
-        waNumber: true,
         sortOrder: true,
       },
-    } as never)) as Product[]
+    } as never)) as PaketProduct[]
+
     return products
   } catch (err) {
     console.error('[packages] fetch error:', err)
@@ -56,7 +55,10 @@ export async function Packages() {
   const products = await getActiveProducts()
 
   return (
-    <section id="paket" className="border-t border-border bg-background">
+    <section
+      id="paket"
+      className="border-t border-border bg-background"
+    >
       <div className="container mx-auto max-w-7xl px-4 py-12 sm:py-16 lg:py-20">
         {/* Section header */}
         <div className="max-w-2xl">
@@ -65,77 +67,16 @@ export async function Packages() {
           </h2>
           <p className="mt-2 text-sm sm:text-base text-muted-foreground">
             Pilih paket pengerjaan sesuai kebutuhan &amp; budget mobil Anda.
+            Scroll untuk menggeser produk.
           </p>
         </div>
 
-        {/* Vertical list — horizontal cards */}
-        {products.length === 0 ? (
-          <div className="mt-8 rounded-xl border border-dashed border-border p-10 text-center text-sm text-muted-foreground">
-            Belum ada produk aktif. Admin bisa tambah produk di{' '}
-            <Link
-              href="/admin/products/new"
-              className="font-semibold text-brand hover:underline"
-            >
-              dashboard admin
-            </Link>
-            .
-          </div>
-        ) : (
-          <ul className="mt-8 space-y-4">
-            {products.map((p) => {
-              return (
-                <li
-                  key={p.id}
-                  className="rounded-xl border border-border bg-card p-3 sm:p-4 transition-all duration-200 hover:shadow-md hover:border-brand/40"
-                >
-                  <div className="flex gap-3 sm:gap-4 items-start">
-                    {/* Gambar kiri — aspect-square */}
-                    <div className="shrink-0 relative overflow-hidden rounded-md bg-muted border border-border w-[100px] sm:w-[120px] aspect-square">
-                      {p.imageUrl ? (
-                        <Image
-                          src={p.imageUrl}
-                          alt={p.imageAlt || p.name}
-                          fill
-                          sizes="(min-width: 640px) 120px, 100px"
-                          className="object-cover"
-                        />
-                      ) : (
-                        <div className="absolute inset-0 grid place-items-center bg-gradient-to-br from-brand/30 to-brand-dark/40">
-                          <span className="text-[10px] font-semibold uppercase tracking-wider text-white/80">
-                            Peredam Mobil
-                          </span>
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Konten kanan */}
-                    <div className="min-w-0 flex-1">
-                      {/* Badge kategori */}
-                      <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
-                        <span className="inline-block rounded bg-brand/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-brand dark:text-brand-light">
-                          {p.category}
-                        </span>
-                      </div>
-
-                      {/* Title */}
-                      <h3 className="mt-1.5 text-lg sm:text-xl font-bold leading-snug line-clamp-1">
-                        {p.name}
-                      </h3>
-
-                      {/* Deskripsi */}
-                      {p.description && (
-                        <p className="mt-1.5 text-sm text-muted-foreground leading-relaxed line-clamp-2">
-                          {p.description}
-                        </p>
-                      )}
-                    </div>
-                  </div>
-                </li>
-              )
-            })}
-          </ul>
-        )}
+        {/* Products carousel — pre-load all, slide animation (no reload) */}
+        <ProductsList products={products as ProductItem[]} />
       </div>
     </section>
   )
 }
+
+// Re-export untuk konsistensi API
+export type { ProductItem } from '@/components/landing/products-list'
