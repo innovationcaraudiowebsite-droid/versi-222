@@ -2003,7 +2003,7 @@
   ],
   "products": [
     {
-      "id": "prod-001-5frw6nbg",
+      "id": "prod-001-ooz1fvln",
       "name": "Simple Upgrade",
       "slug": "simple-upgrade",
       "category": "Paket Upgrade Audio",
@@ -2013,11 +2013,11 @@
       "waNumber": "6282211222399",
       "sortOrder": 1,
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "prod-002-shl35umw",
+      "id": "prod-002-10bh6pwd",
       "name": "2 Way Upgrade Audio",
       "slug": "2-way-upgrade-audio",
       "category": "Paket Upgrade Audio",
@@ -2027,11 +2027,11 @@
       "waNumber": "6282211222399",
       "sortOrder": 2,
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "prod-003-l1lzjq9c",
+      "id": "prod-003-szt00mbs",
       "name": "Full Upgrade Audio",
       "slug": "full-upgrade-audio",
       "category": "Paket Upgrade Audio",
@@ -2041,11 +2041,11 @@
       "waNumber": "6282211222399",
       "sortOrder": 3,
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "prod-004-5xz6eu4a",
+      "id": "prod-004-ffwf7bmt",
       "name": "Peredam Mobil",
       "slug": "peredam-mobil",
       "category": "Paket Peredam",
@@ -2055,11 +2055,11 @@
       "waNumber": "6282211222399",
       "sortOrder": 4,
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "prod-005-8kumoqxd",
+      "id": "prod-005-amgdg6ro",
       "name": "Audio Tuning Service",
       "slug": "audio-tuning-service",
       "category": "Paket Service",
@@ -2069,14 +2069,28 @@
       "waNumber": "6282211222399",
       "sortOrder": 5,
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
+    },
+    {
+      "id": "prod-006-uguncw9u",
+      "name": "2 Way Subwoofer Bawah Jok",
+      "slug": "2-way-subwoofer-bawah-jok",
+      "category": "Paket Upgrade Audio",
+      "shortDescription": "Sistem 2-way aktif + DSP + subwoofer compact bawah jok untuk bass tanpa mengorbankan bagasi",
+      "imageUrl": "https://images.unsplash.com/photo-1000000220165?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "2 Way Subwoofer Bawah Jok",
+      "waNumber": "6282211222399",
+      "sortOrder": 6,
+      "isActive": true,
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     }
   ],
   "productVariants": [
     {
-      "id": "var-001-kxzb8j38",
-      "productId": "prod-001-5frw6nbg",
+      "id": "var-001-nlhdjekl",
+      "productId": "prod-001-ooz1fvln",
       "name": "Basic",
       "slug": "simple-upgrade-basic",
       "tier": "basic",
@@ -2137,12 +2151,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-002-jm804g4p",
-      "productId": "prod-001-5frw6nbg",
+      "id": "var-002-0rm3q7dh",
+      "productId": "prod-001-ooz1fvln",
       "name": "Normal",
       "slug": "simple-upgrade-normal",
       "tier": "normal",
@@ -2210,12 +2224,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-003-be79fn20",
-      "productId": "prod-001-5frw6nbg",
+      "id": "var-003-8ded7yu3",
+      "productId": "prod-001-ooz1fvln",
       "name": "Best Buy",
       "slug": "simple-upgrade-best-buy",
       "tier": "best_buy",
@@ -2311,12 +2325,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-004-tfzi49y2",
-      "productId": "prod-002-shl35umw",
+      "id": "var-004-kk0u1862",
+      "productId": "prod-002-10bh6pwd",
       "name": "Basic",
       "slug": "2-way-upgrade-audio-basic",
       "tier": "basic",
@@ -2375,12 +2389,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-005-bj441a3t",
-      "productId": "prod-002-shl35umw",
+      "id": "var-005-0v8zw7bx",
+      "productId": "prod-002-10bh6pwd",
       "name": "Normal",
       "slug": "2-way-upgrade-audio-normal",
       "tier": "normal",
@@ -2442,12 +2456,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-006-5ln3s9rn",
-      "productId": "prod-002-shl35umw",
+      "id": "var-006-wmfgrruq",
+      "productId": "prod-002-10bh6pwd",
       "name": "Recommended",
       "slug": "2-way-upgrade-audio-recommended",
       "tier": "recommended",
@@ -2574,12 +2588,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-007-cs0fvtfl",
-      "productId": "prod-003-l1lzjq9c",
+      "id": "var-007-b6uri420",
+      "productId": "prod-003-szt00mbs",
       "name": "Basic",
       "slug": "full-upgrade-audio-basic",
       "tier": "basic",
@@ -2637,12 +2651,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-008-ndo1p8pf",
-      "productId": "prod-003-l1lzjq9c",
+      "id": "var-008-uif4s821",
+      "productId": "prod-003-szt00mbs",
       "name": "Normal",
       "slug": "full-upgrade-audio-normal",
       "tier": "normal",
@@ -2705,12 +2719,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-009-rmzdorty",
-      "productId": "prod-003-l1lzjq9c",
+      "id": "var-009-8vj95lsf",
+      "productId": "prod-003-szt00mbs",
       "name": "Best Buy",
       "slug": "full-upgrade-audio-best-buy",
       "tier": "best_buy",
@@ -2809,12 +2823,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-010-qtpg22bn",
-      "productId": "prod-004-5xz6eu4a",
+      "id": "var-010-nqmg4711",
+      "productId": "prod-004-ffwf7bmt",
       "name": "Basic",
       "slug": "peredam-mobil-basic",
       "tier": "basic",
@@ -2863,12 +2877,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-011-iystey0s",
-      "productId": "prod-004-5xz6eu4a",
+      "id": "var-011-cemtcu52",
+      "productId": "prod-004-ffwf7bmt",
       "name": "Normal",
       "slug": "peredam-mobil-normal",
       "tier": "normal",
@@ -2919,12 +2933,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-012-i2pacsj5",
-      "productId": "prod-004-5xz6eu4a",
+      "id": "var-012-4ipwndv2",
+      "productId": "prod-004-ffwf7bmt",
       "name": "Best Buy",
       "slug": "peredam-mobil-best-buy",
       "tier": "best_buy",
@@ -2978,12 +2992,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-013-pruvugar",
-      "productId": "prod-005-8kumoqxd",
+      "id": "var-013-5jkf6kch",
+      "productId": "prod-005-amgdg6ro",
       "name": "Basic",
       "slug": "audio-tuning-service-basic",
       "tier": "basic",
@@ -3028,12 +3042,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-014-vomz0yhz",
-      "productId": "prod-005-8kumoqxd",
+      "id": "var-014-vnliw136",
+      "productId": "prod-005-amgdg6ro",
       "name": "Normal",
       "slug": "audio-tuning-service-normal",
       "tier": "normal",
@@ -3080,12 +3094,12 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     },
     {
-      "id": "var-015-2dfh1qxd",
-      "productId": "prod-005-8kumoqxd",
+      "id": "var-015-3at4652a",
+      "productId": "prod-005-amgdg6ro",
       "name": "Recommended",
       "slug": "audio-tuning-service-recommended",
       "tier": "recommended",
@@ -3145,8 +3159,275 @@
       ],
       "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
       "isActive": true,
-      "createdAt": "2026-09-22T06:45:57.617Z",
-      "updatedAt": "2026-09-22T06:45:57.617Z"
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
+    },
+    {
+      "id": "var-016-wjlhi7ek",
+      "productId": "prod-006-uguncw9u",
+      "name": "Basic",
+      "slug": "2-way-subwoofer-bawah-jok-basic",
+      "tier": "basic",
+      "sortOrder": 1,
+      "price": "Rp 5.500.000",
+      "priceValue": 5500000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "BASIC",
+      "ribbonColor": "slate",
+      "cardTitle": "2-WAY PASSIVE + DSP",
+      "cardDescription": "Speaker 2-way passive + DSP Rainbow. Tanpa subwoofer, fokus vocal clarity untuk daily use.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000220165?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "2 Way Subwoofer Bawah Jok Basic",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000220165?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000611915?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000003666?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000395416?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Basic 2 Way Subwoofer Bawah Jok cocok untuk pengguna yang ingin speaker 2-way aftermarket dengan DSP processing, tanpa penambahan subwoofer.",
+      "sections": [
+        {
+          "title": "A. PRODUK UTAMA",
+          "type": "list",
+          "items": [
+            "Speaker Front 2 Way — GZRT 25 SQ + GZRK 165 SQ",
+            "DSP — Rainbow EL-PA4.6",
+            "Kontroler DSP — Rainbow EL-PA4.6"
+          ]
+        },
+        {
+          "title": "B. KABEL & MATERIAL",
+          "type": "list",
+          "items": [
+            "Kabel aki & ground 8 AWG",
+            "Fuse Box ANL 1 line",
+            "Kabel speaker Front 16 AWG",
+            "Kabel input DSP 16 AWG",
+            "RCA SQ 2,5m",
+            "Kabel remote"
+          ]
+        },
+        {
+          "title": "C. JASA INSTALASI & TUNING",
+          "type": "list",
+          "items": [
+            "Jasa instalasi",
+            "Phase checker",
+            "Setting & tuning DSP dasar"
+          ]
+        }
+      ],
+      "closingTagline": "Basic — 2-Way + DSP Processing",
+      "closingComponents": [
+        "GZRT 25 SQ",
+        "GZRK 165 SQ",
+        "Rainbow DSP EL-PA4.6"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
+    },
+    {
+      "id": "var-017-e3o53wdi",
+      "productId": "prod-006-uguncw9u",
+      "name": "Normal",
+      "slug": "2-way-subwoofer-bawah-jok-normal",
+      "tier": "normal",
+      "sortOrder": 2,
+      "price": "Rp 7.800.000",
+      "priceValue": 7800000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "POPULAR",
+      "ribbonColor": "blue",
+      "cardTitle": "2-WAY + DSP + SUB 8\" ENTRY",
+      "cardDescription": "Tambah subwoofer 8\" entry level bawah jok untuk bass lebih dalam. Combo seimbang untuk daily audio.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000278683?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "2 Way Subwoofer Bawah Jok Normal",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000278683?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000422945?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000567207?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000711469?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Normal menambahkan subwoofer 8\" entry level bawah jok untuk melengkapi frekuensi rendah. DSP Rainbow memberikan kontrol penuh sistem dengan konsep compact.",
+      "sections": [
+        {
+          "title": "A. PRODUK UTAMA",
+          "type": "list",
+          "items": [
+            "Speaker Front 2 Way — GZRT 25 SQ + GZRK 165 SQ",
+            "DSP — Rainbow EL-PA4.6",
+            "Power Mono — Entry Level",
+            "Subwoofer 8\" Entry Level — Bawah Jok"
+          ]
+        },
+        {
+          "title": "B. KABEL, POWER & SIGNAL",
+          "type": "list",
+          "items": [
+            "Dek dasar subwoofer",
+            "Kabel aki & ground 8 AWG",
+            "Fuse Box ANL 1 line",
+            "Kabel speaker Front 16 AWG",
+            "Kabel input DSP 16 AWG",
+            "RCA SQ 2,5m",
+            "Kabel remote"
+          ]
+        },
+        {
+          "title": "C. JASA INSTALASI & TUNING",
+          "type": "list",
+          "items": [
+            "Jasa instalasi",
+            "Phase checker",
+            "Dudukan fuse box",
+            "Klem kabel + solder",
+            "Sealer kabel",
+            "Setting & tuning DSP"
+          ]
+        }
+      ],
+      "closingTagline": "Normal — 2-Way + DSP + Subwoofer 8\" Bawah Jok",
+      "closingComponents": [
+        "GZRT 25 SQ",
+        "GZRK 165 SQ",
+        "Rainbow DSP EL-PA4.6",
+        "Subwoofer 8\" Entry Level"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
+    },
+    {
+      "id": "var-018-q3rfgxlc",
+      "productId": "prod-006-uguncw9u",
+      "name": "Best Buy",
+      "slug": "2-way-subwoofer-bawah-jok-best-buy",
+      "tier": "best_buy",
+      "sortOrder": 3,
+      "price": "Rp 9.500.000",
+      "priceValue": 9500000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "BEST BUY",
+      "ribbonColor": "amber",
+      "cardTitle": "2-WAY ACTIVE + DSP + SUB BAWAH JOK",
+      "cardDescription": "GZ RadioActive 2-way aktif + DSP Rainbow + Sub 8\" Zevox bawah jok + Peredam Gran Turismo. Konfigurasi lengkap.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000608299?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "2 Way Subwoofer Bawah Jok Best Buy",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000608299?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000244220?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000880140?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000516061?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket audio mobil 2 Way Subwoofer Bawah Jok – Best Buy Package dari Innovation Car Audio Jakarta merupakan paket yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara yang lebih serius, dengan kombinasi 2-way aktif, DSP processor, dan subwoofer compact.\n\nPaket ini menggunakan GZ RadioActive sebagai sistem speaker depan, terdiri dari GZRT 25 SQ dan GZRK 165 SQ, yang dikendalikan secara aktif melalui DSP Rainbow EL-PA4.6. Konfigurasi ini memberikan kontrol yang lebih luas terhadap masing-masing speaker, sehingga proses tuning dapat dilakukan dengan lebih presisi untuk mendapatkan keseimbangan suara, staging, imaging, dan integrasi bass yang lebih baik.",
+      "sections": [
+        {
+          "title": "2-WAY FRONT – GZ RADIOACTIVE",
+          "type": "markdown",
+          "markdown": "Sebagai sistem speaker depan digunakan kombinasi GZRT 25 SQ dan GZRK 165 SQ. Keduanya membentuk sistem 2-way aktif, dengan tweeter dan midbass mendapatkan pengaturan melalui DSP secara lebih terkontrol.\n\nKonsep aktif memberikan fleksibilitas tuning yang lebih luas dibanding sistem passive crossover konvensional. Karakter suara speaker dapat disesuaikan melalui DSP agar lebih sesuai dengan posisi pemasangan dan karakter akustik kabin kendaraan.\n\nHasil akhirnya diarahkan untuk menghadirkan suara depan yang lebih terfokus, vokal yang lebih jelas, detail yang lebih mudah terbaca, serta staging yang lebih teratur."
+        },
+        {
+          "title": "DSP RAINBOW EL-PA4.6",
+          "type": "markdown",
+          "markdown": "Sebagai pusat pengolahan sistem digunakan DSP Rainbow EL-PA4.6, lengkap dengan Controller DSP Rainbow EL-PA4.6.\n\nDSP menjadi bagian penting dalam konfigurasi 2-way aktif karena masing-masing jalur speaker membutuhkan pengaturan yang lebih detail.\n\nMelalui proses DSP setting dan tuning, sistem dapat diatur untuk membantu mendapatkan tonal balance yang lebih seimbang, pembagian frekuensi yang lebih terkontrol, staging dan imaging yang lebih terarah, fokus vokal yang lebih baik, detail musik yang lebih mudah terdengar, dan integrasi midbass dengan subwoofer yang lebih natural.\n\nController DSP juga memberikan kemudahan bagi pengguna untuk melakukan pengaturan karakter suara sesuai kebutuhan."
+        },
+        {
+          "title": "SUBWOOFER 8\" – ZEVox ZV 8 SAS",
+          "type": "markdown",
+          "markdown": "Untuk melengkapi reproduksi frekuensi rendah, paket menggunakan Subwoofer 8\" Zevox ZV 8 SAS dengan konsep Subwoofer Bawah Jok.\n\nUkuran 8\" dipilih untuk menjaga konsep sistem tetap compact sekaligus memberikan tambahan fondasi bass yang tidak didapatkan secara maksimal dari sistem 2-way depan saja.\n\nDengan pengaturan melalui DSP, subwoofer dapat diselaraskan dengan karakter midbass sehingga transisi dari speaker depan menuju frekuensi rendah terasa lebih menyatu.\n\nKonsep ini cocok untuk pengguna yang menginginkan sistem lebih lengkap tanpa harus menggunakan instalasi subwoofer berukuran besar di area bagasi."
+        },
+        {
+          "title": "KONFIGURASI DSP",
+          "type": "subsections",
+          "subsections": [
+            {
+              "title": "DSP 6CH – TIDAK BISA",
+              "markdown": "Untuk konfigurasi 2-way aktif yang dibutuhkan, DSP 6CH tidak mencukupi karena channel terpakai semua untuk front aktif."
+            },
+            {
+              "title": "DSP 8CH (Recommended)",
+              "markdown": "Front: ON, Rear: OFF, Sub: ON — Sistem difokuskan pada 2-way front aktif + subwoofer. Seluruh channel tersedia digunakan untuk konfigurasi utama."
+            },
+            {
+              "title": "DSP 10CH (Alternatif)",
+              "markdown": "Front: ON, Rear: ON, Sub: ON — Jika kendaraan membutuhkan speaker belakang tetap aktif, konfigurasi dapat menggunakan DSP 10CH."
+            }
+          ]
+        },
+        {
+          "title": "KABEL, POWER & SIGNAL",
+          "type": "list",
+          "items": [
+            "Kabel aki & ground 8 AWG",
+            "Fuse box ANL 1 line",
+            "Fuse box ANL 2 line",
+            "Kabel speaker Front 16 AWG",
+            "Kabel input DSP 16 AWG",
+            "RCA SQ 2,5 meter",
+            "Kabel remote",
+            "Dek dasar subwoofer"
+          ]
+        },
+        {
+          "title": "PEREDAM & SUPPORT INSTALLATION",
+          "type": "markdown",
+          "markdown": "Paket dilengkapi Peredam Gran Turismo sebanyak 3 lembar. Peredam digunakan sebagai bagian dari support instalasi untuk membantu mengurangi resonansi pada area yang membutuhkan penanganan sekaligus mendukung performa speaker depan."
+        },
+        {
+          "title": "RING MIDBASS & SUPPORT",
+          "type": "list",
+          "items": [
+            "Ring midbass + finishing cat",
+            "Pembesaran plat + anti karat"
+          ]
+        },
+        {
+          "title": "PROFESSIONAL INSTALLATION",
+          "type": "list",
+          "items": [
+            "Phase checker",
+            "Selang flexible kabel aki di ruang mesin",
+            "Ring midbass + cat",
+            "Pembesaran plat + anti karat",
+            "Dudukan fuse box",
+            "Klem kabel",
+            "Solder dan heat shrink",
+            "Sealer kabel",
+            "Perlindungan area tarikan pintu & kisi AC",
+            "Penutup cover stir",
+            "Wrapping plastik untuk jok dan interior",
+            "Penataan kabel dan perangkat",
+            "DSP setting & tuning"
+          ]
+        },
+        {
+          "title": "KENAPA BEST BUY?",
+          "type": "markdown",
+          "markdown": "Konfigurasi ini memberikan kombinasi yang lebih lengkap:\n\nGZ RADIOACTIVE 2-WAY AKTIF\n↓\nDSP RAINBOW EL-PA4.6\n↓\nSUBWOOFER 8\" ZEVox\n↓\nPROFESSIONAL INSTALLATION & DSP TUNING\n\nFokus utama paket ini adalah mendapatkan kualitas suara depan yang lebih serius melalui konfigurasi 2-way aktif, kemudian melengkapinya dengan subwoofer bawah jok untuk memberikan fondasi bass yang lebih penuh.\n\nDibanding konfigurasi 2-way passive, sistem aktif memberikan ruang tuning yang lebih luas karena masing-masing jalur speaker dapat dikontrol melalui DSP."
+        },
+        {
+          "title": "PACKAGE SUMMARY",
+          "type": "markdown",
+          "markdown": "2 WAY SUBWOOFER BAWAH JOK – BEST BUY PACKAGE merupakan pilihan untuk pengguna yang ingin membangun sistem audio dengan konsep 2-way aktif + DSP + subwoofer compact.\n\nDengan GZRT 25 SQ + GZRK 165 SQ, sistem memiliki fondasi speaker depan yang lebih serius. DSP Rainbow EL-PA4.6 memberikan kontrol dan fleksibilitas tuning, sementara Zevox ZV 8 SAS melengkapi sistem dengan reproduksi bass.\n\nSeluruhnya didukung instalasi profesional, jalur power dan signal yang tertata, peredam Gran Turismo, pengerjaan ring midbass, serta proses DSP tuning."
+        }
+      ],
+      "closingTagline": "ACTIVE 2-WAY. DSP CONTROL. COMPACT BASS.",
+      "closingComponents": [
+        "GZRT 25 SQ",
+        "GZRK 165 SQ",
+        "DSP Rainbow EL-PA4.6",
+        "Subwoofer 8\" Zevox ZV 8 SAS"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T10:19:59.312Z",
+      "updatedAt": "2026-09-22T10:19:59.312Z"
     }
   ]
 }

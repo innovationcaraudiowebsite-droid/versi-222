@@ -521,6 +521,128 @@ const MOCK_PRODUCTS: MockProduct[] = [
         closingComponents: ['Full DSP Tuning', 'RTA Measurement', 'Follow-up Service']
       }
     ]
+  },
+
+  // === PRODUK 6: 2 Way Subwoofer Bawah Jok (dari artikel 3) ===
+  {
+    name: '2 Way Subwoofer Bawah Jok',
+    slug: '2-way-subwoofer-bawah-jok',
+    category: 'Paket Upgrade Audio',
+    shortDescription: 'Sistem 2-way aktif + DSP + subwoofer compact bawah jok untuk bass tanpa mengorbankan bagasi',
+    waNumber: '6282211222399',
+    variants: [
+      {
+        name: 'Basic',
+        tier: 'basic',
+        sortOrder: 1,
+        price: 'Rp 5.500.000',
+        priceValue: 5500000,
+        ribbonLabel: 'BASIC',
+        ribbonColor: 'slate',
+        cardTitle: '2-WAY PASSIVE + DSP',
+        cardDescription: 'Speaker 2-way passive + DSP Rainbow. Tanpa subwoofer, fokus vocal clarity untuk daily use.',
+        galleryImages: gallery('subbawahjok-basic'),
+        introMarkdown: 'Paket Basic 2 Way Subwoofer Bawah Jok cocok untuk pengguna yang ingin speaker 2-way aftermarket dengan DSP processing, tanpa penambahan subwoofer.',
+        sections: [
+          { title: 'A. PRODUK UTAMA', type: 'list', items: ['Speaker Front 2 Way — GZRT 25 SQ + GZRK 165 SQ', 'DSP — Rainbow EL-PA4.6', 'Kontroler DSP — Rainbow EL-PA4.6'] },
+          { title: 'B. KABEL & MATERIAL', type: 'list', items: ['Kabel aki & ground 8 AWG', 'Fuse Box ANL 1 line', 'Kabel speaker Front 16 AWG', 'Kabel input DSP 16 AWG', 'RCA SQ 2,5m', 'Kabel remote'] },
+          { title: 'C. JASA INSTALASI & TUNING', type: 'list', items: ['Jasa instalasi', 'Phase checker', 'Setting & tuning DSP dasar'] }
+        ],
+        closingTagline: 'Basic — 2-Way + DSP Processing',
+        closingComponents: ['GZRT 25 SQ', 'GZRK 165 SQ', 'Rainbow DSP EL-PA4.6']
+      },
+      {
+        name: 'Normal',
+        tier: 'normal',
+        sortOrder: 2,
+        price: 'Rp 7.800.000',
+        priceValue: 7800000,
+        ribbonLabel: 'POPULAR',
+        ribbonColor: 'blue',
+        cardTitle: '2-WAY + DSP + SUB 8" ENTRY',
+        cardDescription: 'Tambah subwoofer 8" entry level bawah jok untuk bass lebih dalam. Combo seimbang untuk daily audio.',
+        galleryImages: gallery('subbawahjok-normal'),
+        introMarkdown: 'Paket Normal menambahkan subwoofer 8" entry level bawah jok untuk melengkapi frekuensi rendah. DSP Rainbow memberikan kontrol penuh sistem dengan konsep compact.',
+        sections: [
+          { title: 'A. PRODUK UTAMA', type: 'list', items: ['Speaker Front 2 Way — GZRT 25 SQ + GZRK 165 SQ', 'DSP — Rainbow EL-PA4.6', 'Power Mono — Entry Level', 'Subwoofer 8" Entry Level — Bawah Jok'] },
+          { title: 'B. KABEL, POWER & SIGNAL', type: 'list', items: ['Dek dasar subwoofer', 'Kabel aki & ground 8 AWG', 'Fuse Box ANL 1 line', 'Kabel speaker Front 16 AWG', 'Kabel input DSP 16 AWG', 'RCA SQ 2,5m', 'Kabel remote'] },
+          { title: 'C. JASA INSTALASI & TUNING', type: 'list', items: ['Jasa instalasi', 'Phase checker', 'Dudukan fuse box', 'Klem kabel + solder', 'Sealer kabel', 'Setting & tuning DSP'] }
+        ],
+        closingTagline: 'Normal — 2-Way + DSP + Subwoofer 8" Bawah Jok',
+        closingComponents: ['GZRT 25 SQ', 'GZRK 165 SQ', 'Rainbow DSP EL-PA4.6', 'Subwoofer 8" Entry Level']
+      },
+      {
+        name: 'Best Buy',
+        tier: 'best_buy',
+        sortOrder: 3,
+        price: 'Rp 9.500.000',
+        priceValue: 9500000,
+        ribbonLabel: 'BEST BUY',
+        ribbonColor: 'amber',
+        cardTitle: '2-WAY ACTIVE + DSP + SUB BAWAH JOK',
+        cardDescription: 'GZ RadioActive 2-way aktif + DSP Rainbow + Sub 8" Zevox bawah jok + Peredam Gran Turismo. Konfigurasi lengkap.',
+        galleryImages: gallery('subbawahjok-best-buy'),
+        introMarkdown: 'Paket audio mobil 2 Way Subwoofer Bawah Jok – Best Buy Package dari Innovation Car Audio Jakarta merupakan paket yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara yang lebih serius, dengan kombinasi 2-way aktif, DSP processor, dan subwoofer compact.\n\nPaket ini menggunakan GZ RadioActive sebagai sistem speaker depan, terdiri dari GZRT 25 SQ dan GZRK 165 SQ, yang dikendalikan secara aktif melalui DSP Rainbow EL-PA4.6. Konfigurasi ini memberikan kontrol yang lebih luas terhadap masing-masing speaker, sehingga proses tuning dapat dilakukan dengan lebih presisi untuk mendapatkan keseimbangan suara, staging, imaging, dan integrasi bass yang lebih baik.',
+        sections: [
+          {
+            title: '2-WAY FRONT – GZ RADIOACTIVE',
+            type: 'markdown',
+            markdown: 'Sebagai sistem speaker depan digunakan kombinasi GZRT 25 SQ dan GZRK 165 SQ. Keduanya membentuk sistem 2-way aktif, dengan tweeter dan midbass mendapatkan pengaturan melalui DSP secara lebih terkontrol.\n\nKonsep aktif memberikan fleksibilitas tuning yang lebih luas dibanding sistem passive crossover konvensional. Karakter suara speaker dapat disesuaikan melalui DSP agar lebih sesuai dengan posisi pemasangan dan karakter akustik kabin kendaraan.\n\nHasil akhirnya diarahkan untuk menghadirkan suara depan yang lebih terfokus, vokal yang lebih jelas, detail yang lebih mudah terbaca, serta staging yang lebih teratur.'
+          },
+          {
+            title: 'DSP RAINBOW EL-PA4.6',
+            type: 'markdown',
+            markdown: 'Sebagai pusat pengolahan sistem digunakan DSP Rainbow EL-PA4.6, lengkap dengan Controller DSP Rainbow EL-PA4.6.\n\nDSP menjadi bagian penting dalam konfigurasi 2-way aktif karena masing-masing jalur speaker membutuhkan pengaturan yang lebih detail.\n\nMelalui proses DSP setting dan tuning, sistem dapat diatur untuk membantu mendapatkan tonal balance yang lebih seimbang, pembagian frekuensi yang lebih terkontrol, staging dan imaging yang lebih terarah, fokus vokal yang lebih baik, detail musik yang lebih mudah terdengar, dan integrasi midbass dengan subwoofer yang lebih natural.\n\nController DSP juga memberikan kemudahan bagi pengguna untuk melakukan pengaturan karakter suara sesuai kebutuhan.'
+          },
+          {
+            title: 'SUBWOOFER 8" – ZEVox ZV 8 SAS',
+            type: 'markdown',
+            markdown: 'Untuk melengkapi reproduksi frekuensi rendah, paket menggunakan Subwoofer 8" Zevox ZV 8 SAS dengan konsep Subwoofer Bawah Jok.\n\nUkuran 8" dipilih untuk menjaga konsep sistem tetap compact sekaligus memberikan tambahan fondasi bass yang tidak didapatkan secara maksimal dari sistem 2-way depan saja.\n\nDengan pengaturan melalui DSP, subwoofer dapat diselaraskan dengan karakter midbass sehingga transisi dari speaker depan menuju frekuensi rendah terasa lebih menyatu.\n\nKonsep ini cocok untuk pengguna yang menginginkan sistem lebih lengkap tanpa harus menggunakan instalasi subwoofer berukuran besar di area bagasi.'
+          },
+          {
+            title: 'KONFIGURASI DSP',
+            type: 'subsections',
+            subsections: [
+              { title: 'DSP 6CH – TIDAK BISA', markdown: 'Untuk konfigurasi 2-way aktif yang dibutuhkan, DSP 6CH tidak mencukupi karena channel terpakai semua untuk front aktif.' },
+              { title: 'DSP 8CH (Recommended)', markdown: 'Front: ON, Rear: OFF, Sub: ON — Sistem difokuskan pada 2-way front aktif + subwoofer. Seluruh channel tersedia digunakan untuk konfigurasi utama.' },
+              { title: 'DSP 10CH (Alternatif)', markdown: 'Front: ON, Rear: ON, Sub: ON — Jika kendaraan membutuhkan speaker belakang tetap aktif, konfigurasi dapat menggunakan DSP 10CH.' }
+            ]
+          },
+          {
+            title: 'KABEL, POWER & SIGNAL',
+            type: 'list',
+            items: ['Kabel aki & ground 8 AWG', 'Fuse box ANL 1 line', 'Fuse box ANL 2 line', 'Kabel speaker Front 16 AWG', 'Kabel input DSP 16 AWG', 'RCA SQ 2,5 meter', 'Kabel remote', 'Dek dasar subwoofer']
+          },
+          {
+            title: 'PEREDAM & SUPPORT INSTALLATION',
+            type: 'markdown',
+            markdown: 'Paket dilengkapi Peredam Gran Turismo sebanyak 3 lembar. Peredam digunakan sebagai bagian dari support instalasi untuk membantu mengurangi resonansi pada area yang membutuhkan penanganan sekaligus mendukung performa speaker depan.'
+          },
+          {
+            title: 'RING MIDBASS & SUPPORT',
+            type: 'list',
+            items: ['Ring midbass + finishing cat', 'Pembesaran plat + anti karat']
+          },
+          {
+            title: 'PROFESSIONAL INSTALLATION',
+            type: 'list',
+            items: ['Phase checker', 'Selang flexible kabel aki di ruang mesin', 'Ring midbass + cat', 'Pembesaran plat + anti karat', 'Dudukan fuse box', 'Klem kabel', 'Solder dan heat shrink', 'Sealer kabel', 'Perlindungan area tarikan pintu & kisi AC', 'Penutup cover stir', 'Wrapping plastik untuk jok dan interior', 'Penataan kabel dan perangkat', 'DSP setting & tuning']
+          },
+          {
+            title: 'KENAPA BEST BUY?',
+            type: 'markdown',
+            markdown: 'Konfigurasi ini memberikan kombinasi yang lebih lengkap:\n\nGZ RADIOACTIVE 2-WAY AKTIF\n↓\nDSP RAINBOW EL-PA4.6\n↓\nSUBWOOFER 8" ZEVox\n↓\nPROFESSIONAL INSTALLATION & DSP TUNING\n\nFokus utama paket ini adalah mendapatkan kualitas suara depan yang lebih serius melalui konfigurasi 2-way aktif, kemudian melengkapinya dengan subwoofer bawah jok untuk memberikan fondasi bass yang lebih penuh.\n\nDibanding konfigurasi 2-way passive, sistem aktif memberikan ruang tuning yang lebih luas karena masing-masing jalur speaker dapat dikontrol melalui DSP.'
+          },
+          {
+            title: 'PACKAGE SUMMARY',
+            type: 'markdown',
+            markdown: '2 WAY SUBWOOFER BAWAH JOK – BEST BUY PACKAGE merupakan pilihan untuk pengguna yang ingin membangun sistem audio dengan konsep 2-way aktif + DSP + subwoofer compact.\n\nDengan GZRT 25 SQ + GZRK 165 SQ, sistem memiliki fondasi speaker depan yang lebih serius. DSP Rainbow EL-PA4.6 memberikan kontrol dan fleksibilitas tuning, sementara Zevox ZV 8 SAS melengkapi sistem dengan reproduksi bass.\n\nSeluruhnya didukung instalasi profesional, jalur power dan signal yang tertata, peredam Gran Turismo, pengerjaan ring midbass, serta proses DSP tuning.'
+          }
+        ],
+        closingTagline: 'ACTIVE 2-WAY. DSP CONTROL. COMPACT BASS.',
+        closingComponents: ['GZRT 25 SQ', 'GZRK 165 SQ', 'DSP Rainbow EL-PA4.6', 'Subwoofer 8" Zevox ZV 8 SAS']
+      }
+    ]
   }
 ]
 
