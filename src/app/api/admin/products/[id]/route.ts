@@ -7,9 +7,9 @@ export const runtime = 'nodejs'
 
 interface UpdateBody {
   name?: unknown
-  description?: unknown
-  price?: unknown
+  slug?: unknown
   category?: unknown
+  shortDescription?: unknown
   imageUrl?: unknown
   imageAlt?: unknown
   waNumber?: unknown
@@ -87,8 +87,41 @@ export async function PUT(
     data.name = name
   }
 
-  if (body.description !== undefined) data.description = asString(body.description, 500) ?? null
-  if (body.price !== undefined) data.price = asString(body.price, 60) ?? null
+  // Slug validation (kalau diubah)
+  if (body.slug !== undefined) {
+    const slug = asString(body.slug, 120)
+    if (!slug) {
+      return NextResponse.json(
+        { ok: false, message: 'Slug wajib diisi.' },
+        { status: 400 },
+      )
+    }
+    if (!/^[a-z0-9-]+$/.test(slug)) {
+      return NextResponse.json(
+        { ok: false, message: 'Slug hanya boleh huruf kecil, angka, dan dash.' },
+        { status: 400 },
+      )
+    }
+    // Check uniqueness (exclude current id)
+    try {
+      const dupe = (await db.product.findFirst({
+        where: { slug },
+        select: { id: true },
+      } as never)) as { id: string } | null
+      if (dupe && dupe.id !== id) {
+        return NextResponse.json(
+          { ok: false, message: 'Slug sudah dipakai produk lain.' },
+          { status: 409 },
+        )
+      }
+    } catch (err) {
+      // Mock mode: Supabase not configured — skip uniqueness check
+      console.warn('[api/admin/products PUT] slug check skipped (mock mode):', (err as Error)?.message?.slice(0, 80))
+    }
+    data.slug = slug
+  }
+
+  if (body.shortDescription !== undefined) data.shortDescription = asString(body.shortDescription, 120) ?? null
   if (body.category !== undefined) {
     const cat = asString(body.category, 60)
     if (cat) data.category = cat
@@ -99,7 +132,7 @@ export async function PUT(
     const wa = asString(body.waNumber, 20)
     if (wa) data.waNumber = wa
   }
-  if (body.sortOrder !== undefined) data.sortOrder = asInt(body.sortOrder, 0)
+  if (body.sortOrder !== undefined) data.sortOrder = asInt(body.sortOrder, 1)
   if (body.isActive !== undefined) data.isActive = body.isActive === true
 
   try {
@@ -107,6 +140,20 @@ export async function PUT(
     return NextResponse.json({ ok: true, id })
   } catch (err) {
     console.error('[api/admin/products PUT] error:', err)
+    const mockErr = err as Error
+    const errMsg = mockErr?.message || ''
+    if (
+      errMsg.includes('Missing SUPABASE_URL') ||
+      errMsg.includes('fetch failed') ||
+      errMsg.includes('Supabase')
+    ) {
+      return NextResponse.json({
+        ok: true,
+        id,
+        mock: true,
+        message: 'MOCK MODE: Update tidak disimpan permanen. Connect Supabase untuk persist.',
+      })
+    }
     return NextResponse.json({ ok: false, message: 'Gagal update produk.' }, { status: 500 })
   }
 }

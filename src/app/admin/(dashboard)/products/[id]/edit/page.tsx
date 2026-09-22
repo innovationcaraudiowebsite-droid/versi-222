@@ -13,6 +13,19 @@ export const metadata = {
   robots: { index: false, follow: false },
 }
 
+interface ProductRow {
+  id: string
+  name: string
+  slug: string
+  category: string
+  shortDescription: string | null
+  imageUrl: string | null
+  imageAlt: string | null
+  waNumber: string
+  sortOrder: number
+  isActive: boolean
+}
+
 export default async function EditProductPage({
   params,
 }: {
@@ -21,9 +34,11 @@ export default async function EditProductPage({
   await requireAdmin()
   const { id } = await params
 
-  let product: any = null
+  let product: ProductRow | null = null
   try {
-    product = await db.product.findUnique({ where: { id } })
+    product = (await db.product.findUnique({
+      where: { id },
+    } as never)) as ProductRow | null
   } catch (err) {
     console.error('[edit-product] fetch error:', err)
   }
@@ -33,13 +48,13 @@ export default async function EditProductPage({
   const initial: InitialProductData = {
     id: product.id,
     name: product.name ?? '',
-    description: product.description ?? '',
-    price: product.price ?? '',
-    category: product.category ?? 'Paket Layanan',
+    slug: product.slug ?? '',
+    category: product.category ?? 'Paket Upgrade Audio',
+    shortDescription: product.shortDescription ?? null,
     imageUrl: product.imageUrl,
-    imageAlt: product.imageAlt ?? '',
+    imageAlt: product.imageAlt ?? null,
     waNumber: product.waNumber ?? '6282211222399',
-    sortOrder: product.sortOrder ?? 0,
+    sortOrder: product.sortOrder ?? 1,
     isActive: product.isActive ?? true,
   }
 

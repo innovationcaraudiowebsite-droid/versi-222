@@ -7,9 +7,9 @@ export const runtime = 'nodejs'
 
 interface CreateBody {
   name?: unknown
-  description?: unknown
-  price?: unknown
+  slug?: unknown
   category?: unknown
+  shortDescription?: unknown
   imageUrl?: unknown
   imageAlt?: unknown
   waNumber?: unknown
@@ -84,6 +84,20 @@ export async function POST(req: NextRequest) {
     )
   }
 
+  const slug = asString(body.slug, 120)
+  if (!slug) {
+    return NextResponse.json(
+      { ok: false, message: 'Slug wajib diisi.' },
+      { status: 400 },
+    )
+  }
+  if (!/^[a-z0-9-]+$/.test(slug)) {
+    return NextResponse.json(
+      { ok: false, message: 'Slug hanya boleh huruf kecil, angka, dan dash.' },
+      { status: 400 },
+    )
+  }
+
   const category = asString(body.category, 60)
   if (!category) {
     return NextResponse.json(
@@ -100,23 +114,67 @@ export async function POST(req: NextRequest) {
     )
   }
 
+  // Check slug uniqueness
+  try {
+    const existing = (await db.product.findFirst({
+      where: { slug },
+      select: { id: true },
+    } as never)) as { id: string } | null
+    if (existing) {
+      return NextResponse.json(
+        { ok: false, message: 'Slug sudah dipakai produk lain. Gunakan slug unik.' },
+        { status: 409 },
+      )
+    }
+  } catch (err) {
+    // Mock mode: Supabase not configured — skip uniqueness check
+    console.warn('[api/admin/products POST] slug check skipped (mock mode):', (err as Error)?.message?.slice(0, 80))
+  }
+
   try {
     const product = await db.product.create({
       data: {
         name,
-        description: asString(body.description, 500) ?? null,
-        price: asString(body.price, 60) ?? null,
+        slug,
         category,
+        shortDescription: asString(body.shortDescription, 120) ?? null,
         imageUrl: asString(body.imageUrl) ?? null,
         imageAlt: asString(body.imageAlt, 120) ?? null,
         waNumber,
-        sortOrder: asInt(body.sortOrder, 0),
+        sortOrder: asInt(body.sortOrder, 1),
         isActive: body.isActive !== false, // default true
       },
     })
-    return NextResponse.json({ ok: true, id: (product as { id: string }).id })
+    return NextResponse.json({ ok: true, product })
   } catch (err) {
     console.error('[api/admin/products POST] error:', err)
+    // Mock mode: Supabase not configured — return mock success dengan generated ID
+    const mockErr = err as Error
+    const errMsg = mockErr?.message || ''
+    if (
+      errMsg.includes('Missing SUPABASE_URL') ||
+      errMsg.includes('fetch failed') ||
+      errMsg.includes('Supabase')
+    ) {
+      const mockId = `prod-mock-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`
+      return NextResponse.json({
+        ok: true,
+        product: {
+          id: mockId,
+          name,
+          slug,
+          category,
+          shortDescription: asString(body.shortDescription, 120) ?? null,
+          imageUrl: asString(body.imageUrl) ?? null,
+          imageAlt: asString(body.imageAlt, 120) ?? null,
+          waNumber,
+          sortOrder: asInt(body.sortOrder, 1),
+          isActive: body.isActive !== false,
+        },
+        mock: true,
+        message: 'MOCK MODE: Data tidak disimpan permanen. Connect Supabase untuk persist data.',
+      })
+    }
     return NextResponse.json({ ok: false, message: 'Gagal membuat produk.' }, { status: 500 })
   }
 }
