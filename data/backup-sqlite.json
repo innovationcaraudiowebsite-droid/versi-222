@@ -2003,60 +2003,1150 @@
   ],
   "products": [
     {
-      "id": "3886d38f-afe0-45f6-9eee-09b74fe1ead1",
-      "name": "Paket 4 Pintu",
-      "description": "Peredam 4 pintu dengan butyl 2mm + foam absorber. Audio speaker jernih, suara jalan berkurang.",
-      "price": "Hubungi Admin",
-      "category": "Paket Layanan",
-      "imageUrl": "https://dxtxpobdnskdfqmlskyv.supabase.co/storage/v1/object/public/site-assets/landing/paket-4-pintu.png",
-      "imageAlt": "Paket 4 Pintu",
+      "id": "prod-001-5frw6nbg",
+      "name": "Simple Upgrade",
+      "slug": "simple-upgrade",
+      "category": "Paket Upgrade Audio",
+      "shortDescription": "Upgrade audio dengan speaker original tetap dipertahankan",
+      "imageUrl": "https://images.unsplash.com/photo-1000000804772?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Simple Upgrade",
       "waNumber": "6282211222399",
       "sortOrder": 1,
       "isActive": true,
-      "createdAt": "2026-09-15T07:54:28.212806+00:00",
-      "updatedAt": "2026-09-15T07:54:28.212806+00:00"
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
     },
     {
-      "id": "2c214b3b-eced-424a-9108-7ea65e4c3d55",
-      "name": "Paket Full Kabin",
-      "description": "Peredam lantai + 4 pintu + plafon. Redam derau jalan, mesin, dan getaran body secara menyeluruh.",
-      "price": "Hubungi Admin",
-      "category": "Paket Layanan",
-      "imageUrl": "https://dxtxpobdnskdfqmlskyv.supabase.co/storage/v1/object/public/site-assets/landing/paket-full-kabin.png",
-      "imageAlt": "Paket Full Kabin",
+      "id": "prod-002-shl35umw",
+      "name": "2 Way Upgrade Audio",
+      "slug": "2-way-upgrade-audio",
+      "category": "Paket Upgrade Audio",
+      "shortDescription": "Speaker 2 Way + DSP + Subwoofer untuk kualitas suara detail",
+      "imageUrl": "https://images.unsplash.com/photo-1000000985316?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "2 Way Upgrade Audio",
       "waNumber": "6282211222399",
       "sortOrder": 2,
       "isActive": true,
-      "createdAt": "2026-09-15T07:54:28.212806+00:00",
-      "updatedAt": "2026-09-15T07:54:28.212806+00:00"
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
     },
     {
-      "id": "32f26c3a-2053-48ee-b605-84a898fe645b",
-      "name": "Paket Kap Mesin",
-      "description": "Peredam kap mesin + firewall dengan heat barrier + butyl. Kurangi panas & derau mesin masuk kabin.",
-      "price": "Hubungi Admin",
-      "category": "Paket Layanan",
-      "imageUrl": "https://dxtxpobdnskdfqmlskyv.supabase.co/storage/v1/object/public/site-assets/landing/paket-kap-mesin.png",
-      "imageAlt": "Paket Kap Mesin",
+      "id": "prod-003-l1lzjq9c",
+      "name": "Full Upgrade Audio",
+      "slug": "full-upgrade-audio",
+      "category": "Paket Upgrade Audio",
+      "shortDescription": "Full sistem upgrade dengan speaker aftermarket premium + power + sub",
+      "imageUrl": "https://images.unsplash.com/photo-1000000919739?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Full Upgrade Audio",
       "waNumber": "6282211222399",
       "sortOrder": 3,
       "isActive": true,
-      "createdAt": "2026-09-15T07:54:28.212806+00:00",
-      "updatedAt": "2026-09-15T07:54:28.212806+00:00"
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
     },
     {
-      "id": "a108cccf-5206-443d-8763-de18758c470e",
-      "name": "Paket Wheel Housing",
-      "description": "Peredam wheel housing (4 fender) dengan butyl tebal + foam. Redam suara ban & suspensi di jalan rusak.",
-      "price": "Hubungi Admin",
-      "category": "Paket Layanan",
-      "imageUrl": "https://dxtxpobdnskdfqmlskyv.supabase.co/storage/v1/object/public/site-assets/landing/paket-wheel-housing.png",
-      "imageAlt": "Paket Wheel Housing",
+      "id": "prod-004-5xz6eu4a",
+      "name": "Peredam Mobil",
+      "slug": "peredam-mobil",
+      "category": "Paket Peredam",
+      "shortDescription": "Paket peredam mobil untuk mengurangi kebisingan kabin",
+      "imageUrl": "https://images.unsplash.com/photo-1000000055681?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Peredam Mobil",
       "waNumber": "6282211222399",
       "sortOrder": 4,
       "isActive": true,
-      "createdAt": "2026-09-15T07:54:28.212806+00:00",
-      "updatedAt": "2026-09-15T07:54:28.212806+00:00"
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "prod-005-8kumoqxd",
+      "name": "Audio Tuning Service",
+      "slug": "audio-tuning-service",
+      "category": "Paket Service",
+      "shortDescription": "Jasa tuning DSP profesional untuk sistem audio mobil",
+      "imageUrl": "https://images.unsplash.com/photo-1000000691173?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Audio Tuning Service",
+      "waNumber": "6282211222399",
+      "sortOrder": 5,
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    }
+  ],
+  "productVariants": [
+    {
+      "id": "var-001-kxzb8j38",
+      "productId": "prod-001-5frw6nbg",
+      "name": "Basic",
+      "slug": "simple-upgrade-basic",
+      "tier": "basic",
+      "sortOrder": 1,
+      "price": "Rp 3.500.000",
+      "priceValue": 3500000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "BASIC",
+      "ribbonColor": "slate",
+      "cardTitle": "DSP + POWER ONLY",
+      "cardDescription": "Upgrade dasar dengan DSP Rainbow + Power 4ch. Speaker original tetap dipakai.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000804772?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Simple Upgrade Basic",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000804772?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000017894?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000231015?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000444136?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Basic dirancang untuk pengguna yang ingin upgrade audio minimal dengan DSP processing. Speaker original tetap dipertahankan untuk menjaga biaya tetap rendah.",
+      "sections": [
+        {
+          "title": "A. PRODUK UTAMA",
+          "type": "list",
+          "items": [
+            "DSP — Rainbow EL-PA4.6",
+            "Power 4ch — Prototype Quarto",
+            "Speaker Front — Original",
+            "Speaker Rear — Original"
+          ]
+        },
+        {
+          "title": "B. KABEL & MATERIAL",
+          "type": "list",
+          "items": [
+            "Kabel aki & ground 8 AWG",
+            "Fuse Box ANL 1 line",
+            "Kabel speaker 16 AWG",
+            "RCA SQ 2,5m",
+            "Kabel remote"
+          ]
+        },
+        {
+          "title": "C. JASA INSTALASI & TUNING",
+          "type": "list",
+          "items": [
+            "Jasa instalasi",
+            "Phase checker",
+            "Setting & tuning DSP dasar"
+          ]
+        }
+      ],
+      "closingTagline": "Basic Upgrade — Speaker Original + DSP Processing",
+      "closingComponents": [
+        "Rainbow DSP EL-PA4.6",
+        "Prototype Quarto Power 4ch"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-002-jm804g4p",
+      "productId": "prod-001-5frw6nbg",
+      "name": "Normal",
+      "slug": "simple-upgrade-normal",
+      "tier": "normal",
+      "sortOrder": 2,
+      "price": "Rp 4.800.000",
+      "priceValue": 4800000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "POPULAR",
+      "ribbonColor": "blue",
+      "cardTitle": "DSP + POWER + SUB 8\"",
+      "cardDescription": "Tambah subwoofer 8\" untuk bass lebih dalam. Speaker original + DSP + Power + Sub.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000401518?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Simple Upgrade Normal",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000401518?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000008276?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000615033?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000221791?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Normal menambahkan subwoofer 8\" untuk melengkapi frekuensi rendah yang tidak bisa dihasilkan speaker original. DSP Rainbow memberikan kontrol penuh sistem.",
+      "sections": [
+        {
+          "title": "A. PRODUK UTAMA",
+          "type": "list",
+          "items": [
+            "DSP — Rainbow EL-PA4.6",
+            "Power Mono — Prototype Quarto",
+            "Subwoofer 8\" — Prototype Quarto",
+            "Speaker Front — Original",
+            "Speaker Rear — Original"
+          ]
+        },
+        {
+          "title": "B. KABEL, PILAR & BOX",
+          "type": "list",
+          "items": [
+            "Box kayu simple",
+            "Kabel aki & ground 8 AWG",
+            "Kabel speaker 16 AWG",
+            "Kabel subwoofer 16 AWG",
+            "RCA SQ 2,5m",
+            "Fuse Box ANL 1 line",
+            "Kabel remote"
+          ]
+        },
+        {
+          "title": "C. JASA INSTALASI & TUNING",
+          "type": "list",
+          "items": [
+            "Jasa instalasi",
+            "Phase checker",
+            "Dudukan fuse box",
+            "Klem kabel + solder",
+            "Sealer kabel",
+            "Setting & tuning DSP"
+          ]
+        }
+      ],
+      "closingTagline": "Normal Upgrade — DSP + Power + Subwoofer 8\"",
+      "closingComponents": [
+        "Rainbow DSP EL-PA4.6",
+        "Prototype Quarto Power Mono",
+        "Subwoofer 8\" Prototype Quarto"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-003-be79fn20",
+      "productId": "prod-001-5frw6nbg",
+      "name": "Best Buy",
+      "slug": "simple-upgrade-best-buy",
+      "tier": "best_buy",
+      "sortOrder": 3,
+      "price": "Rp 6.500.000",
+      "priceValue": 6500000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "BEST BUY",
+      "ribbonColor": "amber",
+      "cardTitle": "DSP + CONTROLLER + SUB 10\"",
+      "cardDescription": "Paket lengkap dengan DSP Controller + Power Mono + Sub 10\" Prototype Quarto. Upgrade signifikan tanpa rombak total.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000652852?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Simple Upgrade Best Buy",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000652852?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000746912?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000840972?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000935032?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Simple Upgrade – Best Buy dirancang untuk pengguna yang menginginkan peningkatan sistem audio yang lebih lengkap, dengan tetap mempertahankan speaker Front dan Rear original kendaraan.\n\nPaket ini menggabungkan DSP Rainbow EL-PA4.6 + Controller, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto untuk membangun sistem yang memiliki kontrol suara lebih baik sekaligus tambahan tenaga dan karakter bass yang lebih kuat.",
+      "sections": [
+        {
+          "title": "A. PRODUK UTAMA",
+          "type": "subsections",
+          "subsections": [
+            {
+              "title": "DSP — Rainbow EL-PA4.6",
+              "subtitle": "+ Controller",
+              "markdown": "DSP Rainbow memberikan fleksibilitas pengolahan sinyal dan tuning sistem. Speaker original tetap digunakan, kemudian karakter suara dapat dioptimalkan melalui DSP agar lebih seimbang, fokus, dan terkontrol."
+            },
+            {
+              "title": "Power Mono — Prototype Quarto",
+              "markdown": "Power mono secara khusus menangani subwoofer sehingga kebutuhan reproduksi frekuensi rendah dapat bekerja dengan lebih optimal."
+            },
+            {
+              "title": "Subwoofer 10\" — Prototype Quarto",
+              "markdown": "Subwoofer 10\" memberikan tambahan bass yang lebih terasa dan memiliki impact lebih kuat, sekaligus membantu speaker original bekerja lebih ringan pada reproduksi frekuensi rendah."
+            }
+          ]
+        },
+        {
+          "title": "B. KABEL, PILAR & BOX",
+          "type": "list",
+          "items": [
+            "Box kayu simple",
+            "Kabel aki & ground 8 AWG",
+            "Kabel speaker input & output 16 AWG",
+            "Kabel subwoofer 16 AWG",
+            "Kabel input DSP 16 AWG",
+            "RCA SQ 2,5 m",
+            "Fuse Box ANL jepit 1 line",
+            "Fuse Box ANL jepit 2 line",
+            "Kabel remote"
+          ]
+        },
+        {
+          "title": "C. JASA INSTALASI & TUNING",
+          "type": "list",
+          "items": [
+            "Jasa instalasi",
+            "Phase checker",
+            "Selang flexible kabel aki ruang mesin",
+            "Dudukan fuse box",
+            "Klem kabel + solder + selang bakar",
+            "Sealer kabel",
+            "Proteksi tarikan pintu & kisi AC",
+            "Penutup cover stir",
+            "Wrapping perlindungan jok & interior",
+            "Setting & tuning DSP"
+          ]
+        },
+        {
+          "title": "DSP TUNING & SYSTEM INTEGRATION",
+          "type": "markdown",
+          "markdown": "Setelah seluruh perangkat terpasang, sistem akan melalui proses setting dan tuning. DSP digunakan untuk membantu mengintegrasikan speaker original dengan sistem subwoofer sehingga transisi antara suara depan dan frekuensi rendah dapat terdengar lebih menyatu. Tuning dilakukan dengan memperhatikan keseimbangan tonal, staging, imaging, karakter vokal, serta integrasi bass."
+        },
+        {
+          "title": "D. OPTIONAL",
+          "type": "list",
+          "items": [
+            "Peredam Gran Turismo",
+            "Panel Controller",
+            "Dek dasar + Panel DSP"
+          ]
+        }
+      ],
+      "closingTagline": "BEST BUY — Complete Upgrade, Original Speaker Retained",
+      "closingComponents": [
+        "Rainbow DSP EL-PA4.6 + Controller",
+        "Prototype Quarto Power Mono",
+        "Subwoofer 10\" Prototype Quarto"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-004-tfzi49y2",
+      "productId": "prod-002-shl35umw",
+      "name": "Basic",
+      "slug": "2-way-upgrade-audio-basic",
+      "tier": "basic",
+      "sortOrder": 1,
+      "price": "Rp 4.200.000",
+      "priceValue": 4200000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "BASIC",
+      "ribbonColor": "slate",
+      "cardTitle": "2 WAY + DSP ONLY",
+      "cardDescription": "Speaker 2 Way aftermarket + DSP Rainbow. Tanpa subwoofer, fokus vocal clarity.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000985316?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "2 Way Upgrade Audio Basic",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000985316?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000892926?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000800536?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000708146?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Basic 2 Way Upgrade cocok untuk pengguna yang ingin speaker aftermarket dengan DSP processing, tanpa penambahan subwoofer.",
+      "sections": [
+        {
+          "title": "A. PRODUK UTAMA",
+          "type": "list",
+          "items": [
+            "Speaker Front 2 Way — Aftermarket",
+            "DSP — Rainbow EL-PA4.6",
+            "Kontroler DSP — Rainbow EL-PA4.6"
+          ]
+        },
+        {
+          "title": "B. KABEL & MATERIAL",
+          "type": "list",
+          "items": [
+            "Kabel aki & ground 8 AWG",
+            "Kabel speaker 16 AWG",
+            "RCA SQ 2,5m",
+            "Fuse Box ANL 1 line"
+          ]
+        },
+        {
+          "title": "C. JASA INSTALASI & TUNING",
+          "type": "list",
+          "items": [
+            "Jasa instalasi",
+            "Phase checker",
+            "Setting & tuning DSP"
+          ]
+        }
+      ],
+      "closingTagline": "Basic 2 Way — Speaker Aftermarket + DSP",
+      "closingComponents": [
+        "Speaker 2 Way Aftermarket",
+        "Rainbow DSP EL-PA4.6"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-005-bj441a3t",
+      "productId": "prod-002-shl35umw",
+      "name": "Normal",
+      "slug": "2-way-upgrade-audio-normal",
+      "tier": "normal",
+      "sortOrder": 2,
+      "price": "Rp 5.500.000",
+      "priceValue": 5500000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "POPULAR",
+      "ribbonColor": "blue",
+      "cardTitle": "2 WAY + DSP + SUB 8\" ENTRY",
+      "cardDescription": "Tambah subwoofer 8\" entry level untuk bass tambahan. Combo seimbang untuk daily use.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000998387?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "2 Way Upgrade Audio Normal",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000998387?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000134295?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000270202?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000406109?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Normal 2 Way Upgrade menambahkan subwoofer 8\" entry level untuk melengkapi frekuensi rendah. DSP Rainbow memberikan kontrol penuh sistem.",
+      "sections": [
+        {
+          "title": "A. PRODUK UTAMA",
+          "type": "list",
+          "items": [
+            "Speaker Front 2 Way — Aftermarket",
+            "DSP — Rainbow EL-PA4.6",
+            "Power Mono — Entry Level",
+            "Subwoofer 8\" — Entry Level"
+          ]
+        },
+        {
+          "title": "B. KABEL, PILAR & BOX",
+          "type": "list",
+          "items": [
+            "Box kayu simple",
+            "Kabel aki 8 AWG",
+            "Kabel speaker 16 AWG",
+            "RCA SQ 2,5m",
+            "Fuse Box ANL 1 line"
+          ]
+        },
+        {
+          "title": "C. JASA INSTALASI & TUNING",
+          "type": "list",
+          "items": [
+            "Jasa instalasi",
+            "Phase checker",
+            "Setting & tuning DSP"
+          ]
+        }
+      ],
+      "closingTagline": "Normal 2 Way — Speaker + DSP + Subwoofer 8\"",
+      "closingComponents": [
+        "Speaker 2 Way Aftermarket",
+        "Rainbow DSP EL-PA4.6",
+        "Subwoofer 8\" Entry Level"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-006-5ln3s9rn",
+      "productId": "prod-002-shl35umw",
+      "name": "Recommended",
+      "slug": "2-way-upgrade-audio-recommended",
+      "tier": "recommended",
+      "sortOrder": 3,
+      "price": "Rp 7.800.000",
+      "priceValue": 7800000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "RECOMMENDED",
+      "ribbonColor": "emerald",
+      "cardTitle": "PHD 6.1 + DSP + SUB 8\" + CNC",
+      "cardDescription": "PHD MF 6.1 KIT 2 Way + DSP Rainbow + Subwoofer 8\" Zevox + Jaring CNC Midrange. Konfigurasi lengkap.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000463186?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "2 Way Upgrade Audio Recommended",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000463186?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000379049?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000294912?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000210775?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Recommended ini merupakan konfigurasi upgrade audio yang dirancang untuk pengguna yang menginginkan kualitas suara lebih detail, seimbang, dan memiliki karakter yang lebih lengkap.\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" Pasif, dipadukan dengan DSP Rainbow EL-PA4.6 dan Subwoofer 8\" Zevox ZV 8 SAS.",
+      "sections": [
+        {
+          "title": "A. PRODUK UTAMA",
+          "type": "subsections",
+          "subsections": [
+            {
+              "title": "1. PHD MF 6.1 KIT",
+              "subtitle": "2 Way 6.5\" Pasif",
+              "markdown": "Konfigurasi 2 Way dirancang untuk menghasilkan reproduksi vocal yang lebih jelas, detail musik yang lebih terbuka, serta midbass yang lebih solid. Dengan pengolahan DSP, karakter speaker dapat disesuaikan dengan kondisi akustik kendaraan."
+            },
+            {
+              "title": "Jaring CNC Midrange",
+              "markdown": "Dilengkapi Jaring CNC Midrange sebagai bagian pendukung instalasi speaker untuk memberikan tampilan yang lebih rapi dan presisi."
+            },
+            {
+              "title": "2. DSP Rainbow EL-PA4.6",
+              "markdown": "DSP berfungsi sebagai pusat pengolahan dan tuning seluruh sistem audio. Parameter: Crossover, Level/Gain, Equalizer, Phase, Time Alignment, Staging, Imaging, Integrasi Front/Rear/Subwoofer."
+            },
+            {
+              "title": "3. Kontroler DSP Rainbow EL-PA4.6",
+              "markdown": "Kontroler digunakan untuk memudahkan pengoperasian serta pengaturan DSP sesuai kebutuhan sistem."
+            },
+            {
+              "title": "4. Subwoofer 8\" Zevox ZV 8 SAS",
+              "markdown": "Subwoofer 8\" berfungsi melengkapi reproduksi frekuensi rendah yang tidak dapat dihasilkan secara optimal oleh speaker 2 Way. Memberikan bass yang lebih dalam, berisi, dan terkontrol."
+            }
+          ]
+        },
+        {
+          "title": "KONFIGURASI CHANNEL DSP",
+          "type": "subsections",
+          "subsections": [
+            {
+              "title": "DSP 6 Channel",
+              "markdown": "Front: ON, Rear: OFF, Sub: ON — Sistem Front + Subwoofer"
+            },
+            {
+              "title": "DSP 8 Channel",
+              "markdown": "Front: ON, Rear: ON, Sub: ON — Front + Rear + Subwoofer aktif"
+            },
+            {
+              "title": "DSP 10 Channel",
+              "markdown": "Front: ON, Rear: ON, Sub: ON — Konfigurasi penuh dengan fleksibilitas maksimal"
+            }
+          ]
+        },
+        {
+          "title": "B. KABEL, PILAR & BOX",
+          "type": "list",
+          "items": [
+            "Dek dasar subwoofer",
+            "Kabel aki & ground 8 AWG",
+            "Fuse Box ANL jepit 1 line",
+            "Fuse Box ANL jepit 2 line",
+            "Kabel remote",
+            "Kabel speaker Front 16 AWG",
+            "Kabel input DSP 16 AWG",
+            "RCA SQ 2,5 meter",
+            "Peredam Gran Turismo"
+          ]
+        },
+        {
+          "title": "C. JASA INSTALASI & TUNING",
+          "type": "list",
+          "items": [
+            "Jasa instalasi",
+            "Phase checker",
+            "Selang flexible kabel aki ruang mesin",
+            "Ring midbass + finishing cat",
+            "Pembesaran plat + anti karat",
+            "Dudukan fuse box",
+            "Klem kabel + solder + selang bakar",
+            "Sealer kabel",
+            "Plakban jalur tarikan pintu & kisi AC",
+            "Penutup cover stir",
+            "Wrapping plastik untuk jok & interior",
+            "Jasa setting DSP"
+          ]
+        },
+        {
+          "title": "TARGET HASIL SUARA",
+          "type": "list",
+          "items": [
+            "Vocal lebih jelas dan natural",
+            "Detail musik lebih terbuka",
+            "Midbass lebih solid",
+            "Tonal balance lebih seimbang",
+            "Bass lebih dalam dan terkontrol",
+            "Staging lebih luas",
+            "Imaging lebih fokus",
+            "Distribusi suara lebih merata",
+            "Integrasi Front, Rear & Subwoofer lebih menyatu",
+            "Karakter suara nyaman untuk penggunaan harian"
+          ]
+        }
+      ],
+      "closingTagline": "RECOMMENDED — PHD MF 6.1 KIT + DSP + SUBWOOFER 8\"",
+      "closingComponents": [
+        "PHD MF 6.1 KIT",
+        "Rainbow DSP EL-PA4.6",
+        "Zevox ZV 8 SAS",
+        "Jaring CNC Midrange"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-007-cs0fvtfl",
+      "productId": "prod-003-l1lzjq9c",
+      "name": "Basic",
+      "slug": "full-upgrade-audio-basic",
+      "tier": "basic",
+      "sortOrder": 1,
+      "price": "Rp 5.000.000",
+      "priceValue": 5000000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "BASIC",
+      "ribbonColor": "slate",
+      "cardTitle": "SPEAKER PREMIUM + DSP",
+      "cardDescription": "Speaker aftermarket entry + DSP Rainbow. Tanpa power tambahan, fokus clarity.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000919739?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Full Upgrade Audio Basic",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000919739?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000827349?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000734959?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000642569?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Full Upgrade Basic cocok untuk pengguna yang ingin speaker aftermarket dengan DSP processing dasar.",
+      "sections": [
+        {
+          "title": "A. PRODUK UTAMA",
+          "type": "list",
+          "items": [
+            "Speaker Front 2 Way — Premium Entry",
+            "DSP — Rainbow EL-PA4.6"
+          ]
+        },
+        {
+          "title": "B. KABEL & MATERIAL",
+          "type": "list",
+          "items": [
+            "Kabel aki 8 AWG",
+            "Kabel speaker 16 AWG",
+            "RCA SQ 2,5m",
+            "Fuse Box ANL 1 line"
+          ]
+        },
+        {
+          "title": "C. JASA INSTALASI & TUNING",
+          "type": "list",
+          "items": [
+            "Jasa instalasi",
+            "Phase checker",
+            "Setting & tuning DSP"
+          ]
+        }
+      ],
+      "closingTagline": "Full Basic — Speaker Premium + DSP",
+      "closingComponents": [
+        "Speaker Premium Entry",
+        "Rainbow DSP EL-PA4.6"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-008-ndo1p8pf",
+      "productId": "prod-003-l1lzjq9c",
+      "name": "Normal",
+      "slug": "full-upgrade-audio-normal",
+      "tier": "normal",
+      "sortOrder": 2,
+      "price": "Rp 7.200.000",
+      "priceValue": 7200000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "POPULAR",
+      "ribbonColor": "blue",
+      "cardTitle": "SPEAKER + DSP + POWER 4CH + SUB 10\"",
+      "cardDescription": "Tambah power 4ch + sub 10\" untuk sistem lebih lengkap dan bertenaga.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000965498?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Full Upgrade Audio Normal",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000965498?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000101406?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000237313?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000373220?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Full Upgrade Normal menambahkan power 4ch dan subwoofer 10\" untuk sistem yang lebih bertenaga dengan bass lebih dalam.",
+      "sections": [
+        {
+          "title": "A. PRODUK UTAMA",
+          "type": "list",
+          "items": [
+            "Speaker Front 2 Way — Premium",
+            "DSP — Rainbow EL-PA4.6",
+            "Power 4ch — Premium",
+            "Subwoofer 10\" — Premium"
+          ]
+        },
+        {
+          "title": "B. KABEL, PILAR & BOX",
+          "type": "list",
+          "items": [
+            "Box kayu simple",
+            "Kabel aki 8 AWG",
+            "Kabel speaker 16 AWG",
+            "RCA SQ 2,5m",
+            "Fuse Box ANL 1 line"
+          ]
+        },
+        {
+          "title": "C. JASA INSTALASI & TUNING",
+          "type": "list",
+          "items": [
+            "Jasa instalasi",
+            "Phase checker",
+            "Setting & tuning DSP"
+          ]
+        }
+      ],
+      "closingTagline": "Full Normal — Speaker + Power + Subwoofer 10\"",
+      "closingComponents": [
+        "Speaker Premium",
+        "Rainbow DSP EL-PA4.6",
+        "Power 4ch Premium",
+        "Subwoofer 10\" Premium"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-009-rmzdorty",
+      "productId": "prod-003-l1lzjq9c",
+      "name": "Best Buy",
+      "slug": "full-upgrade-audio-best-buy",
+      "tier": "best_buy",
+      "sortOrder": 3,
+      "price": "Rp 9.800.000",
+      "priceValue": 9800000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "BEST BUY",
+      "ribbonColor": "amber",
+      "cardTitle": "SPEAKER PREMIUM + DSP + SUB 12\"",
+      "cardDescription": "Speaker premium + DSP Rainbow + Power + Sub 12\" + install premium. Konfigurasi terlengkap.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000638174?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Full Upgrade Audio Best Buy",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000638174?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000244932?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000851689?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000458447?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Full Upgrade Best Buy adalah konfigurasi terlengkap dengan speaker premium, DSP Rainbow, power, dan subwoofer 12\" untuk bass yang lebih dalam dan powerful.",
+      "sections": [
+        {
+          "title": "A. PRODUK UTAMA",
+          "type": "subsections",
+          "subsections": [
+            {
+              "title": "1. Speaker Premium",
+              "subtitle": "2 Way Component",
+              "markdown": "Speaker premium dengan komponen kualitas tinggi untuk reproduksi suara yang detail dan akurat."
+            },
+            {
+              "title": "2. DSP — Rainbow EL-PA4.6",
+              "markdown": "DSP Rainbow memberikan kontrol penuh atas parameter suara: crossover, EQ, time alignment, phase."
+            },
+            {
+              "title": "3. Power 4ch Premium",
+              "markdown": "Power amplifier 4 channel premium untuk drive speaker dengan tenaga optimal."
+            },
+            {
+              "title": "4. Subwoofer 12\"",
+              "markdown": "Subwoofer 12\" memberikan bass yang dalam dan bertenaga, melengkapi sistem dengan frekuensi rendah yang powerful."
+            }
+          ]
+        },
+        {
+          "title": "B. KABEL, PILAR & BOX",
+          "type": "list",
+          "items": [
+            "Box kayu custom",
+            "Kabel aki 8 AWG",
+            "Kabel speaker 16 AWG",
+            "RCA SQ 2,5m",
+            "Fuse Box ANL 1 line",
+            "Fuse Box ANL 2 line",
+            "Peredam Gran Turismo"
+          ]
+        },
+        {
+          "title": "C. JASA INSTALASI & TUNING",
+          "type": "list",
+          "items": [
+            "Jasa instalasi premium",
+            "Phase checker",
+            "Selang flexible kabel aki",
+            "Ring midbass + finishing",
+            "Pembesaran plat + anti karat",
+            "Dudukan fuse box",
+            "Klem + solder + selang bakar",
+            "Sealer kabel",
+            "Plakban jalur tarikan pintu",
+            "Penutup cover stir",
+            "Wrapping jok & interior",
+            "Setting & tuning DSP lengkap"
+          ]
+        },
+        {
+          "title": "TARGET HASIL SUARA",
+          "type": "list",
+          "items": [
+            "Vocal sangat jelas dan detail",
+            "Midbass solid dan punchy",
+            "Bass dalam, bertenaga, terkontrol",
+            "Soundstage luas dan presisi",
+            "Imaging fokus",
+            "Detail musik terbuka sempurna"
+          ]
+        }
+      ],
+      "closingTagline": "BEST BUY — Full Premium Upgrade with Sub 12\"",
+      "closingComponents": [
+        "Speaker Premium",
+        "Rainbow DSP EL-PA4.6",
+        "Power 4ch Premium",
+        "Subwoofer 12\" Premium"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-010-qtpg22bn",
+      "productId": "prod-004-5xz6eu4a",
+      "name": "Basic",
+      "slug": "peredam-mobil-basic",
+      "tier": "basic",
+      "sortOrder": 1,
+      "price": "Rp 1.200.000",
+      "priceValue": 1200000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "BASIC",
+      "ribbonColor": "slate",
+      "cardTitle": "PEREDAM 4 PINTU",
+      "cardDescription": "Peredam 4 pintu dengan butyl 2mm + foam absorber. Audio speaker jernih, suara jalan berkurang.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000055681?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Peredam Mobil Basic",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000055681?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000662438?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000269196?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000875953?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Basic Peredam fokus pada 4 pintu untuk meningkatkan kualitas audio speaker dan mengurangi kebisingan dari luar.",
+      "sections": [
+        {
+          "title": "A. MATERIAL PEREDAM",
+          "type": "list",
+          "items": [
+            "Butyl 2mm — 4 pintu",
+            "Foam Absorber — 4 pintu"
+          ]
+        },
+        {
+          "title": "B. JASA INSTALASI",
+          "type": "list",
+          "items": [
+            "Jasa instalasi 4 pintu",
+            "Pembersihan door panel",
+            "Pemasangan presisi",
+            "Finishing & reassembly"
+          ]
+        }
+      ],
+      "closingTagline": "Basic — Peredam 4 Pintu",
+      "closingComponents": [
+        "Butyl 2mm",
+        "Foam Absorber"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-011-iystey0s",
+      "productId": "prod-004-5xz6eu4a",
+      "name": "Normal",
+      "slug": "peredam-mobil-normal",
+      "tier": "normal",
+      "sortOrder": 2,
+      "price": "Rp 1.800.000",
+      "priceValue": 1800000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "POPULAR",
+      "ribbonColor": "blue",
+      "cardTitle": "PEREDAM 4 PINTU + KAP MESIN",
+      "cardDescription": "Tambah peredam kap mesin untuk mengurangi panas & suara mesin. Lebih nyaman untuk harian.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000179674?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Peredam Mobil Normal",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000179674?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000989159?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000798645?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000608131?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Normal menambahkan peredam kap mesin untuk mengurangi panas dan suara mesin yang masuk ke kabin.",
+      "sections": [
+        {
+          "title": "A. MATERIAL PEREDAM",
+          "type": "list",
+          "items": [
+            "Butyl 2mm — 4 pintu",
+            "Foam Absorber — 4 pintu",
+            "Butyl Heat Shield — Kap Mesin"
+          ]
+        },
+        {
+          "title": "B. JASA INSTALASI",
+          "type": "list",
+          "items": [
+            "Jasa instalasi 4 pintu + kap mesin",
+            "Pembersihan door panel",
+            "Pemasangan presisi",
+            "Finishing & reassembly"
+          ]
+        }
+      ],
+      "closingTagline": "Normal — Peredam 4 Pintu + Kap Mesin",
+      "closingComponents": [
+        "Butyl 2mm",
+        "Foam Absorber",
+        "Butyl Heat Shield"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-012-i2pacsj5",
+      "productId": "prod-004-5xz6eu4a",
+      "name": "Best Buy",
+      "slug": "peredam-mobil-best-buy",
+      "tier": "best_buy",
+      "sortOrder": 3,
+      "price": "Rp 3.500.000",
+      "priceValue": 3500000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "BEST BUY",
+      "ribbonColor": "amber",
+      "cardTitle": "FULL KABIN + WHEEL HOUSING + KAP",
+      "cardDescription": "Peredam full kabin + wheel housing + kap mesin. Kabín paling senyap untuk audio maksimal.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000460555?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Peredam Mobil Best Buy",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000460555?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000376418?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000292281?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000208144?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Best Buy Peredam mencakup full kabin, wheel housing, dan kap mesin. Hasilnya kabin paling senyap, audio maksimal, dan kenyamanan premium.",
+      "sections": [
+        {
+          "title": "A. MATERIAL PEREDAM",
+          "type": "list",
+          "items": [
+            "Butyl 2mm — Full Kabin",
+            "Foam Absorber — Full Kabin",
+            "Butyl Heat Shield — Kap Mesin",
+            "Absorber Wheel Housing"
+          ]
+        },
+        {
+          "title": "B. JASA INSTALASI",
+          "type": "list",
+          "items": [
+            "Jasa instalasi full kabin",
+            "Bongkar interior lengkap",
+            "Pemasangan presisi",
+            "Reassembly rapi",
+            "Quality check"
+          ]
+        }
+      ],
+      "closingTagline": "BEST BUY — Full Kabin + Wheel Housing + Kap Mesin",
+      "closingComponents": [
+        "Butyl 2mm Full Kabin",
+        "Foam Absorber",
+        "Heat Shield Kap",
+        "Wheel Housing Absorber"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-013-pruvugar",
+      "productId": "prod-005-8kumoqxd",
+      "name": "Basic",
+      "slug": "audio-tuning-service-basic",
+      "tier": "basic",
+      "sortOrder": 1,
+      "price": "Rp 500.000",
+      "priceValue": 500000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "BASIC",
+      "ribbonColor": "slate",
+      "cardTitle": "DSP TUNING (1 JAM)",
+      "cardDescription": "Tuning DSP dasar 1 jam. Crossover, level, EQ basic untuk sistem existing.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000691173?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Audio Tuning Service Basic",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000691173?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000904294?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000117416?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000330537?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Basic Tuning cocok untuk user dengan sistem audio existing yang ingin tuning dasar DSP selama 1 jam.",
+      "sections": [
+        {
+          "title": "A. SERVICE INCLUDE",
+          "type": "list",
+          "items": [
+            "Crossover setting",
+            "Level/Gain adjustment",
+            "EQ basic",
+            "Phase check"
+          ]
+        },
+        {
+          "title": "B. DURASI",
+          "type": "markdown",
+          "markdown": "Estimasi 1 jam pengerjaan. Cocok untuk sistem yang sudah terpasang dan butuh fine-tuning."
+        }
+      ],
+      "closingTagline": "Basic — DSP Tuning 1 Jam",
+      "closingComponents": [
+        "DSP Tuning Service"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-014-vomz0yhz",
+      "productId": "prod-005-8kumoqxd",
+      "name": "Normal",
+      "slug": "audio-tuning-service-normal",
+      "tier": "normal",
+      "sortOrder": 2,
+      "price": "Rp 850.000",
+      "priceValue": 850000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "POPULAR",
+      "ribbonColor": "blue",
+      "cardTitle": "TUNING + RTA MEASUREMENT",
+      "cardDescription": "Tuning lengkap dengan RTA measurement. Time alignment + EQ presisi.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000879945?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Audio Tuning Service Normal",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000879945?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000486703?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000093461?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000700218?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Normal Tuning menambahkan RTA measurement untuk tuning yang lebih presisi dengan time alignment dan EQ detail.",
+      "sections": [
+        {
+          "title": "A. SERVICE INCLUDE",
+          "type": "list",
+          "items": [
+            "Crossover setting",
+            "Level/Gain adjustment",
+            "EQ presisi",
+            "Phase check",
+            "Time alignment",
+            "RTA measurement"
+          ]
+        },
+        {
+          "title": "B. DURASI",
+          "type": "markdown",
+          "markdown": "Estimasi 2-3 jam pengerjaan. Untuk sistem yang ingin optimasi suara lebih detail."
+        }
+      ],
+      "closingTagline": "Normal — Tuning + RTA Measurement",
+      "closingComponents": [
+        "DSP Tuning + RTA Service"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
+    },
+    {
+      "id": "var-015-2dfh1qxd",
+      "productId": "prod-005-8kumoqxd",
+      "name": "Recommended",
+      "slug": "audio-tuning-service-recommended",
+      "tier": "recommended",
+      "sortOrder": 3,
+      "price": "Rp 1.200.000",
+      "priceValue": 1200000,
+      "priceNote": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "ribbonLabel": "RECOMMENDED",
+      "ribbonColor": "emerald",
+      "cardTitle": "FULL TUNING + RTA + FOLLOW-UP",
+      "cardDescription": "Full tuning + RTA + follow-up 1 bulan. Hasil optimal dengan garansi penyesuaian.",
+      "imageUrl": "https://images.unsplash.com/photo-1000000169547?w=800&q=80&auto=format&fit=crop",
+      "imageAlt": "Audio Tuning Service Recommended",
+      "galleryImages": [
+        "https://images.unsplash.com/photo-1000000169547?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000313809?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000458071?w=800&q=80&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1000000602333?w=800&q=80&auto=format&fit=crop"
+      ],
+      "tagline": "Innovation Car Audio Jakarta",
+      "introMarkdown": "Paket Recommended Tuning adalah layanan paling lengkap dengan full tuning, RTA measurement, dan follow-up 1 bulan untuk penyesuaian setelah sistem break-in.",
+      "sections": [
+        {
+          "title": "A. SERVICE INCLUDE",
+          "type": "list",
+          "items": [
+            "Crossover setting lengkap",
+            "Level/Gain adjustment presisi",
+            "EQ 31-band",
+            "Phase check",
+            "Time alignment presisi",
+            "RTA measurement",
+            "Staging & imaging",
+            "Subwoofer integration"
+          ]
+        },
+        {
+          "title": "B. FOLLOW-UP 1 BULAN",
+          "type": "markdown",
+          "markdown": "Setelah tuning awal, kami menyediakan follow-up 1 bulan kemudian untuk penyesuaian setelah sistem break-in. Memastikan suara tetap optimal setelah pemakaian."
+        },
+        {
+          "title": "C. GARANSI",
+          "type": "list",
+          "items": [
+            "Free adjustment 1x dalam 1 bulan",
+            "Konsultasi audio via WhatsApp",
+            "Priority booking untuk service berikutnya"
+          ]
+        }
+      ],
+      "closingTagline": "RECOMMENDED — Full Tuning + RTA + Follow-up 1 Bulan",
+      "closingComponents": [
+        "Full DSP Tuning",
+        "RTA Measurement",
+        "Follow-up Service"
+      ],
+      "disclaimer": "Harga non-diskon mengikuti harga yang tercantum pada brosur",
+      "isActive": true,
+      "createdAt": "2026-09-22T06:45:57.617Z",
+      "updatedAt": "2026-09-22T06:45:57.617Z"
     }
   ]
 }

@@ -59,7 +59,8 @@ function mapTable(table: string): string {
     site_settings: 'siteSettings',
     article_versions: 'articleVersions',
     _ArticleTags: 'articleTags',
-    products: 'products', // not in backup → empty
+    products: 'products',
+    product_variants: 'productVariants', // mock data key di backup JSON
     profiles: 'profiles', // not in backup → empty
   }
   return map[table] || table

@@ -1,50 +1,111 @@
 import { db } from '@/lib/db'
-import { ProductsList, type ProductItem } from '@/components/landing/products-list'
+import { ProductsList, type ProductVariantItem } from '@/components/landing/products-list'
 
 /**
  * Paket Layanan section — section id="paket".
  *
- * CAROUSEL MODE (sama seperti LatestArticles, sesuai brief user revisi):
- *  - Server fetch ALL produk aktif (limit 50) sekali saja di SSR.
- *  - Pass ke ProductsList client component yang render semua produk di DOM.
- *  - Container overflow:hidden, hanya 4 card visible (1 col × 4 row di mobile,
- *    2 col × 2 row di tablet/desktop).
- *  - Scroll/swipe → CSS transform translateY → slide ke 4 card berikutnya.
- *  - NO API reload — pure CSS animation, instant.
+ * CAROUSEL MODE — 1 card per ProductVariant (15 card untuk 5 produk × 3 varian).
  *
- * Layout card: VERTICAL (gambar atas aspect-video + konten bawah).
- *  - Badge kategori
- *  - Title (line-clamp-1)
- *  - Description (line-clamp-2)
- *  - (Harga & CTA WhatsApp per produk dihapus — user request.)
+ * Flow:
+ *  1. Fetch semua Product parent (isActive=true, urut by sortOrder ASC)
+ *  2. Fetch semua ProductVariant (isActive=true, urut by sortOrder ASC)
+ *  3. Join variant → parent (untuk dapat parentName, waNumber)
+ *  4. Pass ke <ProductsList> client component untuk render carousel
  *
- * Filter: hanya produk dengan isActive=true, urut by sortOrder ASC.
+ * Card menampilkan:
+ *  - Ribbon/badge sesuai tier (BASIC/POPULAR/BEST BUY/RECOMMENDED)
+ *  - Mini image carousel (4+ gallery images per varian)
+ *  - Card title (konfigurasi)
+ *  - Card description (2-line)
+ *  - Price + tier label
+ *
+ * Tier distribution:
+ *  - basic       → ribbon "BASIC"      (slate)
+ *  - normal      → ribbon "POPULAR"    (blue)
+ *  - best_buy    → ribbon "BEST BUY"   (amber)
+ *  - recommended → ribbon "RECOMMENDED" (emerald)
  */
 
 export const dynamic = 'force-dynamic'
 
-const MAX_PRODUCTS = 50 // limit supaya tidak berat (kalau DB punya ratusan)
+const MAX_VARIANTS = 60 // limit supaya tidak berat (kalau DB punya ratusan)
 
-type PaketProduct = ProductItem
+type ProductRow = {
+  id: string
+  name: string
+  slug: string
+  category: string
+  waNumber: string
+  sortOrder: number
+}
 
-async function getActiveProducts(): Promise<PaketProduct[]> {
+async function getActiveVariants(): Promise<ProductVariantItem[]> {
   try {
+    // Fetch parent products (map by id untuk join)
     const products = (await db.product.findMany({
       where: { isActive: true },
       orderBy: [{ sortOrder: 'asc' }, { createdAt: 'desc' }],
-      take: MAX_PRODUCTS,
       select: {
         id: true,
         name: true,
-        description: true,
+        slug: true,
         category: true,
-        imageUrl: true,
-        imageAlt: true,
+        waNumber: true,
         sortOrder: true,
       },
-    } as never)) as PaketProduct[]
+    } as never)) as ProductRow[]
 
-    return products
+    const productMap = new Map<string, ProductRow>()
+    for (const p of products) productMap.set(p.id, p)
+
+    if (productMap.size === 0) {
+      console.warn('[packages] No active products found')
+      return []
+    }
+
+    // Fetch variants, filter hanya yang parentId ada di productMap
+    const variants = (await db.productVariant.findMany({
+      where: { isActive: true },
+      orderBy: [
+        { sortOrder: 'asc' },
+        { createdAt: 'desc' },
+      ],
+      take: MAX_VARIANTS,
+      select: {
+        id: true,
+        productId: true,
+        name: true,
+        slug: true,
+        tier: true,
+        sortOrder: true,
+        price: true,
+        priceValue: true,
+        priceNote: true,
+        ribbonLabel: true,
+        ribbonColor: true,
+        cardTitle: true,
+        cardDescription: true,
+        imageUrl: true,
+        imageAlt: true,
+        galleryImages: true,
+      },
+    } as never)) as Array<Omit<ProductVariantItem, 'parentName' | 'parentSlug' | 'category' | 'waNumber'>>
+
+    // Join parent info
+    const joined: ProductVariantItem[] = variants
+      .filter((v) => productMap.has(v.productId))
+      .map((v) => {
+        const parent = productMap.get(v.productId)!
+        return {
+          ...v,
+          parentName: parent.name,
+          parentSlug: parent.slug,
+          category: parent.category,
+          waNumber: parent.waNumber,
+        }
+      })
+
+    return joined
   } catch (err) {
     console.error('[packages] fetch error:', err)
     return []
@@ -52,7 +113,7 @@ async function getActiveProducts(): Promise<PaketProduct[]> {
 }
 
 export async function Packages() {
-  const products = await getActiveProducts()
+  const variants = await getActiveVariants()
 
   return (
     <section
@@ -71,12 +132,12 @@ export async function Packages() {
           </p>
         </div>
 
-        {/* Products carousel — pre-load all, slide animation (no reload) */}
-        <ProductsList products={products as ProductItem[]} />
+        {/* Products carousel — 1 card per variant, 4 visible per batch */}
+        <ProductsList variants={variants} />
       </div>
     </section>
   )
 }
 
 // Re-export untuk konsistensi API
-export type { ProductItem } from '@/components/landing/products-list'
+export type { ProductVariantItem } from '@/components/landing/products-list'

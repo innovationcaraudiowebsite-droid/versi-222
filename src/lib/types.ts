@@ -153,20 +153,95 @@ export type ProfileWithCounts = Profile & {
 }
 
 /**
- * Product — untuk Section 4 (Paket Layanan) landing page.
+ * Product — Parent product (induk) untuk Section 4 (Paket Layanan).
+ * Satu Product punya banyak ProductVariant (Basic, Normal, Best Buy, Recommended).
  * Di-manage via admin dashboard /admin/products.
  */
 export type Product = {
   id: string
-  name: string
-  description: string | null
-  price: string | null
-  category: string // contoh: "Paket Layanan", "Material", "Aksesori"
-  imageUrl: string | null
+  name: string                    // "Simple Upgrade"
+  slug: string                    // "simple-upgrade" (unique)
+  category: string                // "Paket Upgrade Audio"
+  shortDescription: string | null // 1-line summary untuk card fallback
+  imageUrl: string | null         // gambar utama parent (fallback kalau variant tidak ada)
   imageAlt: string | null
-  waNumber: string // nomor WA admin untuk CTA produk ini (format: 628xxx)
-  sortOrder: number // urutan tampil (ASC) — pakai sortOrder karena 'order' reserved keyword di PostgreSQL
+  waNumber: string                // "6282211222399"
+  sortOrder: number               // urutan tampil (ASC)
   isActive: boolean
   createdAt: string | Date
   updatedAt: string | Date
+}
+
+/**
+ * Variant Tier enum — 4 tingkat varian.
+ * Urutan prioritas: basic < normal < best_buy < recommended
+ */
+export type VariantTier = 'basic' | 'normal' | 'best_buy' | 'recommended'
+
+/**
+ * ProductVariant — Anak varian dari Product.
+ * Contoh: Product "Simple Upgrade" punya 3 varian (Basic, Normal, Best Buy).
+ *
+ * Setiap varian punya:
+ *  - Harga sendiri
+ *  - Ribbon/badge sendiri (warna + label)
+ *  - Konten card sendiri (judul, deskripsi, gambar)
+ *  - Konten detail page sendiri (artikel panjang + structured sections)
+ *  - Gallery gambar (4+ images untuk mini carousel di card)
+ */
+export type ProductVariant = {
+  id: string
+  productId: string               // FK → Product.id
+  product?: Product               // relation (joined by adapter)
+
+  // === Identitas Varian ===
+  name: string                    // "Best Buy" | "Recommended" | "Basic" | "Normal"
+  slug: string                    // "simple-upgrade-best-buy" (unique)
+  tier: VariantTier               // "basic" | "normal" | "best_buy" | "recommended"
+  sortOrder: number               // 1=basic, 2=normal, 3=best_buy, 4=recommended
+
+  // === Harga ===
+  price: string                   // "Rp 6.500.000" atau "Hubungi Admin"
+  priceValue: number | null       // 6500000 (untuk sorting/filter)
+  priceNote: string | null        // "Harga non-diskon mengikuti brosur"
+
+  // === Ribbon / Badge ===
+  ribbonLabel: string | null      // "BEST BUY" | "RECOMMENDED" | "POPULAR" | "BASIC"
+  ribbonColor: string | null      // "amber" | "emerald" | "blue" | "slate"
+
+  // === Konten Card (untuk carousel landing) ===
+  cardTitle: string | null        // "2 WAY 6.5\" + DSP + SUBWOOFER 8\""
+  cardDescription: string | null   // 2-line summary untuk card
+  imageUrl: string | null         // gambar utama varian
+  imageAlt: string | null
+  galleryImages: string[]         // 4+ images untuk mini carousel di card
+
+  // === Konten Detail Page (artikel panjang) ===
+  tagline: string | null          // "Innovation Car Audio Jakarta"
+  introMarkdown: string | null    // paragraf intro
+  sections: ProductVariantSection[] | null  // structured sections (A/B/C + optional)
+  closingTagline: string | null    // "RECOMMENDED — PHD MF 6.1 KIT..."
+  closingComponents: string[] | null // ["PHD MF 6.1 KIT", "Rainbow DSP EL-PA4.6", ...]
+  disclaimer: string | null        // "Harga non-diskon mengikuti brosur"
+
+  isActive: boolean
+  createdAt: string | Date
+  updatedAt: string | Date
+}
+
+/**
+ * Section di artikel varian — bisa naratif (markdown), list, atau subsections.
+ */
+export type ProductVariantSection = {
+  title: string                                  // "A. PRODUK UTAMA"
+  type: 'markdown' | 'list' | 'subsections'
+  markdown?: string                              // untuk type="markdown"
+  items?: string[]                               // untuk type="list"
+  subsections?: ProductVariantSubsection[]       // untuk type="subsections"
+}
+
+export type ProductVariantSubsection = {
+  title: string              // "1. PHD MF 6.1 KIT"
+  subtitle?: string | null   // "2 Way 6.5\" Pasif"
+  markdown: string           // konten naratif
 }

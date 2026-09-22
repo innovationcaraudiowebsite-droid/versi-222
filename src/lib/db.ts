@@ -791,6 +791,7 @@ export const db = {
   profile: makeModel<Profile>('profiles'),
   articleVersion: makeModel<ArticleVersion>('article_versions'),
   product: makeModel<Product>('products'),
+  productVariant: makeModel<ProductVariant>('product_variants'),
   // Junction table for Article <-> Tag (m-n). Columns: A (articleId), B (tagId).
   _articleTags: makeModel('_ArticleTags'),
 }
@@ -802,6 +803,8 @@ import type {
   Category,
   Comment,
   Faq,
+  Product,
+  ProductVariant,
   Profile,
   SiteSetting,
   Subscriber,
