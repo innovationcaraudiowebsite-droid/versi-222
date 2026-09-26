@@ -26,8 +26,8 @@ import { Check, ChevronDown } from 'lucide-react'
 
 interface ProductContentProps {
   sections: ProductVariantSection[] | null
-  /** Index section yang default open (default: 0 = section pertama). -1 untuk semua collapsed. */
-  defaultOpenIndex?: number
+  /** Index section yang default open. Bisa number tunggal atau array untuk multiple. -1 untuk semua collapsed. */
+  defaultOpenIndex?: number | number[]
 }
 
 // ============================================================
@@ -202,12 +202,16 @@ function AccordionSection({ section, index, isOpen, onToggle }: AccordionSection
 // ============================================================
 export function ProductContent({
   sections,
-  defaultOpenIndex = 0,
+  defaultOpenIndex = [0, 1],
 }: ProductContentProps) {
   // Track open state per index — Set of indexes that are open
-  const [openIndexes, setOpenIndexes] = useState<Set<number>>(
-    () => new Set([defaultOpenIndex].filter((i) => i >= 0))
-  )
+  const [openIndexes, setOpenIndexes] = useState<Set<number>>(() => {
+    if (defaultOpenIndex === -1) return new Set()
+    if (Array.isArray(defaultOpenIndex)) {
+      return new Set(defaultOpenIndex.filter((i) => i >= 0))
+    }
+    return new Set([defaultOpenIndex].filter((i) => i >= 0))
+  })
 
   function toggleSection(idx: number) {
     setOpenIndexes((prev) => {
