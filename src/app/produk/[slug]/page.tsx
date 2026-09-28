@@ -25,6 +25,8 @@ import { LandingFooter } from '@/components/landing/landing-footer'
 import { ProductGallery } from '@/components/portal/product-gallery'
 import { ProductContent } from '@/components/portal/product-content'
 import { ProductJsonLd } from '@/components/seo/product-json-ld'
+import { ProductViewTracker, trackWAClick } from '@/components/portal/product-view-tracker'
+import { WhatsAppButton } from '@/components/portal/whatsapp-button'
 
 /**
  * Detail page ProductVariant — /produk/[slug]
@@ -408,15 +410,7 @@ export default async function ProductDetailPage({
 
               {/* CTA buttons */}
               <div className="mt-5 flex flex-col sm:flex-row gap-3">
-                <a
-                  href={waLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-md bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-3 text-sm transition-colors"
-                >
-                  <MessageCircle className="size-4" />
-                  Tanya via WhatsApp
-                </a>
+                <WhatsAppButton href={waLink} variantId={variant.id} />
                 <a
                   href={shareLinks.whatsapp}
                   target="_blank"
@@ -569,6 +563,9 @@ export default async function ProductDetailPage({
 
       {/* JSON-LD SEO schemas */}
       <ProductJsonLd variant={variant} siteUrl={SITE_URL} />
+
+      {/* Tracking: record page view */}
+      <ProductViewTracker slug={variant.slug} />
     </div>
   )
 }

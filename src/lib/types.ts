@@ -245,3 +245,54 @@ export type ProductVariantSubsection = {
   subtitle?: string | null   // "2 Way 6.5\" Pasif"
   markdown: string           // konten naratif
 }
+
+// ============================================================
+// Analytics tracking types (3 tabel baru)
+// ============================================================
+
+/**
+ * PageView — track semua page view (article, product, variant, home, category).
+ *
+ * Tracking dipasang di server component page.tsx (auto record saat render).
+ * Tidak butuh auth — anonymous tracking.
+ */
+export type PageView = {
+  id: string
+  pageType: 'article' | 'product' | 'variant' | 'home' | 'category' | 'search'
+  pageSlug: string | null       // slug artikel/produk/varian, null untuk home/search
+  viewedAt: string | Date
+  userAgent: string | null
+  ipAddress: string | null
+  referrer: string | null
+}
+
+/**
+ * VariantClick — track klik card variant di carousel → detail page.
+ *
+ * Dipicu dari client component (ViewTracker pattern).
+ * source: 'carousel' = klik dari homepage carousel
+ *         'sibling' = klik dari sibling variants section di detail page
+ *         'related' = klik dari related products section
+ *         'search' = klik dari search results
+ */
+export type VariantClick = {
+  id: string
+  variantId: string             // FK → ProductVariant.id
+  source: 'carousel' | 'sibling' | 'related' | 'search'
+  clickedAt: string | Date
+  userAgent: string | null
+  ipAddress: string | null
+}
+
+/**
+ * WAClick — track klik tombol "Tanya via WhatsApp".
+ *
+ * Dipicu dari onClick handler di WA button di detail page.
+ */
+export type WAClick = {
+  id: string
+  variantId: string             // FK → ProductVariant.id (nullable kalau dari non-variant page)
+  clickedAt: string | Date
+  userAgent: string | null
+  ipAddress: string | null
+}

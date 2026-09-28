@@ -21,6 +21,7 @@ import {
   Package,
   Layers,
   BarChart3,
+  TrendingUp,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -100,6 +101,16 @@ export const navSections: NavSection[] = [
           { label: 'Tambah Varian', href: '/admin/variants/new', icon: Plus, exact: true },
         ],
       },
+    ],
+  },
+  {
+    title: 'Analytics',
+    items: [
+      { label: 'Overview', href: '/admin/analytics', icon: BarChart3, exact: true },
+      { label: 'Traffic', href: '/admin/analytics/traffic', icon: TrendingUp, exact: true },
+      { label: 'Produk', href: '/admin/analytics/products', icon: Package, exact: true },
+      { label: 'Artikel', href: '/admin/analytics/articles', icon: FileText, exact: true },
+      { label: 'Engagement', href: '/admin/analytics/engagement', icon: MessageSquare, exact: true },
     ],
   },
   {

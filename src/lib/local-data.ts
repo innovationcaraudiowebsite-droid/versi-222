@@ -60,7 +60,11 @@ function mapTable(table: string): string {
     article_versions: 'articleVersions',
     _ArticleTags: 'articleTags',
     products: 'products',
-    product_variants: 'productVariants', // mock data key di backup JSON
+    product_variants: 'productVariants',
+    // Analytics tracking tables
+    page_views: 'pageViews',
+    variant_clicks: 'variantClicks',
+    wa_clicks: 'waClicks',
     profiles: 'profiles', // not in backup → empty
   }
   return map[table] || table

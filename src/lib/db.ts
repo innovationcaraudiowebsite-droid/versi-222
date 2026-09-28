@@ -792,6 +792,10 @@ export const db = {
   articleVersion: makeModel<ArticleVersion>('article_versions'),
   product: makeModel<Product>('products'),
   productVariant: makeModel<ProductVariant>('product_variants'),
+  // Analytics tracking tables (3 new)
+  pageView: makeModel<PageView>('page_views'),
+  variantClick: makeModel<VariantClick>('variant_clicks'),
+  waClick: makeModel<WAClick>('wa_clicks'),
   // Junction table for Article <-> Tag (m-n). Columns: A (articleId), B (tagId).
   _articleTags: makeModel('_ArticleTags'),
 }
@@ -803,12 +807,15 @@ import type {
   Category,
   Comment,
   Faq,
+  PageView,
   Product,
   ProductVariant,
   Profile,
   SiteSetting,
   Subscriber,
   Tag,
+  VariantClick,
+  WAClick,
 } from './types'
 
 // ============================================================
