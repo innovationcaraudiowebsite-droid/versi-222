@@ -214,3 +214,118 @@ export function CategoryViewsPie({ data, className }: CategoryViewsPieProps) {
     </div>
   )
 }
+
+/* -------------------------------------------------------------------------- */
+/*  Variant tier distribution (Donut chart)                                   */
+/* -------------------------------------------------------------------------- */
+
+export interface TierSlice {
+  name: string      // "Basic" | "Normal" | "Best Buy" | "Recommended"
+  count: number
+  color: string     // hex color
+}
+
+const TIER_COLORS: Record<string, string> = {
+  basic: '#64748b',       // slate-500
+  normal: '#3b82f6',      // blue-500
+  best_buy: '#f59e0b',    // amber-500
+  recommended: '#10b981', // emerald-500
+}
+
+const TIER_LABELS: Record<string, string> = {
+  basic: 'Basic',
+  normal: 'Normal',
+  best_buy: 'Best Buy',
+  recommended: 'Recommended',
+}
+
+interface TierDonutChartProps {
+  data: Array<{ tier: string; count: number }>
+  className?: string
+}
+
+export function TierDonutChart({ data, className }: TierDonutChartProps) {
+  const slices: TierSlice[] = data.map((d) => ({
+    name: TIER_LABELS[d.tier] || d.tier,
+    count: d.count,
+    color: TIER_COLORS[d.tier] || '#94a3b8',
+  }))
+  const total = slices.reduce((sum, s) => sum + s.count, 0)
+  const hasData = total > 0
+
+  return (
+    <div className={cn('flex flex-col items-center gap-4', className)}>
+      <div className="relative h-56 w-full">
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
+            <Pie
+              data={hasData ? slices : [{ name: 'Tanpa data', count: 1, color: '#cbd5e1' }]}
+              dataKey="count"
+              nameKey="name"
+              cx="50%"
+              cy="50%"
+              innerRadius={56}
+              outerRadius={84}
+              paddingAngle={2}
+              stroke="var(--background)"
+              strokeWidth={2}
+            >
+              {(hasData ? slices : [{ name: 'Tanpa data', count: 1, color: '#cbd5e1' }]).map(
+                (entry, i) => (
+                  <Cell key={entry.name + i} fill={entry.color} />
+                ),
+              )}
+            </Pie>
+            <Tooltip
+              contentStyle={{
+                fontSize: 12,
+                borderRadius: 8,
+                border: '1px solid var(--border)',
+                background: 'var(--background)',
+                color: 'var(--foreground)',
+                boxShadow: '0 6px 18px -6px rgba(0,0,0,0.2)',
+              }}
+              formatter={(value: number, _name, entry) => {
+                const name = (entry?.payload as { name?: string })?.name ?? ''
+                const pct = total > 0 ? Math.round((value / total) * 100) : 0
+                return [`${value} varian (${pct}%)`, name]
+              }}
+            />
+          </PieChart>
+        </ResponsiveContainer>
+        {/* Donut center label */}
+        <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center">
+          <span className="text-lg font-bold text-foreground">
+            {total}
+          </span>
+          <span className="text-[11px] text-muted-foreground">Total varian</span>
+        </div>
+      </div>
+
+      {/* Legend */}
+      <ul className="grid w-full grid-cols-2 gap-1.5">
+        {slices.map((slice) => (
+          <li
+            key={slice.name}
+            className="flex items-center justify-between gap-2 text-xs"
+          >
+            <span className="flex min-w-0 items-center gap-2">
+              <span
+                className="h-2.5 w-2.5 shrink-0 rounded-sm"
+                style={{ background: slice.color }}
+                aria-hidden
+              />
+              <span className="truncate text-muted-foreground">{slice.name}</span>
+            </span>
+            <span className="font-medium text-foreground tabular-nums">
+              {slice.count}
+            </span>
+          </li>
+        ))}
+        {!hasData && (
+          <li className="text-xs text-muted-foreground col-span-2">Belum ada varian.</li>
+        )}
+      </ul>
+    </div>
+  )
+}
