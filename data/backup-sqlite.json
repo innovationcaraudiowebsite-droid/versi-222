@@ -2009,7 +2009,7 @@
       "category": "Simple Upgrade",
       "subCategory": "",
       "shortDescription": "Simple Upgrade — paket upgrade audio dengan speaker original tetap dipertahankan",
-      "imageUrl": "/product-images/simple-upgrade-1.png",
+      "imageUrl": "/product-images-v2/simple-upgrade-basic.png",
       "imageAlt": "Simple Upgrade",
       "waNumber": "6282211222399",
       "sortOrder": 1,
@@ -2024,7 +2024,7 @@
       "category": "Entry",
       "subCategory": "2 Way Subwoofer Bawah Jok",
       "shortDescription": "Entry - 2 Way dengan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS)",
-      "imageUrl": "/product-images/upgrade-audio-series-1.png",
+      "imageUrl": "/product-images-v2/entry-2way-sub-bawah-jok-basic.png",
       "imageAlt": "2 Way Subwoofer Bawah Jok",
       "waNumber": "6282211222399",
       "sortOrder": 2,
@@ -2039,7 +2039,7 @@
       "category": "Entry",
       "subCategory": "2 Way Subwoofer Quarto 10\" (bagasi)",
       "shortDescription": "Entry - 2 Way dengan Subwoofer 10\" Prototype Quarto (bagasi)",
-      "imageUrl": "/product-images/upgrade-audio-series-1.png",
+      "imageUrl": "/product-images-v2/entry-2way-sub-quarto-10-bagasi-basic.png",
       "imageAlt": "2 Way Subwoofer Quarto 10\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 3,
@@ -2054,7 +2054,7 @@
       "category": "Entry",
       "subCategory": "3 Way Subwoofer Bawah Jok",
       "shortDescription": "Entry - 3 Way dengan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS)",
-      "imageUrl": "/product-images/upgrade-audio-series-1.png",
+      "imageUrl": "/product-images-v2/entry-3way-sub-bawah-jok-basic.png",
       "imageAlt": "3 Way Subwoofer Bawah Jok",
       "waNumber": "6282211222399",
       "sortOrder": 4,
@@ -2069,7 +2069,7 @@
       "category": "Entry",
       "subCategory": "3 Way Subwoofer Quarto 10\" (bagasi)",
       "shortDescription": "Entry - 3 Way dengan Subwoofer 10\" Prototype Quarto (bagasi)",
-      "imageUrl": "/product-images/upgrade-audio-series-1.png",
+      "imageUrl": "/product-images-v2/entry-3way-sub-quarto-10-bagasi-basic.png",
       "imageAlt": "3 Way Subwoofer Quarto 10\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 5,
@@ -2084,7 +2084,7 @@
       "category": "Daily Use",
       "subCategory": "2 Way Subwoofer Bawah Jok",
       "shortDescription": "Daily Use - 2 Way dengan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS)",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-bawah-jok-basic.png",
       "imageAlt": "2 Way Subwoofer Bawah Jok",
       "waNumber": "6282211222399",
       "sortOrder": 6,
@@ -2099,7 +2099,7 @@
       "category": "Daily Use",
       "subCategory": "2 Way Subwoofer Quarto 10\" (bagasi)",
       "shortDescription": "Daily Use - 2 Way dengan Subwoofer 10\" Prototype Quarto (bagasi)",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-quarto-10-bagasi-basic.png",
       "imageAlt": "2 Way Subwoofer Quarto 10\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 7,
@@ -2114,7 +2114,7 @@
       "category": "Daily Use",
       "subCategory": "2 Way Subwoofer PHD 8\" (bagasi)",
       "shortDescription": "Daily Use - 2 Way dengan Subwoofer 8\" PHD (bagasi)",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-phd-8-bagasi-basic.png",
       "imageAlt": "2 Way Subwoofer PHD 8\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 8,
@@ -2129,7 +2129,7 @@
       "category": "Daily Use",
       "subCategory": "2 Way Subwoofer Cresscendo 10\" (bagasi)",
       "shortDescription": "Daily Use - 2 Way dengan Subwoofer 10\" Cresscendo (bagasi)",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-cresscendo-10-bagasi-basic.png",
       "imageAlt": "2 Way Subwoofer Cresscendo 10\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 9,
@@ -2144,7 +2144,7 @@
       "category": "Daily Use",
       "subCategory": "3 Way Subwoofer Bawah Jok",
       "shortDescription": "Daily Use - 3 Way dengan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS)",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-bawah-jok-basic.png",
       "imageAlt": "3 Way Subwoofer Bawah Jok",
       "waNumber": "6282211222399",
       "sortOrder": 10,
@@ -2159,7 +2159,7 @@
       "category": "Daily Use",
       "subCategory": "3 Way Subwoofer Quarto 10\" (bagasi)",
       "shortDescription": "Daily Use - 3 Way dengan Subwoofer 10\" Prototype Quarto (bagasi)",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-quarto-10-bagasi-basic.png",
       "imageAlt": "3 Way Subwoofer Quarto 10\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 11,
@@ -2174,7 +2174,7 @@
       "category": "Daily Use",
       "subCategory": "3 Way Subwoofer PHD 8\" (bagasi)",
       "shortDescription": "Daily Use - 3 Way dengan Subwoofer 8\" PHD (bagasi)",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-phd-8-bagasi-basic.png",
       "imageAlt": "3 Way Subwoofer PHD 8\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 12,
@@ -2189,7 +2189,7 @@
       "category": "Daily Use",
       "subCategory": "3 Way Subwoofer Cresscendo 10\" (bagasi)",
       "shortDescription": "Daily Use - 3 Way dengan Subwoofer 10\" Cresscendo (bagasi)",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-cresscendo-10-bagasi-basic.png",
       "imageAlt": "3 Way Subwoofer Cresscendo 10\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 13,
@@ -2204,7 +2204,7 @@
       "category": "Affordable High End",
       "subCategory": "2 Way Subwoofer Bawah Jok",
       "shortDescription": "Affordable High End - 2 Way dengan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS)",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-bawah-jok-basic.png",
       "imageAlt": "2 Way Subwoofer Bawah Jok",
       "waNumber": "6282211222399",
       "sortOrder": 14,
@@ -2219,7 +2219,7 @@
       "category": "Affordable High End",
       "subCategory": "2 Way Subwoofer Quarto 10\" (bagasi)",
       "shortDescription": "Affordable High End - 2 Way dengan Subwoofer 10\" Prototype Quarto (bagasi)",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-quarto-10-bagasi-basic.png",
       "imageAlt": "2 Way Subwoofer Quarto 10\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 15,
@@ -2234,7 +2234,7 @@
       "category": "Affordable High End",
       "subCategory": "2 Way Subwoofer PHD 8\" (bagasi)",
       "shortDescription": "Affordable High End - 2 Way dengan Subwoofer 8\" PHD (bagasi)",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-phd-8-bagasi-basic.png",
       "imageAlt": "2 Way Subwoofer PHD 8\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 16,
@@ -2249,7 +2249,7 @@
       "category": "Affordable High End",
       "subCategory": "2 Way Subwoofer Cresscendo 10\" (bagasi)",
       "shortDescription": "Affordable High End - 2 Way dengan Subwoofer 10\" Cresscendo (bagasi)",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-cresscendo-10-bagasi-basic.png",
       "imageAlt": "2 Way Subwoofer Cresscendo 10\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 17,
@@ -2264,7 +2264,7 @@
       "category": "Affordable High End",
       "subCategory": "3 Way Subwoofer Bawah Jok",
       "shortDescription": "Affordable High End - 3 Way dengan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS)",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-bawah-jok-basic.png",
       "imageAlt": "3 Way Subwoofer Bawah Jok",
       "waNumber": "6282211222399",
       "sortOrder": 18,
@@ -2279,7 +2279,7 @@
       "category": "Affordable High End",
       "subCategory": "3 Way Subwoofer Quarto 10\" (bagasi)",
       "shortDescription": "Affordable High End - 3 Way dengan Subwoofer 10\" Prototype Quarto (bagasi)",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-quarto-10-bagasi-basic.png",
       "imageAlt": "3 Way Subwoofer Quarto 10\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 19,
@@ -2294,7 +2294,7 @@
       "category": "Affordable High End",
       "subCategory": "3 Way Subwoofer PHD 8\" (bagasi)",
       "shortDescription": "Affordable High End - 3 Way dengan Subwoofer 8\" PHD (bagasi)",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-phd-8-bagasi-basic.png",
       "imageAlt": "3 Way Subwoofer PHD 8\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 20,
@@ -2309,7 +2309,7 @@
       "category": "Affordable High End",
       "subCategory": "3 Way Subwoofer Cresscendo 10\" (bagasi)",
       "shortDescription": "Affordable High End - 3 Way dengan Subwoofer 10\" Cresscendo (bagasi)",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-cresscendo-10-bagasi-basic.png",
       "imageAlt": "3 Way Subwoofer Cresscendo 10\" (bagasi)",
       "waNumber": "6282211222399",
       "sortOrder": 21,
@@ -2333,13 +2333,10 @@
       "ribbonColor": "slate",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Simple Upgrade - Basic: Speaker Front — Original + DSP Rainbow + Power Mono + Subwoofer 8\" bawah jok (Z. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/simple-upgrade-1.png",
+      "imageUrl": "/product-images-v2/simple-upgrade-basic.png",
       "imageAlt": "Simple Upgrade Basic",
       "galleryImages": [
-        "/product-images/simple-upgrade-1.png",
-        "/product-images/simple-upgrade-1.png",
-        "/product-images/simple-upgrade-2.png",
-        "/product-images/simple-upgrade-3.png"
+        "/product-images-v2/simple-upgrade-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Simple Upgrade - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 2 Way + DSP + Power Mono + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nMenggunakan Speaker Front — Original sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -2483,13 +2480,10 @@
       "ribbonColor": "blue",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Simple Upgrade - Normal: Speaker Front — Original + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/simple-upgrade-2.png",
+      "imageUrl": "/product-images-v2/simple-upgrade-normal.png",
       "imageAlt": "Simple Upgrade Normal",
       "galleryImages": [
-        "/product-images/simple-upgrade-2.png",
-        "/product-images/simple-upgrade-1.png",
-        "/product-images/simple-upgrade-2.png",
-        "/product-images/simple-upgrade-3.png"
+        "/product-images-v2/simple-upgrade-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Simple Upgrade - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Speaker Front — Original, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -2633,13 +2627,10 @@
       "ribbonColor": "amber",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Simple Upgrade - Best Buy: Speaker Front — Original + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/simple-upgrade-3.png",
+      "imageUrl": "/product-images-v2/simple-upgrade-best-buy.png",
       "imageAlt": "Simple Upgrade Best Buy",
       "galleryImages": [
-        "/product-images/simple-upgrade-3.png",
-        "/product-images/simple-upgrade-1.png",
-        "/product-images/simple-upgrade-2.png",
-        "/product-images/simple-upgrade-3.png"
+        "/product-images-v2/simple-upgrade-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Simple Upgrade - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Speaker Front — Original, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 2 Way + DSP + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -2783,13 +2774,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Simple Upgrade - Recommended: Speaker Front — Original + DSP + Power Mono + Subwoofer 8\" bawah jok (Z + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/simple-upgrade-4.png",
+      "imageUrl": "/product-images-v2/simple-upgrade-recommended.png",
       "imageAlt": "Simple Upgrade Recommended",
       "galleryImages": [
-        "/product-images/simple-upgrade-4.png",
-        "/product-images/simple-upgrade-1.png",
-        "/product-images/simple-upgrade-2.png",
-        "/product-images/simple-upgrade-3.png"
+        "/product-images-v2/simple-upgrade-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Simple Upgrade - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan Speaker Front — Original, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.",
@@ -2933,13 +2921,10 @@
       "ribbonColor": "slate",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Entry - Basic: Infinity Alpha 650C / 603 + DSP Rainbow + Power Mono + Subwoofer 8\" bawah jok (Z. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/upgrade-audio-series-1.png",
+      "imageUrl": "/product-images-v2/entry-2way-sub-bawah-jok-basic.png",
       "imageAlt": "Entry 2 Way Subwoofer Bawah Jok Basic",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-2way-sub-bawah-jok-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 2 Way + DSP + Power Mono + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nMenggunakan Infinity Alpha 650C / 603C sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -3083,13 +3068,10 @@
       "ribbonColor": "blue",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Entry - Normal: Rainbow Experience Line E + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/upgrade-audio-series-2.png",
+      "imageUrl": "/product-images-v2/entry-2way-sub-bawah-jok-normal.png",
       "imageAlt": "Entry 2 Way Subwoofer Bawah Jok Normal",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-2way-sub-bawah-jok-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Rainbow Experience Line EL-C6.2, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -3233,13 +3215,10 @@
       "ribbonColor": "amber",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Entry - Best Buy: Blam Relax 165 RX + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/upgrade-audio-series-3.png",
+      "imageUrl": "/product-images-v2/entry-2way-sub-bawah-jok-best-buy.png",
       "imageAlt": "Entry 2 Way Subwoofer Bawah Jok Best Buy",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-3.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-2way-sub-bawah-jok-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Blam Relax 165 RX, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 2 Way + DSP + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -3383,13 +3362,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Entry - Recommended: GZ Mercy GZCS 100.2 MB + DSP + Power Mono + Subwoofer 8\" bawah jok (Z + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/upgrade-audio-series-4.png",
+      "imageUrl": "/product-images-v2/entry-2way-sub-bawah-jok-recommended.png",
       "imageAlt": "Entry 2 Way Subwoofer Bawah Jok Recommended",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-4.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-2way-sub-bawah-jok-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -3538,13 +3514,10 @@
       "ribbonColor": "slate",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Entry - Basic: Infinity Alpha 650C / 603 + DSP Rainbow + Power Mono + Subwoofer 10\" Prototype Q. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/upgrade-audio-series-1.png",
+      "imageUrl": "/product-images-v2/entry-2way-sub-quarto-10-bagasi-basic.png",
       "imageAlt": "Entry 2 Way Subwoofer Quarto 10\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-2way-sub-quarto-10-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 2 Way + DSP + Power Mono + Subwoofer 10\" Prototype Quarto (bagasi).\n\nMenggunakan Infinity Alpha 650C / 603C sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -3688,13 +3661,10 @@
       "ribbonColor": "blue",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Entry - Normal: Rainbow Experience Line E + DSP + Power Mono + Subwoofer 10\" Prototype Q. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/upgrade-audio-series-2.png",
+      "imageUrl": "/product-images-v2/entry-2way-sub-quarto-10-bagasi-normal.png",
       "imageAlt": "Entry 2 Way Subwoofer Quarto 10\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-2way-sub-quarto-10-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Rainbow Experience Line EL-C6.2, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -3838,13 +3808,10 @@
       "ribbonColor": "amber",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Entry - Best Buy: Blam Relax 165 RX + DSP + Power Mono + Subwoofer 10\" Prototype Q. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/upgrade-audio-series-3.png",
+      "imageUrl": "/product-images-v2/entry-2way-sub-quarto-10-bagasi-best-buy.png",
       "imageAlt": "Entry 2 Way Subwoofer Quarto 10\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-3.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-2way-sub-quarto-10-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Blam Relax 165 RX, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 2 Way + DSP + Subwoofer 10\" Prototype Quarto (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -3988,13 +3955,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Entry - Recommended: GZ Mercy GZCS 100.2 MB + DSP + Power Mono + Subwoofer 10\" Prototype Q + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/upgrade-audio-series-4.png",
+      "imageUrl": "/product-images-v2/entry-2way-sub-quarto-10-bagasi-recommended.png",
       "imageAlt": "Entry 2 Way Subwoofer Quarto 10\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-4.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-2way-sub-quarto-10-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 10\" Prototype Quarto (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 10\" Prototype Quarto (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -4143,13 +4107,10 @@
       "ribbonColor": "slate",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Entry - Basic: Infinity Alpha 650C / 603 + DSP Rainbow + Power Mono + Subwoofer 8\" bawah jok (Z. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/upgrade-audio-series-1.png",
+      "imageUrl": "/product-images-v2/entry-3way-sub-bawah-jok-basic.png",
       "imageAlt": "Entry 3 Way Subwoofer Bawah Jok Basic",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-3way-sub-bawah-jok-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 3 Way + DSP + Power Mono + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nMenggunakan Infinity Alpha 650C / 603C sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -4293,13 +4254,10 @@
       "ribbonColor": "blue",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Entry - Normal: Rainbow Experience Line E + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/upgrade-audio-series-2.png",
+      "imageUrl": "/product-images-v2/entry-3way-sub-bawah-jok-normal.png",
       "imageAlt": "Entry 3 Way Subwoofer Bawah Jok Normal",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-3way-sub-bawah-jok-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Rainbow Experience Line EL-C6.2, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -4443,13 +4401,10 @@
       "ribbonColor": "amber",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Entry - Best Buy: Blam Relax 165 RX + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/upgrade-audio-series-3.png",
+      "imageUrl": "/product-images-v2/entry-3way-sub-bawah-jok-best-buy.png",
       "imageAlt": "Entry 3 Way Subwoofer Bawah Jok Best Buy",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-3.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-3way-sub-bawah-jok-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Blam Relax 165 RX, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 3 Way + DSP + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -4593,13 +4548,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Entry - Recommended: GZ Mercy GZCS 100.2 MB + DSP + Power Mono + Subwoofer 8\" bawah jok (Z + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/upgrade-audio-series-4.png",
+      "imageUrl": "/product-images-v2/entry-3way-sub-bawah-jok-recommended.png",
       "imageAlt": "Entry 3 Way Subwoofer Bawah Jok Recommended",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-4.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-3way-sub-bawah-jok-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -4748,13 +4700,10 @@
       "ribbonColor": "slate",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Entry - Basic: Infinity Alpha 650C / 603 + DSP Rainbow + Power Mono + Subwoofer 10\" Prototype Q. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/upgrade-audio-series-1.png",
+      "imageUrl": "/product-images-v2/entry-3way-sub-quarto-10-bagasi-basic.png",
       "imageAlt": "Entry 3 Way Subwoofer Quarto 10\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-3way-sub-quarto-10-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 3 Way + DSP + Power Mono + Subwoofer 10\" Prototype Quarto (bagasi).\n\nMenggunakan Infinity Alpha 650C / 603C sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -4898,13 +4847,10 @@
       "ribbonColor": "blue",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Entry - Normal: Rainbow Experience Line E + DSP + Power Mono + Subwoofer 10\" Prototype Q. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/upgrade-audio-series-2.png",
+      "imageUrl": "/product-images-v2/entry-3way-sub-quarto-10-bagasi-normal.png",
       "imageAlt": "Entry 3 Way Subwoofer Quarto 10\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-3way-sub-quarto-10-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Rainbow Experience Line EL-C6.2, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -5048,13 +4994,10 @@
       "ribbonColor": "amber",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Entry - Best Buy: Blam Relax 165 RX + DSP + Power Mono + Subwoofer 10\" Prototype Q. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/upgrade-audio-series-3.png",
+      "imageUrl": "/product-images-v2/entry-3way-sub-quarto-10-bagasi-best-buy.png",
       "imageAlt": "Entry 3 Way Subwoofer Quarto 10\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-3.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-3way-sub-quarto-10-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Blam Relax 165 RX, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 3 Way + DSP + Subwoofer 10\" Prototype Quarto (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -5198,13 +5141,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Entry - Recommended: GZ Mercy GZCS 100.2 MB + DSP + Power Mono + Subwoofer 10\" Prototype Q + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/upgrade-audio-series-4.png",
+      "imageUrl": "/product-images-v2/entry-3way-sub-quarto-10-bagasi-recommended.png",
       "imageAlt": "Entry 3 Way Subwoofer Quarto 10\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/upgrade-audio-series-4.png",
-        "/product-images/upgrade-audio-series-1.png",
-        "/product-images/upgrade-audio-series-2.png",
-        "/product-images/upgrade-audio-series-3.png"
+        "/product-images-v2/entry-3way-sub-quarto-10-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Entry - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 10\" Prototype Quarto (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 10\" Prototype Quarto (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -5353,13 +5293,10 @@
       "ribbonColor": "slate",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Daily Use - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 8\" bawah jok (Z. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-bawah-jok-basic.png",
       "imageAlt": "Daily Use 2 Way Subwoofer Bawah Jok Basic",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-bawah-jok-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 2 Way + DSP + Power Mono + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -5503,13 +5440,10 @@
       "ribbonColor": "blue",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Daily Use - Normal: Rainbow Experience Line E + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/full-upgrade-audio-2.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-bawah-jok-normal.png",
       "imageAlt": "Daily Use 2 Way Subwoofer Bawah Jok Normal",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-bawah-jok-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Rainbow Experience Line EL-C6.2, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -5653,13 +5587,10 @@
       "ribbonColor": "amber",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Daily Use - Best Buy: Blam Relax 165 RX + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/full-upgrade-audio-3.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-bawah-jok-best-buy.png",
       "imageAlt": "Daily Use 2 Way Subwoofer Bawah Jok Best Buy",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-3.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-bawah-jok-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Blam Relax 165 RX, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 2 Way + DSP + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -5803,13 +5734,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Daily Use - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 8\" bawah jok (Z + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/full-upgrade-audio-4.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-bawah-jok-recommended.png",
       "imageAlt": "Daily Use 2 Way Subwoofer Bawah Jok Recommended",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-4.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-bawah-jok-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -5958,13 +5886,10 @@
       "ribbonColor": "slate",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Daily Use - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 10\" Prototype Q. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-quarto-10-bagasi-basic.png",
       "imageAlt": "Daily Use 2 Way Subwoofer Quarto 10\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-quarto-10-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 2 Way + DSP + Power Mono + Subwoofer 10\" Prototype Quarto (bagasi).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -6108,13 +6033,10 @@
       "ribbonColor": "blue",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Daily Use - Normal: Rainbow Experience Line E + DSP + Power Mono + Subwoofer 10\" Prototype Q. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/full-upgrade-audio-2.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-quarto-10-bagasi-normal.png",
       "imageAlt": "Daily Use 2 Way Subwoofer Quarto 10\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-quarto-10-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Rainbow Experience Line EL-C6.2, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -6258,13 +6180,10 @@
       "ribbonColor": "amber",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Daily Use - Best Buy: Blam Relax 165 RX + DSP + Power Mono + Subwoofer 10\" Prototype Q. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/full-upgrade-audio-3.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-quarto-10-bagasi-best-buy.png",
       "imageAlt": "Daily Use 2 Way Subwoofer Quarto 10\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-3.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-quarto-10-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Blam Relax 165 RX, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 2 Way + DSP + Subwoofer 10\" Prototype Quarto (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -6408,13 +6327,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Daily Use - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 10\" Prototype Q + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/full-upgrade-audio-4.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-quarto-10-bagasi-recommended.png",
       "imageAlt": "Daily Use 2 Way Subwoofer Quarto 10\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-4.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-quarto-10-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 10\" Prototype Quarto (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 10\" Prototype Quarto (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -6563,13 +6479,10 @@
       "ribbonColor": "slate",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Daily Use - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 8\" PHD (bagasi). Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-phd-8-bagasi-basic.png",
       "imageAlt": "Daily Use 2 Way Subwoofer PHD 8\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-phd-8-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 2 Way + DSP + Power Mono + Subwoofer 8\" PHD (bagasi).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" PHD (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -6713,13 +6626,10 @@
       "ribbonColor": "blue",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Daily Use - Normal: Rainbow Experience Line E + DSP + Power Mono + Subwoofer 8\" PHD (bagasi). Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/full-upgrade-audio-2.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-phd-8-bagasi-normal.png",
       "imageAlt": "Daily Use 2 Way Subwoofer PHD 8\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-phd-8-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Rainbow Experience Line EL-C6.2, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" PHD (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -6863,13 +6773,10 @@
       "ribbonColor": "amber",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Daily Use - Best Buy: Blam Relax 165 RX + DSP + Power Mono + Subwoofer 8\" PHD (bagasi). Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/full-upgrade-audio-3.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-phd-8-bagasi-best-buy.png",
       "imageAlt": "Daily Use 2 Way Subwoofer PHD 8\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-3.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-phd-8-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Blam Relax 165 RX, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" PHD (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 2 Way + DSP + Subwoofer 8\" PHD (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -7013,13 +6920,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Daily Use - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 8\" PHD (bagasi) + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/full-upgrade-audio-4.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-phd-8-bagasi-recommended.png",
       "imageAlt": "Daily Use 2 Way Subwoofer PHD 8\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-4.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-phd-8-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 8\" PHD (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 8\" PHD (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -7168,13 +7072,10 @@
       "ribbonColor": "slate",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Daily Use - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 10\" Cresscendo . Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-cresscendo-10-bagasi-basic.png",
       "imageAlt": "Daily Use 2 Way Subwoofer Cresscendo 10\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-cresscendo-10-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 2 Way + DSP + Power Mono + Subwoofer 10\" Cresscendo (bagasi).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Cresscendo (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -7318,13 +7219,10 @@
       "ribbonColor": "blue",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Daily Use - Normal: Rainbow Experience Line E + DSP + Power Mono + Subwoofer 10\" Cresscendo . Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/full-upgrade-audio-2.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-cresscendo-10-bagasi-normal.png",
       "imageAlt": "Daily Use 2 Way Subwoofer Cresscendo 10\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-cresscendo-10-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Rainbow Experience Line EL-C6.2, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Cresscendo (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -7468,13 +7366,10 @@
       "ribbonColor": "amber",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Daily Use - Best Buy: Blam Relax 165 RX + DSP + Power Mono + Subwoofer 10\" Cresscendo . Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/full-upgrade-audio-3.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-cresscendo-10-bagasi-best-buy.png",
       "imageAlt": "Daily Use 2 Way Subwoofer Cresscendo 10\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-3.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-cresscendo-10-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Blam Relax 165 RX, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Cresscendo (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 2 Way + DSP + Subwoofer 10\" Cresscendo (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -7618,13 +7513,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Daily Use - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 10\" Cresscendo  + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/full-upgrade-audio-4.png",
+      "imageUrl": "/product-images-v2/daily-use-2way-sub-cresscendo-10-bagasi-recommended.png",
       "imageAlt": "Daily Use 2 Way Subwoofer Cresscendo 10\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-4.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-2way-sub-cresscendo-10-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 10\" Cresscendo (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 10\" Cresscendo (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -7773,13 +7665,10 @@
       "ribbonColor": "slate",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Daily Use - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 8\" bawah jok (Z. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-bawah-jok-basic.png",
       "imageAlt": "Daily Use 3 Way Subwoofer Bawah Jok Basic",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-bawah-jok-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 3 Way + DSP + Power Mono + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -7923,13 +7812,10 @@
       "ribbonColor": "blue",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Daily Use - Normal: Rainbow Experience Line E + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/full-upgrade-audio-2.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-bawah-jok-normal.png",
       "imageAlt": "Daily Use 3 Way Subwoofer Bawah Jok Normal",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-bawah-jok-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Rainbow Experience Line EL-C6.2, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -8073,13 +7959,10 @@
       "ribbonColor": "amber",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Daily Use - Best Buy: Blam Relax 165 RX + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/full-upgrade-audio-3.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-bawah-jok-best-buy.png",
       "imageAlt": "Daily Use 3 Way Subwoofer Bawah Jok Best Buy",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-3.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-bawah-jok-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Blam Relax 165 RX, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 3 Way + DSP + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -8223,13 +8106,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Daily Use - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 8\" bawah jok (Z + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/full-upgrade-audio-4.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-bawah-jok-recommended.png",
       "imageAlt": "Daily Use 3 Way Subwoofer Bawah Jok Recommended",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-4.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-bawah-jok-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -8378,13 +8258,10 @@
       "ribbonColor": "slate",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Daily Use - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 10\" Prototype Q. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-quarto-10-bagasi-basic.png",
       "imageAlt": "Daily Use 3 Way Subwoofer Quarto 10\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-quarto-10-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 3 Way + DSP + Power Mono + Subwoofer 10\" Prototype Quarto (bagasi).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -8528,13 +8405,10 @@
       "ribbonColor": "blue",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Daily Use - Normal: Rainbow Experience Line E + DSP + Power Mono + Subwoofer 10\" Prototype Q. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/full-upgrade-audio-2.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-quarto-10-bagasi-normal.png",
       "imageAlt": "Daily Use 3 Way Subwoofer Quarto 10\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-quarto-10-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Rainbow Experience Line EL-C6.2, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -8678,13 +8552,10 @@
       "ribbonColor": "amber",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Daily Use - Best Buy: Blam Relax 165 RX + DSP + Power Mono + Subwoofer 10\" Prototype Q. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/full-upgrade-audio-3.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-quarto-10-bagasi-best-buy.png",
       "imageAlt": "Daily Use 3 Way Subwoofer Quarto 10\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-3.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-quarto-10-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Blam Relax 165 RX, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 3 Way + DSP + Subwoofer 10\" Prototype Quarto (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -8828,13 +8699,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Daily Use - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 10\" Prototype Q + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/full-upgrade-audio-4.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-quarto-10-bagasi-recommended.png",
       "imageAlt": "Daily Use 3 Way Subwoofer Quarto 10\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-4.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-quarto-10-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 10\" Prototype Quarto (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 10\" Prototype Quarto (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -8983,13 +8851,10 @@
       "ribbonColor": "slate",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Daily Use - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 8\" PHD (bagasi). Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-phd-8-bagasi-basic.png",
       "imageAlt": "Daily Use 3 Way Subwoofer PHD 8\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-phd-8-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 3 Way + DSP + Power Mono + Subwoofer 8\" PHD (bagasi).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" PHD (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -9133,13 +8998,10 @@
       "ribbonColor": "blue",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Daily Use - Normal: Rainbow Experience Line E + DSP + Power Mono + Subwoofer 8\" PHD (bagasi). Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/full-upgrade-audio-2.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-phd-8-bagasi-normal.png",
       "imageAlt": "Daily Use 3 Way Subwoofer PHD 8\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-phd-8-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Rainbow Experience Line EL-C6.2, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" PHD (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -9283,13 +9145,10 @@
       "ribbonColor": "amber",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Daily Use - Best Buy: Blam Relax 165 RX + DSP + Power Mono + Subwoofer 8\" PHD (bagasi). Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/full-upgrade-audio-3.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-phd-8-bagasi-best-buy.png",
       "imageAlt": "Daily Use 3 Way Subwoofer PHD 8\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-3.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-phd-8-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Blam Relax 165 RX, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" PHD (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 3 Way + DSP + Subwoofer 8\" PHD (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -9433,13 +9292,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Daily Use - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 8\" PHD (bagasi) + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/full-upgrade-audio-4.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-phd-8-bagasi-recommended.png",
       "imageAlt": "Daily Use 3 Way Subwoofer PHD 8\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-4.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-phd-8-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 8\" PHD (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 8\" PHD (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -9588,13 +9444,10 @@
       "ribbonColor": "slate",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Daily Use - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 10\" Cresscendo . Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/full-upgrade-audio-1.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-cresscendo-10-bagasi-basic.png",
       "imageAlt": "Daily Use 3 Way Subwoofer Cresscendo 10\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-cresscendo-10-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 3 Way + DSP + Power Mono + Subwoofer 10\" Cresscendo (bagasi).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Cresscendo (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -9738,13 +9591,10 @@
       "ribbonColor": "blue",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Daily Use - Normal: Rainbow Experience Line E + DSP + Power Mono + Subwoofer 10\" Cresscendo . Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/full-upgrade-audio-2.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-cresscendo-10-bagasi-normal.png",
       "imageAlt": "Daily Use 3 Way Subwoofer Cresscendo 10\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-cresscendo-10-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Rainbow Experience Line EL-C6.2, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Cresscendo (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -9888,13 +9738,10 @@
       "ribbonColor": "amber",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Daily Use - Best Buy: Blam Relax 165 RX + DSP + Power Mono + Subwoofer 10\" Cresscendo . Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/full-upgrade-audio-3.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-cresscendo-10-bagasi-best-buy.png",
       "imageAlt": "Daily Use 3 Way Subwoofer Cresscendo 10\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-3.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-cresscendo-10-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi Blam Relax 165 RX, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Cresscendo (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 3 Way + DSP + Subwoofer 10\" Cresscendo (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -10038,13 +9885,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Daily Use - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 10\" Cresscendo  + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/full-upgrade-audio-4.png",
+      "imageUrl": "/product-images-v2/daily-use-3way-sub-cresscendo-10-bagasi-recommended.png",
       "imageAlt": "Daily Use 3 Way Subwoofer Cresscendo 10\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/full-upgrade-audio-4.png",
-        "/product-images/full-upgrade-audio-1.png",
-        "/product-images/full-upgrade-audio-2.png",
-        "/product-images/full-upgrade-audio-3.png"
+        "/product-images-v2/daily-use-3way-sub-cresscendo-10-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Daily Use - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 10\" Cresscendo (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 10\" Cresscendo (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -10193,13 +10037,10 @@
       "ribbonColor": "slate",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Affordable High End - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 8\" bawah jok (Z. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-bawah-jok-basic.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer Bawah Jok Basic",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-bawah-jok-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 2 Way + DSP + Power Mono + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -10343,13 +10184,10 @@
       "ribbonColor": "blue",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Affordable High End - Normal: Morel Maximo 6 + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-2.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-bawah-jok-normal.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer Bawah Jok Normal",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-bawah-jok-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Morel Maximo 6, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -10493,13 +10331,10 @@
       "ribbonColor": "amber",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Affordable High End - Best Buy: GZ RadioActive GZRT 25 SQ + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-3.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-bawah-jok-best-buy.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer Bawah Jok Best Buy",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-3.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-bawah-jok-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi GZ RadioActive GZRT 25 SQ + GZRK 165 SQ, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 2 Way + DSP + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -10643,13 +10478,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Affordable High End - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 8\" bawah jok (Z + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-4.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-bawah-jok-recommended.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer Bawah Jok Recommended",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-4.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-bawah-jok-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -10798,13 +10630,10 @@
       "ribbonColor": "slate",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Affordable High End - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 10\" Prototype Q. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-quarto-10-bagasi-basic.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer Quarto 10\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-quarto-10-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 2 Way + DSP + Power Mono + Subwoofer 10\" Prototype Quarto (bagasi).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -10948,13 +10777,10 @@
       "ribbonColor": "blue",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Affordable High End - Normal: Morel Maximo 6 + DSP + Power Mono + Subwoofer 10\" Prototype Q. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-2.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-quarto-10-bagasi-normal.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer Quarto 10\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-quarto-10-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Morel Maximo 6, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -11098,13 +10924,10 @@
       "ribbonColor": "amber",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Affordable High End - Best Buy: GZ RadioActive GZRT 25 SQ + DSP + Power Mono + Subwoofer 10\" Prototype Q. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-3.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-quarto-10-bagasi-best-buy.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer Quarto 10\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-3.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-quarto-10-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi GZ RadioActive GZRT 25 SQ + GZRK 165 SQ, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 2 Way + DSP + Subwoofer 10\" Prototype Quarto (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -11248,13 +11071,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Affordable High End - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 10\" Prototype Q + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-4.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-quarto-10-bagasi-recommended.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer Quarto 10\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-4.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-quarto-10-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 10\" Prototype Quarto (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 10\" Prototype Quarto (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -11403,13 +11223,10 @@
       "ribbonColor": "slate",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Affordable High End - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 8\" PHD (bagasi). Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-phd-8-bagasi-basic.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer PHD 8\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-phd-8-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 2 Way + DSP + Power Mono + Subwoofer 8\" PHD (bagasi).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" PHD (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -11553,13 +11370,10 @@
       "ribbonColor": "blue",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Affordable High End - Normal: Morel Maximo 6 + DSP + Power Mono + Subwoofer 8\" PHD (bagasi). Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-2.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-phd-8-bagasi-normal.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer PHD 8\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-phd-8-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Morel Maximo 6, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" PHD (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -11703,13 +11517,10 @@
       "ribbonColor": "amber",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Affordable High End - Best Buy: GZ RadioActive GZRT 25 SQ + DSP + Power Mono + Subwoofer 8\" PHD (bagasi). Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-3.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-phd-8-bagasi-best-buy.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer PHD 8\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-3.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-phd-8-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi GZ RadioActive GZRT 25 SQ + GZRK 165 SQ, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" PHD (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 2 Way + DSP + Subwoofer 8\" PHD (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -11853,13 +11664,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "2 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Affordable High End - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 8\" PHD (bagasi) + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-4.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-phd-8-bagasi-recommended.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer PHD 8\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-4.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-phd-8-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 8\" PHD (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 8\" PHD (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -12008,13 +11816,10 @@
       "ribbonColor": "slate",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Affordable High End - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 10\" Cresscendo . Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-cresscendo-10-bagasi-basic.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer Cresscendo 10\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-cresscendo-10-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 2 Way + DSP + Power Mono + Subwoofer 10\" Cresscendo (bagasi).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Cresscendo (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -12158,13 +11963,10 @@
       "ribbonColor": "blue",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Affordable High End - Normal: Morel Maximo 6 + DSP + Power Mono + Subwoofer 10\" Cresscendo . Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-2.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-cresscendo-10-bagasi-normal.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer Cresscendo 10\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-cresscendo-10-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Morel Maximo 6, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Cresscendo (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -12308,13 +12110,10 @@
       "ribbonColor": "amber",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Affordable High End - Best Buy: GZ RadioActive GZRT 25 SQ + DSP + Power Mono + Subwoofer 10\" Cresscendo . Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-3.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-cresscendo-10-bagasi-best-buy.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer Cresscendo 10\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-3.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-cresscendo-10-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi GZ RadioActive GZRT 25 SQ + GZRK 165 SQ, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Cresscendo (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 2 Way + DSP + Subwoofer 10\" Cresscendo (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -12458,13 +12257,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "2 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Affordable High End - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 10\" Cresscendo  + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-4.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-2way-sub-cresscendo-10-bagasi-recommended.png",
       "imageAlt": "Affordable High End 2 Way Subwoofer Cresscendo 10\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-4.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-2way-sub-cresscendo-10-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 10\" Cresscendo (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 10\" Cresscendo (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -12613,13 +12409,10 @@
       "ribbonColor": "slate",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Affordable High End - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 8\" bawah jok (Z. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-bawah-jok-basic.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer Bawah Jok Basic",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-bawah-jok-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 3 Way + DSP + Power Mono + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -12763,13 +12556,10 @@
       "ribbonColor": "blue",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Affordable High End - Normal: Morel Maximo 6 + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-2.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-bawah-jok-normal.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer Bawah Jok Normal",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-bawah-jok-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Morel Maximo 6, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -12913,13 +12703,10 @@
       "ribbonColor": "amber",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Affordable High End - Best Buy: GZ RadioActive GZRT 25 SQ + DSP + Power Mono + Subwoofer 8\" bawah jok (Z. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-3.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-bawah-jok-best-buy.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer Bawah Jok Best Buy",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-3.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-bawah-jok-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi GZ RadioActive GZRT 25 SQ + GZRK 165 SQ, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 3 Way + DSP + Subwoofer 8\" bawah jok (Zevox ZV 8 SAS), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -13063,13 +12850,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" bawah j",
       "cardDescription": "Affordable High End - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 8\" bawah jok (Z + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-4.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-bawah-jok-recommended.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer Bawah Jok Recommended",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-4.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-bawah-jok-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 8\" bawah jok (Zevox ZV 8 SAS).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 8\" bawah jok (Zevox ZV 8 SAS) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -13218,13 +13002,10 @@
       "ribbonColor": "slate",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Affordable High End - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 10\" Prototype Q. Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-quarto-10-bagasi-basic.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer Quarto 10\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-quarto-10-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 3 Way + DSP + Power Mono + Subwoofer 10\" Prototype Quarto (bagasi).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -13368,13 +13149,10 @@
       "ribbonColor": "blue",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Affordable High End - Normal: Morel Maximo 6 + DSP + Power Mono + Subwoofer 10\" Prototype Q. Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-2.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-quarto-10-bagasi-normal.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer Quarto 10\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-quarto-10-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Morel Maximo 6, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -13518,13 +13296,10 @@
       "ribbonColor": "amber",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Affordable High End - Best Buy: GZ RadioActive GZRT 25 SQ + DSP + Power Mono + Subwoofer 10\" Prototype Q. Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-3.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-quarto-10-bagasi-best-buy.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer Quarto 10\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-3.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-quarto-10-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi GZ RadioActive GZRT 25 SQ + GZRK 165 SQ, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Prototype Quarto (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 3 Way + DSP + Subwoofer 10\" Prototype Quarto (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -13668,13 +13443,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Protot",
       "cardDescription": "Affordable High End - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 10\" Prototype Q + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-4.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-quarto-10-bagasi-recommended.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer Quarto 10\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-4.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-quarto-10-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 10\" Prototype Quarto (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 10\" Prototype Quarto (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -13823,13 +13595,10 @@
       "ribbonColor": "slate",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Affordable High End - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 8\" PHD (bagasi). Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-phd-8-bagasi-basic.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer PHD 8\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-phd-8-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 3 Way + DSP + Power Mono + Subwoofer 8\" PHD (bagasi).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" PHD (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -13973,13 +13742,10 @@
       "ribbonColor": "blue",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Affordable High End - Normal: Morel Maximo 6 + DSP + Power Mono + Subwoofer 8\" PHD (bagasi). Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-2.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-phd-8-bagasi-normal.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer PHD 8\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-phd-8-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Morel Maximo 6, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" PHD (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -14123,13 +13889,10 @@
       "ribbonColor": "amber",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Affordable High End - Best Buy: GZ RadioActive GZRT 25 SQ + DSP + Power Mono + Subwoofer 8\" PHD (bagasi). Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-3.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-phd-8-bagasi-best-buy.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer PHD 8\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-3.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-phd-8-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi GZ RadioActive GZRT 25 SQ + GZRK 165 SQ, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 8\" PHD (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 3 Way + DSP + Subwoofer 8\" PHD (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -14273,13 +14036,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "3 Way + DSP + Subwoofer 8\" PHD (ba",
       "cardDescription": "Affordable High End - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 8\" PHD (bagasi) + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-4.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-phd-8-bagasi-recommended.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer PHD 8\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-4.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-phd-8-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 8\" PHD (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 8\" PHD (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
@@ -14428,13 +14188,10 @@
       "ribbonColor": "slate",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Affordable High End - Basic: PHD MF 6.1 KIT 2 Way 6.5\" + DSP Rainbow + Power Mono + Subwoofer 10\" Cresscendo . Upgrade lengkap untuk daily use.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-1.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-cresscendo-10-bagasi-basic.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer Cresscendo 10\" (bagasi) Basic",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-cresscendo-10-bagasi-basic.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Basic merupakan pilihan upgrade audio untuk pengguna yang ingin mendapatkan peningkatan kualitas suara secara menyeluruh dengan konfigurasi 3 Way + DSP + Power Mono + Subwoofer 10\" Cresscendo (bagasi).\n\nMenggunakan PHD MF 6.1 KIT 2 Way 6.5\" sebagai speaker depan, dipadukan dengan DSP Rainbow EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Cresscendo (bagasi). Konfigurasi ini memberikan kombinasi antara vocal dan detail yang lebih jelas dari speaker depan, pengaturan suara melalui DSP, serta tambahan tenaga dan reproduksi bass dari sistem mono amplifier dan subwoofer.",
@@ -14578,13 +14335,10 @@
       "ribbonColor": "blue",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Affordable High End - Normal: Morel Maximo 6 + DSP + Power Mono + Subwoofer 10\" Cresscendo . Combo seimbang dengan tonal balance baik.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-2.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-cresscendo-10-bagasi-normal.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer Cresscendo 10\" (bagasi) Normal",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-cresscendo-10-bagasi-normal.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Normal dirancang sebagai upgrade audio system yang lengkap untuk penggunaan harian dengan peningkatan kualitas suara pada area depan dan belakang, sekaligus memberikan dukungan bass yang lebih dalam dan bertenaga.\n\nKombinasi Morel Maximo 6, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Cresscendo (bagasi) menghasilkan sistem yang lebih lengkap, dengan karakter suara yang detail, tonal balance yang baik, vocal lebih jelas, midbass lebih berisi, serta low bass yang lebih dalam dan terkontrol.\n\nDSP berfungsi sebagai pusat pengaturan sistem untuk menyelaraskan karakter suara speaker, subwoofer, dan amplifier sehingga seluruh sistem dapat bekerja lebih terintegrasi.",
@@ -14728,13 +14482,10 @@
       "ribbonColor": "amber",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Affordable High End - Best Buy: GZ RadioActive GZRT 25 SQ + DSP + Power Mono + Subwoofer 10\" Cresscendo . Detail, impact, dan bass yang lebih terasa.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-3.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-cresscendo-10-bagasi-best-buy.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer Cresscendo 10\" (bagasi) Best Buy",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-3.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-cresscendo-10-bagasi-best-buy.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Best Buy merupakan paket upgrade audio yang dirancang untuk pengguna yang menginginkan peningkatan kualitas suara secara menyeluruh dengan kombinasi GZ RadioActive GZRT 25 SQ + GZRK 165 SQ, Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, dan Subwoofer 10\" Cresscendo (bagasi).\n\nKombinasi ini memberikan peningkatan mulai dari vocal, detail, midbass, staging hingga low bass, sementara DSP digunakan untuk mengatur karakter dan integrasi seluruh sistem agar terdengar lebih seimbang dan menyatu.\n\nDengan konsep 3 Way + DSP + Subwoofer 10\" Cresscendo (bagasi), paket ini memberikan fondasi sistem yang lengkap untuk penggunaan harian, dengan karakter suara yang tetap nyaman tetapi memiliki detail, impact dan bass yang lebih terasa.",
@@ -14878,13 +14629,10 @@
       "ribbonColor": "emerald",
       "cardTitle": "3 Way + DSP + Subwoofer 10\" Cressc",
       "cardDescription": "Affordable High End - Recommended: GZ Mercy GZCS 100.2 MB 2  + DSP + Power Mono + Subwoofer 10\" Cresscendo  + Jaring CNC. Konfigurasi terlengkap.",
-      "imageUrl": "/product-images/2-way-subwoofer-bawah-jok-4.png",
+      "imageUrl": "/product-images-v2/affordable-high-end-3way-sub-cresscendo-10-bagasi-recommended.png",
       "imageAlt": "Affordable High End 3 Way Subwoofer Cresscendo 10\" (bagasi) Recommended",
       "galleryImages": [
-        "/product-images/2-way-subwoofer-bawah-jok-4.png",
-        "/product-images/2-way-subwoofer-bawah-jok-1.png",
-        "/product-images/2-way-subwoofer-bawah-jok-2.png",
-        "/product-images/2-way-subwoofer-bawah-jok-3.png"
+        "/product-images-v2/affordable-high-end-3way-sub-cresscendo-10-bagasi-recommended.png"
       ],
       "tagline": "Innovation Car Audio Jakarta",
       "introMarkdown": "Paket Affordable High End - Recommended ini dirancang untuk pengguna yang menginginkan upgrade audio dengan karakter suara yang lebih fokus, detail dan terarah, menggunakan GZ Mercy GZCS 100.2 MB 2 Way 4\", Rainbow DSP EL-PA4.6, Power Mono Prototype Quarto, serta Subwoofer 10\" Cresscendo (bagasi).\n\nKombinasi speaker dengan DSP memberikan karakter suara yang lebih fokus pada area vocal dan detail, sementara Subwoofer 10\" Cresscendo (bagasi) memberikan dukungan frekuensi rendah sehingga sistem tetap memiliki bass yang lebih dalam dan berisi.\n\nKeunggulan lainnya, Jaring CNC Midrange sudah termasuk dari speaker, sehingga tampilan area midrange menjadi lebih rapi sekaligus memberikan finishing yang lebih premium.",
