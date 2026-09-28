@@ -41,6 +41,7 @@ export interface InitialProductData {
   name: string
   slug: string
   category: string
+  subCategory: string
   shortDescription: string | null
   imageUrl: string | null
   imageAlt: string | null
@@ -54,15 +55,20 @@ interface ProductFormProps {
   nextSortOrder?: number // hint untuk default sort order (max+1 dari DB)
 }
 
-// Kategori options — gabungan dari yang lama + yang dipakai di mock data
+// Kategori options — 4 tier kualitas/price point
 const CATEGORY_OPTIONS = [
-  'Paket Upgrade Audio',
-  'Paket Peredam',
-  'Paket Service',
-  'Material',
-  'Aksesori',
-  'Audio',
-  'Lainnya',
+  'Simple Upgrade',
+  'Entry',
+  'Daily Use',
+  'Affordable High End',
+]
+
+// Sub-kategori options — 4 konfigurasi speaker + subwoofer
+const SUB_CATEGORY_OPTIONS = [
+  '2 Way Subwoofer Bawah Jok',
+  '2 Way Subwoofer Quarto 10" (bagasi)',
+  '3 Way Subwoofer Bawah Jok',
+  '3 Way Subwoofer Quarto 10" (bagasi)',
 ]
 
 const DEFAULT_WA = '6282211222399'
@@ -93,7 +99,8 @@ export function ProductForm({ initial, nextSortOrder = 1 }: ProductFormProps) {
     initial ?? {
       name: '',
       slug: '',
-      category: 'Paket Upgrade Audio',
+      category: 'Simple Upgrade',
+      subCategory: '2 Way Subwoofer Bawah Jok',
       shortDescription: '',
       imageUrl: null,
       imageAlt: '',
@@ -189,6 +196,7 @@ export function ProductForm({ initial, nextSortOrder = 1 }: ProductFormProps) {
         name: form.name.trim(),
         slug: form.slug.trim(),
         category: form.category,
+        subCategory: form.subCategory,
         shortDescription: form.shortDescription?.trim() || null,
         imageUrl: form.imageUrl,
         imageAlt: form.imageAlt?.trim() || null,
@@ -338,6 +346,26 @@ export function ProductForm({ initial, nextSortOrder = 1 }: ProductFormProps) {
                   ))}
                 </SelectContent>
               </Select>
+            </div>
+
+            <div>
+              <Label htmlFor="subCategory">
+                Sub-Kategori <span className="text-destructive">*</span>
+              </Label>
+              <Select
+                value={form.subCategory}
+                onValueChange={(val) => patch({ subCategory: val })}
+              >
+                <SelectTrigger id="subCategory">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  {SUB_CATEGORY_OPTIONS.map((c) => (
+                    <SelectItem key={c} value={c}>{c}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+              <p className="mt-1 text-xs text-muted-foreground">Konfigurasi speaker + subwoofer</p>
             </div>
 
             <div>

@@ -161,7 +161,8 @@ export type Product = {
   id: string
   name: string                    // "Simple Upgrade"
   slug: string                    // "simple-upgrade" (unique)
-  category: string                // "Paket Upgrade Audio"
+  category: string                // "Simple Upgrade" | "Entry" | "Daily Use" | "Affordable High End"
+  subCategory: string             // "2 Way Subwoofer Bawah Jok" | "2 Way Sub Quarto 10" (bagasi)" | ...
   shortDescription: string | null // 1-line summary untuk card fallback
   imageUrl: string | null         // gambar utama parent (fallback kalau variant tidak ada)
   imageAlt: string | null

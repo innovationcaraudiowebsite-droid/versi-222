@@ -9,6 +9,7 @@ interface UpdateBody {
   name?: unknown
   slug?: unknown
   category?: unknown
+  subCategory?: unknown
   shortDescription?: unknown
   imageUrl?: unknown
   imageAlt?: unknown
@@ -122,6 +123,7 @@ export async function PUT(
   }
 
   if (body.shortDescription !== undefined) data.shortDescription = asString(body.shortDescription, 120) ?? null
+  if (body.subCategory !== undefined) data.subCategory = asString(body.subCategory, 120) ?? null
   if (body.category !== undefined) {
     const cat = asString(body.category, 60)
     if (cat) data.category = cat

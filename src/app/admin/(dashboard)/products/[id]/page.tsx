@@ -13,6 +13,7 @@ interface ProductDetail {
   name: string
   slug: string
   category: string
+  subCategory: string
   shortDescription: string | null
   imageUrl: string | null
   imageAlt: string | null
@@ -85,6 +86,10 @@ export default async function AdminProductDetailPage({
                 <div>
                   <dt className="text-xs uppercase tracking-wide text-muted-foreground">Kategori</dt>
                   <dd className="mt-0.5 font-medium">{product.category}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs uppercase tracking-wide text-muted-foreground">Sub-Kategori</dt>
+                  <dd className="mt-0.5 font-medium text-muted-foreground text-xs">{product.subCategory || '—'}</dd>
                 </div>
                 <div>
                   <dt className="text-xs uppercase tracking-wide text-muted-foreground">Slug</dt>

@@ -18,6 +18,7 @@ interface ProductRow {
   name: string
   slug: string
   category: string
+  subCategory: string
   shortDescription: string | null
   imageUrl: string | null
   imageAlt: string | null
@@ -49,7 +50,8 @@ export default async function EditProductPage({
     id: product.id,
     name: product.name ?? '',
     slug: product.slug ?? '',
-    category: product.category ?? 'Paket Upgrade Audio',
+    category: product.category ?? 'Simple Upgrade',
+    subCategory: (product as any).subCategory ?? '2 Way Subwoofer Bawah Jok',
     shortDescription: product.shortDescription ?? null,
     imageUrl: product.imageUrl,
     imageAlt: product.imageAlt ?? null,

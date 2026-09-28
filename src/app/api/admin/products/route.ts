@@ -9,6 +9,7 @@ interface CreateBody {
   name?: unknown
   slug?: unknown
   category?: unknown
+  subCategory?: unknown
   shortDescription?: unknown
   imageUrl?: unknown
   imageAlt?: unknown
@@ -137,6 +138,7 @@ export async function POST(req: NextRequest) {
         name,
         slug,
         category,
+        subCategory: asString(body.subCategory, 120) ?? '2 Way Subwoofer Bawah Jok',
         shortDescription: asString(body.shortDescription, 120) ?? null,
         imageUrl: asString(body.imageUrl) ?? null,
         imageAlt: asString(body.imageAlt, 120) ?? null,
@@ -164,6 +166,7 @@ export async function POST(req: NextRequest) {
           name,
           slug,
           category,
+        subCategory: asString(body.subCategory, 120) ?? '2 Way Subwoofer Bawah Jok',
           shortDescription: asString(body.shortDescription, 120) ?? null,
           imageUrl: asString(body.imageUrl) ?? null,
           imageAlt: asString(body.imageAlt, 120) ?? null,
