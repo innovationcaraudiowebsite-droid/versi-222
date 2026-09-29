@@ -44,7 +44,7 @@ export function WhyChooseUs() {
     { icon: Clock, title: 'Free Konsultasi', desc: 'Konsultasi gratis via WhatsApp sebelum pengerjaan.' },
   ]
   return (
-    <section className="bg-muted/30 py-12 sm:py-16">
+    <section id="why-us" className="bg-muted/30 py-12 sm:py-16">
       <div className="container mx-auto max-w-7xl px-4">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
           Mengapa Pilih Kami?

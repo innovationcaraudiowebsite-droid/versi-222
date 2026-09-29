@@ -6,32 +6,40 @@ import { Packages } from '@/components/landing/packages'
 import { LatestArticles } from '@/components/landing/latest-articles'
 import { SectionDivider } from '@/components/landing/section-divider'
 import { LandingFooter } from '@/components/landing/landing-footer'
-import { StatsBar, WhyChooseUs, CTASection, TestimoniSection, SocialMediaSection } from '@/components/landing/new-sections'
+import { StatsBar, WhyChooseUs, CTASection } from '@/components/landing/new-sections'
+import {
+  BrandPartners,
+  AwardsSection,
+  VideoSection,
+  RecommenderSection,
+  AreaServisSection,
+  LokasiSection,
+  FAQSection,
+  TestimoniSection,
+} from '@/components/landing/ref-sections'
 
-// Always render at request time (runtime) — Vercel injects env vars at
-// runtime, not build time. force-dynamic prevents build-time DB queries
-// that would fail when SUPABASE_URL / DATABASE_URL aren't available during
-// the "Collecting page data" build phase.
 export const dynamic = 'force-dynamic'
-// Revalidate hint (ignored when force-dynamic, kept for documentation).
 export const revalidate = 0
 
 /**
  * Landing page "Innovation Car Audio Jakarta" — root route `/`.
  *
- * Sections:
- *  1. Hero             — banner gambar lengkap (sudah berisi judul, subtitle, icon)
- *  2. Stats Bar        — 4 stat cards (20+ tahun, 1000+ instalasi, 84 paket, 4.9★)
- *  3. About            — info tentang Innovation Car Audio (20+ tahun, spesialis)
- *  4. Jenis Bahan      — 4 jenis material peredam (Butyl, Absorber, Spant, Nex)
- *  5. Paket Layanan    — carousel 84 varian produk (4-card per batch)
- *  6. Artikel Terbaru  — carousel semua artikel (pre-load 30, slide animation)
- *  7. Why Choose Us    — 4 feature cards
- *  8. Testimoni        — 3 testimoni pelanggan
- *  9. CTA              — konsultasi WhatsApp
- * 10. Social Media     — Instagram, YouTube, Facebook links
+ * 13 Sections (match innovation-caraudio.com):
+ *  1. #home (Hero)        — Award Winning Car Audio And Soundproofing Store
+ *  2. #about              — Workshop Audio Mobil & Spesialis Peredam Jakarta
+ *  3. #partners           — Brand Partner Resmi (18 brands)
+ *  4. #awards             — Award & Championship (559+ piala)
+ *  5. #why-us             — Mengapa Memilih Innovation?
+ *  6. #video              — Galeri Instalasi & Workshop
+ *  7. #paket-audio        — Paket Audio (84 varian carousel)
+ *  8. #peredam            — Paket Peredam (Jenis Bahan)
+ *  9. #recommender        — Product Matchmaking
+ * 10. #area-jabodetabek   — Area Servis
+ * 11. #testimoni          — Testimoni Pelanggan
+ * 12. #lokasi             — Kontak & Lokasi
+ * 13. #faq               — FAQ
  *
- * Footer: multi-column (brand + layanan + kontak + social).
+ * + Footer multi-column
  */
 export default async function LandingPage() {
   return (
@@ -39,47 +47,58 @@ export default async function LandingPage() {
       <LandingHeader />
 
       <main className="flex-1">
-        {/* Section 1: Hero (gambar saja) */}
+        {/* Section 1: Hero (#home) */}
         <Hero />
 
         {/* Section 2: Stats Bar */}
         <StatsBar />
 
-        {/* Divider: Hero → About */}
+        {/* Section 3: About (#about) */}
         <SectionDivider variant="line" />
-
-        {/* Section 3: About (judul + info Innovation Car Audio) */}
         <About />
 
-        {/* Divider: About → Jenis Bahan */}
+        {/* Section 4: Brand Partners (#partners) */}
         <SectionDivider variant="line" />
+        <BrandPartners />
 
-        {/* Section 4: Jenis Bahan Peredam & Fungsinya */}
-        <Education />
+        {/* Section 5: Awards (#awards) */}
+        <AwardsSection />
 
-        {/* Divider: Jenis Bahan → Paket */}
-        <SectionDivider variant="line" />
-
-        {/* Section 5: Paket Layanan (carousel — pre-load all, slide animation) */}
-        <Packages />
-
-        {/* Divider: Paket → Artikel */}
-        <SectionDivider variant="line" />
-
-        {/* Section 6: Artikel Terbaru (carousel — pre-load all, slide animation) */}
-        <LatestArticles />
-
-        {/* Section 7: Why Choose Us */}
+        {/* Section 6: Why Choose Us (#why-us) */}
         <WhyChooseUs />
 
-        {/* Section 8: Testimoni */}
+        {/* Section 7: Video (#video) */}
+        <VideoSection />
+
+        {/* Section 8: Paket Audio (#paket-audio) */}
+        <SectionDivider variant="line" />
+        <Packages />
+
+        {/* Section 9: Paket Peredam (#peredam) */}
+        <SectionDivider variant="line" />
+        <Education />
+
+        {/* Section 10: Artikel Terbaru */}
+        <SectionDivider variant="line" />
+        <LatestArticles />
+
+        {/* Section 11: Recommender (#recommender) */}
+        <RecommenderSection />
+
+        {/* Section 12: Area Servis (#area-jabodetabek) */}
+        <AreaServisSection />
+
+        {/* Section 13: Testimoni (#testimoni) */}
         <TestimoniSection />
 
-        {/* Section 9: CTA — Konsultasi WhatsApp */}
+        {/* Section 14: CTA */}
         <CTASection />
 
-        {/* Section 10: Social Media */}
-        <SocialMediaSection />
+        {/* Section 15: Lokasi (#lokasi) */}
+        <LokasiSection />
+
+        {/* Section 16: FAQ (#faq) */}
+        <FAQSection />
       </main>
 
       {/* Footer: multi-column */}

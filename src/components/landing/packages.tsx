@@ -2,7 +2,7 @@ import { db } from '@/lib/db'
 import { ProductsList, type ProductVariantItem } from '@/components/landing/products-list'
 
 /**
- * Paket Layanan section — section id="paket".
+ * Paket Layanan section — section id="paket-audio".
  *
  * CAROUSEL MODE — 1 card per ProductVariant (15 card untuk 5 produk × 3 varian).
  *
@@ -117,7 +117,7 @@ export async function Packages() {
 
   return (
     <section
-      id="paket"
+      id="paket-audio"
       className="border-t border-border bg-background"
     >
       <div className="container mx-auto max-w-7xl px-4 py-12 sm:py-16 lg:py-20">

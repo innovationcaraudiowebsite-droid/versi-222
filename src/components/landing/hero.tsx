@@ -9,7 +9,7 @@ import Image from 'next/image'
  */
 export function Hero() {
   return (
-    <section id="hero" className="relative w-full overflow-hidden bg-white">
+    <section id="home" className="relative w-full overflow-hidden bg-white">
       <Image
         src="/hero-peredam-mobil-jakarta.png"
         alt="Peredam Mobil Jakarta — Panduan Lengkap Material dan Cara Pasang yang Benar"

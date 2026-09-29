@@ -26,12 +26,16 @@ import { cn } from '@/lib/utils'
 type NavLink = { href: string; label: string; isAnchor?: boolean }
 
 const NAV_LINKS: NavLink[] = [
-  { href: '#hero', label: 'Beranda', isAnchor: true },
   { href: '#about', label: 'About', isAnchor: true },
-  { href: '#edukasi', label: 'Jenis Bahan', isAnchor: true },
-  { href: '#paket', label: 'Paket', isAnchor: true },
-  { href: '#artikel', label: 'Artikel', isAnchor: true },
-  { href: '/berita', label: 'Portal Berita' },
+  { href: '#awards', label: 'Award', isAnchor: true },
+  { href: '#why-us', label: 'Why Us', isAnchor: true },
+  { href: '#paket-audio', label: 'Paket Audio', isAnchor: true },
+  { href: '#peredam', label: 'Paket Peredam', isAnchor: true },
+  { href: '#video', label: 'Video', isAnchor: true },
+  { href: '#recommender', label: 'Recommender', isAnchor: true },
+  { href: '#area-jabodetabek', label: 'Area Servis', isAnchor: true },
+  { href: '#lokasi', label: 'Kontak', isAnchor: true },
+  { href: '#faq', label: 'FAQ', isAnchor: true },
 ]
 
 export function LandingHeader() {

@@ -45,7 +45,7 @@ const BAHAN_LIST: BahanItem[] = [
 
 export function Education() {
   return (
-    <section id="edukasi" className="border-t border-border bg-muted/30">
+    <section id="peredam" className="border-t border-border bg-muted/30">
       <div className="container mx-auto max-w-7xl px-4 py-12 sm:py-16 lg:py-20">
         {/* Section header */}
         <div className="max-w-2xl">
