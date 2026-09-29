@@ -57,7 +57,7 @@ const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
   (process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : 'https://peredammobiljakarta.com')
+    : 'https://www.innovation-caraudio.com')
 
 const WA_NUMBER = '6282211222399'
 
