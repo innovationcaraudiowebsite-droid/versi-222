@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
-import { Pencil, Trash2, Plus, Search, Eye, ExternalLink } from 'lucide-react'
+import { Pencil, Trash2, Plus, Search, Eye, ExternalLink, Download } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
@@ -139,6 +139,12 @@ export function VariantsTable({ variants }: VariantsTableProps) {
             <Plus className="h-4 w-4" />
             Tambah Varian
           </Link>
+        </Button>
+        <Button asChild variant="outline">
+          <a href="/api/admin/variants/export" download>
+            <Download className="h-4 w-4" />
+            Export CSV
+          </a>
         </Button>
       </div>
 

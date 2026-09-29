@@ -13,6 +13,7 @@ import {
 import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/portal/theme-toggle'
 import { cn } from '@/lib/utils'
+import { ICALogo } from '@/components/landing/ica-logo'
 
 /**
  * Landing header — sticky top, backdrop blur, nav ke section landing + WA button.
@@ -77,13 +78,8 @@ export function LandingHeader() {
               <SheetDescription className="sr-only">
                 Menu utama landing page Innovation Car Audio Jakarta.
               </SheetDescription>
-              <div className="px-4 py-3 border-b border-border flex items-center gap-2">
-                <span className="inline-grid place-items-center size-9 rounded-md bg-gradient-to-br from-brand to-brand-dark text-white font-bold text-sm">
-                  PMJ
-                </span>
-                <span className="font-bold text-base bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent">
-                  Innovation Car Audio Jakarta
-                </span>
+              <div className="px-4 py-3 border-b border-border">
+                <ICALogo className="h-8 w-8" />
               </div>
               <nav className="px-2 py-2">
                 {NAV_LINKS.map((l) => {
@@ -137,12 +133,7 @@ export function LandingHeader() {
             className="flex items-center gap-2 shrink-0"
             aria-label="Innovation Car Audio Jakarta — Beranda"
           >
-            <span className="inline-grid place-items-center size-9 rounded-md bg-gradient-to-br from-brand to-brand-dark text-white font-bold text-sm">
-              PMJ
-            </span>
-            <span className="font-bold text-base sm:text-lg leading-none tracking-tight bg-gradient-to-r from-brand to-brand-dark bg-clip-text text-transparent">
-              Innovation Car Audio Jakarta
-            </span>
+            <ICALogo className="h-8 w-8" />
           </Link>
 
           {/* Desktop nav */}

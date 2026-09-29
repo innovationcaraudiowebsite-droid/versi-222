@@ -5,9 +5,23 @@ import { Trophy, Award, Star, MapPin, Phone, Mail, Clock, Instagram, Facebook, Y
 // ============================================================
 export function BrandPartners() {
   const brands = [
-    'Crescendo', 'PHD', 'Rainbow', 'GZ Audio', 'Blam', 'Eton',
-    'Infinity', 'Harman', 'Flux', 'Recoil', 'Emphaser', 'Reverb',
-    'Goldhorn', 'Zevox', 'Gran Turismo', 'Silent Coat', 'DL Audio Lab', 'Prototype Quarto',
+    { name: 'Crescendo', logo: '/brand-logos/crescendo.png' },
+    { name: 'PHD', logo: '/brand-logos/phd.png' },
+    { name: 'Rainbow', logo: '/brand-logos/rainbow.png' },
+    { name: 'GZ Audio', logo: '/brand-logos/gz.png' },
+    { name: 'Blam', logo: '/brand-logos/blam.png' },
+    { name: 'Eton', logo: '/brand-logos/eton.png' },
+    { name: 'Infinity', logo: '/brand-logos/infinity.png' },
+    { name: 'Harman', logo: '/brand-logos/harman.png' },
+    { name: 'Flux', logo: '/brand-logos/flux.png' },
+    { name: 'Recoil', logo: '/brand-logos/recoil.png' },
+    { name: 'Emphaser', logo: '/brand-logos/emphaser.png' },
+    { name: 'Reverb', logo: '/brand-logos/reverb.png' },
+    { name: 'Goldhorn', logo: '/brand-logos/goldhorn.png' },
+    { name: 'Zevox', logo: '/brand-logos/zevox.png' },
+    { name: 'Gran Turismo', logo: '/brand-logos/gran-turismo.png' },
+    { name: 'Silent Coat', logo: '/brand-logos/silent-coat.png' },
+    { name: 'DL Audio Lab', logo: '/brand-logos/dl-audio-lab.png' },
   ]
   return (
     <section id="partners" className="bg-background py-12 sm:py-16">
@@ -20,8 +34,14 @@ export function BrandPartners() {
         </p>
         <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4">
           {brands.map((brand, i) => (
-            <div key={i} className="flex items-center justify-center rounded-lg border border-border bg-card p-4 hover:shadow-md transition-shadow">
-              <span className="text-sm font-bold text-foreground/80 text-center">{brand}</span>
+            <div key={i} className="flex items-center justify-center rounded-lg border border-border bg-card p-4 hover:shadow-md transition-shadow h-24">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                className="max-h-16 max-w-full object-contain"
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
