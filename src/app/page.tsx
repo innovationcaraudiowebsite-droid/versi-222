@@ -6,6 +6,7 @@ import { Packages } from '@/components/landing/packages'
 import { LatestArticles } from '@/components/landing/latest-articles'
 import { SectionDivider } from '@/components/landing/section-divider'
 import { LandingFooter } from '@/components/landing/landing-footer'
+import { StatsBar, WhyChooseUs, CTASection, TestimoniSection, SocialMediaSection } from '@/components/landing/new-sections'
 
 // Always render at request time (runtime) — Vercel injects env vars at
 // runtime, not build time. force-dynamic prevents build-time DB queries
@@ -16,16 +17,21 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
 /**
- * Landing page "Peredam Mobil Jakarta" — root route `/`.
+ * Landing page "Innovation Car Audio Jakarta" — root route `/`.
  *
- * 5 section + divider line sederhana antar section:
+ * Sections:
  *  1. Hero             — banner gambar lengkap (sudah berisi judul, subtitle, icon)
- *  2. About            — "About me" + lorem ipsum 100 karakter
- *  3. Jenis Bahan      — 4 jenis material peredam (Butyl, Absorber, Spant, Nex)
- *  4. Paket Layanan    — 4 paket jasa (4 Pintu, Full Kabin, Kap Mesin, Wheel Housing)
- *  5. Artikel Terbaru  — carousel semua artikel (pre-load 30, slide animation)
+ *  2. Stats Bar        — 4 stat cards (20+ tahun, 1000+ instalasi, 84 paket, 4.9★)
+ *  3. About            — info tentang Innovation Car Audio (20+ tahun, spesialis)
+ *  4. Jenis Bahan      — 4 jenis material peredam (Butyl, Absorber, Spant, Nex)
+ *  5. Paket Layanan    — carousel 84 varian produk (4-card per batch)
+ *  6. Artikel Terbaru  — carousel semua artikel (pre-load 30, slide animation)
+ *  7. Why Choose Us    — 4 feature cards
+ *  8. Testimoni        — 3 testimoni pelanggan
+ *  9. CTA              — konsultasi WhatsApp
+ * 10. Social Media     — Instagram, YouTube, Facebook links
  *
- * Footer simpel 1 baris (kontak + alamat + copyright).
+ * Footer: multi-column (brand + layanan + kontak + social).
  */
 export default async function LandingPage() {
   return (
@@ -36,34 +42,47 @@ export default async function LandingPage() {
         {/* Section 1: Hero (gambar saja) */}
         <Hero />
 
+        {/* Section 2: Stats Bar */}
+        <StatsBar />
+
         {/* Divider: Hero → About */}
         <SectionDivider variant="line" />
 
-        {/* Section 2: About (judul + lorem ipsum) */}
+        {/* Section 3: About (judul + info Innovation Car Audio) */}
         <About />
 
         {/* Divider: About → Jenis Bahan */}
         <SectionDivider variant="line" />
 
-        {/* Section 3: Jenis Bahan Peredam & Fungsinya */}
+        {/* Section 4: Jenis Bahan Peredam & Fungsinya */}
         <Education />
 
         {/* Divider: Jenis Bahan → Paket */}
         <SectionDivider variant="line" />
 
-        {/* Section 4: Paket Layanan */}
+        {/* Section 5: Paket Layanan (carousel — pre-load all, slide animation) */}
         <Packages />
 
         {/* Divider: Paket → Artikel */}
         <SectionDivider variant="line" />
 
-        {/* Section 5: Artikel Terbaru (carousel — pre-load all, slide animation) */}
+        {/* Section 6: Artikel Terbaru (carousel — pre-load all, slide animation) */}
         <LatestArticles />
+
+        {/* Section 7: Why Choose Us */}
+        <WhyChooseUs />
+
+        {/* Section 8: Testimoni */}
+        <TestimoniSection />
+
+        {/* Section 9: CTA — Konsultasi WhatsApp */}
+        <CTASection />
+
+        {/* Section 10: Social Media */}
+        <SocialMediaSection />
       </main>
 
-      {/* Floating button "Chat WA Sales" — di layout.tsx global */}
-
-      {/* Footer simpel 1 baris (komponen shared supaya konsisten di semua halaman) */}
+      {/* Footer: multi-column */}
       <LandingFooter />
     </div>
   )
