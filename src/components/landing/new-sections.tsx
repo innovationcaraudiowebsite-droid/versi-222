@@ -6,13 +6,13 @@ import { Award, Users, Package, Star, Wrench, ShieldCheck, Headphones, Clock } f
  */
 export function StatsBar() {
   const stats = [
-    { icon: Award, value: '20+', label: 'Tahun Pengalaman', color: 'text-red-300' },
-    { icon: Users, value: '1000+', label: 'Instalasi Selesai', color: 'text-red-300' },
-    { icon: Package, value: '84', label: 'Paket Tersedia', color: 'text-red-300' },
+    { icon: Award, value: '20+', label: 'Tahun Pengalaman', color: 'text-green-300' },
+    { icon: Users, value: '1000+', label: 'Instalasi Selesai', color: 'text-green-300' },
+    { icon: Package, value: '84', label: 'Paket Tersedia', color: 'text-green-300' },
     { icon: Star, value: '4.9★', label: 'Rating Google', color: 'text-yellow-300' },
   ]
   return (
-    <section className="bg-gradient-to-r from-red-600 to-red-800 py-8">
+    <section className="bg-gradient-to-r from-green-600 to-green-800 py-8">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {stats.map((s, i) => {
@@ -54,8 +54,8 @@ export function WhyChooseUs() {
             const Icon = f.icon
             return (
               <div key={i} className="rounded-xl border border-border bg-card p-6 text-center hover:shadow-md transition-shadow">
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-red-500/10">
-                  <Icon className="size-6 text-red-600" />
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-green-600/10">
+                  <Icon className="size-6 text-green-600" />
                 </div>
                 <h3 className="font-bold text-foreground mb-1">{f.title}</h3>
                 <p className="text-sm text-muted-foreground">{f.desc}</p>
@@ -73,7 +73,7 @@ export function WhyChooseUs() {
  */
 export function CTASection() {
   return (
-    <section className="bg-gradient-to-r from-red-600 to-red-800 py-12 sm:py-16">
+    <section className="bg-gradient-to-r from-green-600 to-green-800 py-12 sm:py-16">
       <div className="container mx-auto max-w-4xl px-4 text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
           Siap Upgrade Audio Mobil Anda?
@@ -128,7 +128,7 @@ export function TestimoniSection() {
               </div>
               <p className="text-sm text-foreground/90 mb-4 italic">&ldquo;{t.text}&rdquo;</p>
               <div className="flex items-center gap-2">
-                <div className="h-8 w-8 rounded-full bg-red-500/10 grid place-items-center text-xs font-bold text-red-600">
+                <div className="h-8 w-8 rounded-full bg-green-600/10 grid place-items-center text-xs font-bold text-green-600">
                   {t.name[0]}
                 </div>
                 <div>

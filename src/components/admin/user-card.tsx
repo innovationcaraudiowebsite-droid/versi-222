@@ -58,7 +58,7 @@ export function UserCard({
 
   const roleBadgeClass =
     role === 'admin'
-      ? 'bg-red-500/20 text-red-300'
+      ? 'bg-green-600/20 text-green-300'
       : role === 'editor'
         ? 'bg-emerald-500/20 text-emerald-300'
         : role === 'writer'
@@ -78,7 +78,7 @@ export function UserCard({
             aria-label="Menu user"
           >
             <div
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-red-700 text-xs font-bold text-white"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-green-600 to-green-700 text-xs font-bold text-white"
               aria-hidden
             >
               {initials}

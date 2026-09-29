@@ -183,7 +183,7 @@
 /* ------------------------------------------------------------------ */
 .prose :where(blockquote):not(:where([class~="not-prose"] *)) {
   border-left-width: 4px;
-  border-left-color: #f59e0b; /* amber-500 — brand color */
+  border-left-color: #467C45; /* amber-500 — brand color */
   border-radius: 0 0.25rem 0.25rem 0;
   background-color: rgb(254 252 232 / 0.5); /* amber-50/50 */
   padding: 0.75rem 1rem;
@@ -193,7 +193,7 @@
 .dark .prose :where(blockquote):not(:where([class~="not-prose"] *)) {
   background-color: rgb(120 53 15 / 0.15);
   color: rgb(253 230 138); /* amber-200 */
-  border-left-color: #f59e0b;
+  border-left-color: #467C45;
 }
 .prose :where(blockquote p):not(:where([class~="not-prose"] *)) {
   margin-top: 0.5rem;
