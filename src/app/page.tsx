@@ -1,7 +1,6 @@
 import { LandingHeader } from '@/components/landing/landing-header'
 import { Hero } from '@/components/landing/hero'
 import { About } from '@/components/landing/about'
-import { Education } from '@/components/landing/education'
 import { Packages } from '@/components/landing/packages'
 import { LatestArticles } from '@/components/landing/latest-articles'
 import { SectionDivider } from '@/components/landing/section-divider'
@@ -74,11 +73,7 @@ export default async function LandingPage() {
         <SectionDivider variant="line" />
         <Packages />
 
-        {/* Section 9: Paket Peredam (#peredam) */}
-        <SectionDivider variant="line" />
-        <Education />
-
-        {/* Section 10: Artikel Terbaru */}
+        {/* Section 9: Artikel Terbaru */}
         <SectionDivider variant="line" />
         <LatestArticles />
 
