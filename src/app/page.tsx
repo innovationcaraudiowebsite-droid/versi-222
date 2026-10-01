@@ -11,7 +11,6 @@ import {
   AwardsSection,
   VideoSection,
   RecommenderSection,
-  AreaServisSection,
   LokasiSection,
   FAQSection,
   TestimoniSection,
@@ -80,10 +79,7 @@ export default async function LandingPage() {
         {/* Section 11: Recommender (#recommender) */}
         <RecommenderSection />
 
-        {/* Section 12: Area Servis (#area-jabodetabek) */}
-        <AreaServisSection />
-
-        {/* Section 13: Testimoni (#testimoni) */}
+        {/* Section 12: Testimoni (#testimoni) */}
         <TestimoniSection />
 
         {/* Section 14: CTA */}
