@@ -81,7 +81,7 @@ const RIBBON_STYLES: Record<string, { bg: string; text: string; border: string }
     border: 'border-amber-300 dark:border-amber-800',
   },
   emerald: {
-    bg: 'bg-emerald-100 dark:bg-emerald-950',
+    bg: 'bg-gold/10 dark:bg-emerald-950',
     text: 'text-emerald-700 dark:text-emerald-300',
     border: 'border-emerald-300 dark:border-emerald-800',
   },
@@ -447,7 +447,7 @@ export default async function ProductDetailPage({
                   href={shareLinks.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-emerald-600 hover:underline"
+                  className="text-gold hover:underline"
                 >
                   WhatsApp
                 </a>
@@ -488,7 +488,7 @@ export default async function ProductDetailPage({
                   </div>
                   {variant.closingComponents.map((c, idx) => (
                     <div key={idx} className="flex items-start gap-2 text-sm sm:text-base text-foreground/90">
-                      <CheckCircle2 className="size-4 mt-0.5 shrink-0 text-emerald-500" />
+                      <CheckCircle2 className="size-4 mt-0.5 shrink-0 text-gold" />
                       <span>{c}</span>
                     </div>
                   ))}

@@ -367,7 +367,7 @@ export function VariantForm({ mode, product, initial }: VariantFormProps) {
                   ribbonColor === 'slate' ? 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-300 dark:border-slate-700' :
                   ribbonColor === 'blue' ? 'bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 border-blue-300 dark:border-blue-800' :
                   ribbonColor === 'amber' ? 'bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 border-amber-300 dark:border-amber-800' :
-                  ribbonColor === 'emerald' ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800' :
+                  ribbonColor === 'emerald' ? 'bg-gold/10 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800' :
                   'bg-slate-100 text-slate-700 border-slate-300'
                 }`}>
                   {ribbonLabel || 'BASIC'}
@@ -491,7 +491,7 @@ export function VariantForm({ mode, product, initial }: VariantFormProps) {
                     ribbonColor === 'slate' ? 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-300 dark:border-slate-700' :
                     ribbonColor === 'blue' ? 'bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 border-blue-300 dark:border-blue-800' :
                     ribbonColor === 'amber' ? 'bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 border-amber-300 dark:border-amber-800' :
-                    ribbonColor === 'emerald' ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800' :
+                    ribbonColor === 'emerald' ? 'bg-gold/10 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800' :
                     'bg-slate-100 text-slate-700 border-slate-300'
                   }`}>
                     {ribbonLabel || 'BASIC'}
@@ -624,7 +624,7 @@ export function VariantForm({ mode, product, initial }: VariantFormProps) {
             <div className="pt-4 border-t border-border">
               <div className="text-sm font-semibold text-foreground mb-3">Google Search Result Preview</div>
               <div className="rounded-lg border border-border bg-white p-4 shadow-sm">
-                <div className="text-xs text-green-700 truncate">https://peredammobiljakarta.com › produk › {slug}</div>
+                <div className="text-xs text-gold truncate">https://peredammobiljakarta.com › produk › {slug}</div>
                 <div className="text-lg text-blue-700 hover:underline cursor-pointer mt-0.5 truncate">
                   {seoTitle}
                 </div>

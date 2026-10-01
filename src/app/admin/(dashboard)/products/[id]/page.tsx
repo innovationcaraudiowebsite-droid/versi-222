@@ -103,7 +103,7 @@ export default async function AdminProductDetailPage({
                   <dt className="text-xs uppercase tracking-wide text-muted-foreground">Status</dt>
                   <dd className="mt-0.5">
                     {product.isActive ? (
-                      <span className="inline-flex items-center rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 text-xs font-semibold">
+                      <span className="inline-flex items-center rounded-full bg-gold/10 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 text-xs font-semibold">
                         Active
                       </span>
                     ) : (

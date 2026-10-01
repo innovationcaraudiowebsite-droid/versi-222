@@ -206,7 +206,7 @@ export function TabSeo({
   // Score color banding.
   const scoreColor =
     score >= 85
-      ? 'text-emerald-600 bg-emerald-50 border-emerald-200 dark:bg-emerald-900/20 dark:text-emerald-400 dark:border-emerald-800'
+      ? 'text-gold bg-emerald-50 border-emerald-200 dark:bg-emerald-900/20 dark:text-emerald-400 dark:border-emerald-800'
       : score >= 60
         ? 'text-red-600 bg-amber-50 border-amber-200 dark:bg-amber-900/20 dark:text-amber-400 dark:border-amber-800'
         : 'text-rose-600 bg-rose-50 border-rose-200 dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800'
@@ -233,7 +233,7 @@ export function TabSeo({
                 title={c.hint}
               >
                 {c.pass ? (
-                  <CheckCircle2 className="mt-0.5 size-3.5 shrink-0 text-emerald-500" />
+                  <CheckCircle2 className="mt-0.5 size-3.5 shrink-0 text-gold" />
                 ) : (
                   <XCircle className="mt-0.5 size-3.5 shrink-0 text-rose-500" />
                 )}

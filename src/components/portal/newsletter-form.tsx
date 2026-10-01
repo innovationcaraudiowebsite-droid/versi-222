@@ -78,7 +78,7 @@ export function NewsletterForm({
   if (variant === 'inline') {
     if (done) {
       return (
-        <div className="rounded-lg border border-emerald-500/40 bg-emerald-500/10 p-4 text-center">
+        <div className="rounded-lg border border-emerald-500/40 bg-gold/10 p-4 text-center">
           <p className="inline-flex items-center gap-2 text-sm font-medium text-emerald-700 dark:text-emerald-300">
             <CheckCircle2 className="size-4" />
             Terima kasih sudah berlangganan! Cek email Anda untuk konfirmasi.
@@ -120,7 +120,7 @@ export function NewsletterForm({
   if (variant === 'compact') {
     if (done) {
       return (
-        <div className="rounded-lg border border-emerald-500/40 bg-emerald-500/10 p-3 text-center">
+        <div className="rounded-lg border border-emerald-500/40 bg-gold/10 p-3 text-center">
           <p className="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-700 dark:text-emerald-300">
             <CheckCircle2 className="size-4" />
             Berlangganan berhasil. Terima kasih!
@@ -160,7 +160,7 @@ export function NewsletterForm({
       </h3>
       <p className="mt-1.5 text-sm text-muted-foreground">{subtext}</p>
       {done ? (
-        <div className="mt-4 rounded-lg border border-emerald-500/40 bg-emerald-500/10 p-3 text-center">
+        <div className="mt-4 rounded-lg border border-emerald-500/40 bg-gold/10 p-3 text-center">
           <p className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-700 dark:text-emerald-300">
             <CheckCircle2 className="size-4" />
             Terima kasih sudah berlangganan!

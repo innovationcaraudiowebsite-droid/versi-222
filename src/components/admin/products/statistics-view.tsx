@@ -164,7 +164,7 @@ export function StatisticsView({ products, variants }: StatisticsViewProps) {
       {/* Top products by variant count */}
       <div className="rounded-xl border border-border bg-card p-6">
         <div className="flex items-center gap-2 mb-4">
-          <TrendingUp className="size-4 text-emerald-500" />
+          <TrendingUp className="size-4 text-gold" />
           <h2 className="text-lg font-bold tracking-tight">Produk dengan Varian Terbanyak</h2>
         </div>
         {variantCountPerProduct.length === 0 ? (
@@ -253,7 +253,7 @@ function StatCard({ label, value, subtext, icon: Icon, color }: StatCardProps) {
   const colors = {
     amber: 'bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300',
     blue: 'bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300',
-    emerald: 'bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300',
+    emerald: 'bg-gold/10 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300',
     rose: 'bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300',
   }
   return (

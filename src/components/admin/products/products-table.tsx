@@ -175,7 +175,7 @@ export function ProductsTable({ products }: ProductsTableProps) {
                   <td className="px-4 py-3 text-center hidden md:table-cell text-muted-foreground">{p.sortOrder}</td>
                   <td className="px-4 py-3 text-center">
                     {p.isActive ? (
-                      <Badge variant="default" className="bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300 hover:bg-emerald-100">
+                      <Badge variant="default" className="bg-gold/10 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300 hover:bg-gold/10">
                         Active
                       </Badge>
                     ) : (

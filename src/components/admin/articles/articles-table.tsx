@@ -126,7 +126,7 @@ function categoryBadgeClass(color: string | null | undefined): string {
     case 'red':
       return 'bg-red-100 text-red-800 border-red-200 dark:bg-red-900/40 dark:text-red-200 dark:border-red-800'
     case 'emerald':
-      return 'bg-emerald-100 text-emerald-800 border-emerald-200 dark:bg-emerald-900/40 dark:text-emerald-200 dark:border-emerald-800'
+      return 'bg-gold/10 text-emerald-800 border-emerald-200 dark:bg-emerald-900/40 dark:text-emerald-200 dark:border-emerald-800'
     case 'slate':
       return 'bg-slate-200 text-slate-800 border-slate-300 dark:bg-slate-700/60 dark:text-slate-100 dark:border-slate-600'
     default:
@@ -137,7 +137,7 @@ function categoryBadgeClass(color: string | null | undefined): string {
 function statusBadgeClass(status: string): string {
   switch (status) {
     case 'PUBLISHED':
-      return 'bg-emerald-100 text-emerald-800 border-emerald-200 dark:bg-emerald-900/40 dark:text-emerald-200 dark:border-emerald-800'
+      return 'bg-gold/10 text-emerald-800 border-emerald-200 dark:bg-emerald-900/40 dark:text-emerald-200 dark:border-emerald-800'
     case 'DRAFT':
       return 'bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800/60 dark:text-slate-200 dark:border-slate-700'
     case 'ARCHIVED':

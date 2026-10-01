@@ -663,7 +663,7 @@ export function SubscribersTable({
                       </TableCell>
                       <TableCell>
                         {s.status === 'ACTIVE' ? (
-                          <Badge className="gap-1 border-emerald-500/40 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300">
+                          <Badge className="gap-1 border-emerald-500/40 bg-gold/10 text-emerald-700 dark:text-emerald-300">
                             <CheckCircle2 className="h-3 w-3" />
                             Active
                           </Badge>

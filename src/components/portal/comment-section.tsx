@@ -173,7 +173,7 @@ export function CommentSection({
           Email Anda tidak akan dipublikasikan. Komentar akan dimoderasi admin sebelum tampil.
         </p>
         {pendingNote && (
-          <div className="mb-4 rounded-lg border border-emerald-500/40 bg-emerald-500/10 p-3 text-sm font-medium text-emerald-700 dark:text-emerald-300">
+          <div className="mb-4 rounded-lg border border-emerald-500/40 bg-gold/10 p-3 text-sm font-medium text-emerald-700 dark:text-emerald-300">
             {pendingNote}
           </div>
         )}

@@ -95,7 +95,7 @@ export function SidebarContent({
           )}
           aria-label="Dashboard Admin"
         >
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-green-600 to-green-700 shadow-md ring-1 ring-green-300/40">
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-gold to-gold-dark shadow-md ring-1 ring-gold/40/40">
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -165,7 +165,7 @@ export function SidebarContent({
       {/* Quick action — Tambah Artikel + Tambah Produk */}
       {!isCollapsed ? (
         <div className="px-3 py-3 space-y-2">
-          <Button asChild className="w-full bg-green-600 text-white shadow-md hover:bg-green-700">
+          <Button asChild className="w-full bg-gold text-white shadow-md hover:bg-gold-dark">
             <Link href="/admin/articles/new" onClick={onNavigate}>
               <Plus className="h-4 w-4" />
               <span>Tambah Artikel</span>
@@ -185,7 +185,7 @@ export function SidebarContent({
               <Button
                 asChild
                 size="icon"
-                className="w-9 bg-green-600 text-white shadow-md hover:bg-green-700"
+                className="w-9 bg-gold text-white shadow-md hover:bg-gold-dark"
               >
                 <Link href="/admin/articles/new" onClick={onNavigate} aria-label="Tambah Artikel">
                   <Plus className="h-4 w-4" />

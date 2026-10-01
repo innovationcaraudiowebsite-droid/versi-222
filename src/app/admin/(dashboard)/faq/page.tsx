@@ -82,7 +82,7 @@ export default async function FaqPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-2xl font-bold tabular-nums text-emerald-600 dark:text-emerald-400">
+            <p className="text-2xl font-bold tabular-nums text-gold dark:text-emerald-400">
               {publishedCount}
             </p>
           </CardContent>

@@ -79,7 +79,7 @@ const RIBBON_STYLES: Record<string, { bg: string; text: string; border: string }
     border: 'border-amber-300 dark:border-amber-800',
   },
   emerald: {
-    bg: 'bg-emerald-100 dark:bg-emerald-950',
+    bg: 'bg-gold/10 dark:bg-emerald-950',
     text: 'text-emerald-700 dark:text-emerald-300',
     border: 'border-emerald-300 dark:border-emerald-800',
   },
@@ -362,7 +362,7 @@ export function ProductsList({ variants }: ProductsListProps) {
       {/* End state */}
       {isLastBatch && (
         <div className="mt-4 flex items-center justify-center gap-1.5 text-xs text-muted-foreground">
-          <CheckCircle2 className="size-3.5 text-emerald-500" />
+          <CheckCircle2 className="size-3.5 text-gold" />
           Sampai produk terakhir
         </div>
       )}

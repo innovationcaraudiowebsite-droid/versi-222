@@ -517,7 +517,7 @@ export function ArticleForm({
           </p>
         )}
         {state.title.trim().length >= 3 && (
-          <p className="text-xs text-emerald-600 dark:text-emerald-400">
+          <p className="text-xs text-gold dark:text-emerald-400">
             ✓ Judul valid ({state.title.trim().length} karakter)
           </p>
         )}

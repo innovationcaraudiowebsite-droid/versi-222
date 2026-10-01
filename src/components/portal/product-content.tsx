@@ -124,7 +124,7 @@ function SectionContent({ section }: { section: ProductVariantSection }) {
               className="flex items-start gap-2 text-sm sm:text-base text-foreground/90"
             >
               {isKeunggulan ? (
-                <Check className="mt-0.5 shrink-0 size-4 text-emerald-500" aria-hidden="true" />
+                <Check className="mt-0.5 shrink-0 size-4 text-gold" aria-hidden="true" />
               ) : (
                 <span className="mt-2 shrink-0 size-1.5 rounded-full bg-brand" aria-hidden="true" />
               )}

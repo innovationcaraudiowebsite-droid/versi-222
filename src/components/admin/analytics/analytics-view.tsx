@@ -106,7 +106,7 @@ function StatCard({
           <div className="mt-1 text-2xl font-bold text-foreground truncate">{value}</div>
           {change !== undefined && (
             <div className={`mt-0.5 text-xs flex items-center gap-1 ${
-              isNeutral ? 'text-muted-foreground' : isPositive ? 'text-emerald-600' : 'text-rose-600'
+              isNeutral ? 'text-muted-foreground' : isPositive ? 'text-gold' : 'text-rose-600'
             }`}>
               {!isNeutral && (isPositive ? '↑' : '↓')} {Math.abs(change)}% vs periode lalu
             </div>
@@ -229,7 +229,7 @@ export function OverviewDashboard({ range }: { range: string }) {
                 <Users className="size-4 text-muted-foreground" />
                 <span className="text-sm">New Subscribers</span>
               </div>
-              <span className="font-bold text-emerald-600">+{engagement?.newSubscribers || 0}</span>
+              <span className="font-bold text-gold">+{engagement?.newSubscribers || 0}</span>
             </div>
             <div className="flex items-center justify-between py-2 border-b border-border">
               <div className="flex items-center gap-2">
@@ -348,7 +348,7 @@ export function ProductsDashboard({ range }: { range: string }) {
                   <div className="text-xs text-muted-foreground">{p.variantName} · /produk/{p.slug}</div>
                 </td>
                 <td className="px-4 py-3 text-center font-semibold">{p.views}</td>
-                <td className="px-4 py-3 text-center font-semibold text-emerald-600">{p.waClicks}</td>
+                <td className="px-4 py-3 text-center font-semibold text-gold">{p.waClicks}</td>
                 <td className="px-4 py-3 text-right text-muted-foreground">
                   {p.views > 0 ? `${((p.waClicks / p.views) * 100).toFixed(1)}%` : '—'}
                 </td>
@@ -495,15 +495,15 @@ export function EngagementDashboard({ range }: { range: string }) {
             </div>
             <div className="flex items-center justify-between py-3 border-b border-border">
               <div className="flex items-center gap-3">
-                <div className="rounded-md bg-emerald-100 dark:bg-emerald-950 p-2">
-                  <Users className="size-4 text-emerald-600 dark:text-emerald-400" />
+                <div className="rounded-md bg-gold/10 dark:bg-emerald-950 p-2">
+                  <Users className="size-4 text-gold dark:text-emerald-400" />
                 </div>
                 <div>
                   <div className="text-sm font-medium">New Subscribers</div>
                   <div className="text-xs text-muted-foreground">Periode {range}</div>
                 </div>
               </div>
-              <span className="text-xl font-bold text-emerald-600">+{data.newSubscribers}</span>
+              <span className="text-xl font-bold text-gold">+{data.newSubscribers}</span>
             </div>
             <div className="flex items-center justify-between py-3 border-b border-border">
               <div className="flex items-center gap-3">

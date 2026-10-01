@@ -32,13 +32,13 @@ export function LandingFooter() {
           <div className="space-y-3">
             <h4 className="text-sm font-semibold text-white uppercase tracking-wide">Layanan</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/#paket" className="text-slate-400 hover:text-green-500 transition-colors">Paket Audio Mobil</a></li>
-              <li><a href="/#edukasi" className="text-slate-400 hover:text-green-500 transition-colors">Jenis Bahan Peredam</a></li>
-              <li><a href="/produk/simple-upgrade-basic" className="text-slate-400 hover:text-green-500 transition-colors">Simple Upgrade</a></li>
-              <li><a href="/produk/entry-2way-sub-bawah-jok-basic" className="text-slate-400 hover:text-green-500 transition-colors">Entry Package</a></li>
-              <li><a href="/produk/daily-use-2way-sub-bawah-jok-basic" className="text-slate-400 hover:text-green-500 transition-colors">Daily Use</a></li>
-              <li><a href="/produk/affordable-high-end-2way-sub-bawah-jok-basic" className="text-slate-400 hover:text-green-500 transition-colors">Affordable High End</a></li>
-              <li><a href="/#artikel" className="text-slate-400 hover:text-green-500 transition-colors">Artikel & Tips</a></li>
+              <li><a href="/#paket" className="text-slate-400 hover:text-gold transition-colors">Paket Audio Mobil</a></li>
+              <li><a href="/#edukasi" className="text-slate-400 hover:text-gold transition-colors">Jenis Bahan Peredam</a></li>
+              <li><a href="/produk/simple-upgrade-basic" className="text-slate-400 hover:text-gold transition-colors">Simple Upgrade</a></li>
+              <li><a href="/produk/entry-2way-sub-bawah-jok-basic" className="text-slate-400 hover:text-gold transition-colors">Entry Package</a></li>
+              <li><a href="/produk/daily-use-2way-sub-bawah-jok-basic" className="text-slate-400 hover:text-gold transition-colors">Daily Use</a></li>
+              <li><a href="/produk/affordable-high-end-2way-sub-bawah-jok-basic" className="text-slate-400 hover:text-gold transition-colors">Affordable High End</a></li>
+              <li><a href="/#artikel" className="text-slate-400 hover:text-gold transition-colors">Artikel & Tips</a></li>
             </ul>
           </div>
 
@@ -47,20 +47,20 @@ export function LandingFooter() {
             <h4 className="text-sm font-semibold text-white uppercase tracking-wide">Kontak</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <MapPin className="size-4 text-green-500 shrink-0 mt-0.5" />
+                <MapPin className="size-4 text-gold shrink-0 mt-0.5" />
                 <span className="text-slate-400">Jl. Taman Surya Blvd 3 Blok H1 No.9, Kalideres, Jakarta Barat 11830</span>
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="size-4 text-green-500 shrink-0" />
-                <a href="tel:081295952279" className="text-slate-400 hover:text-green-500 transition-colors">0812-9595-2279</a>
+                <Phone className="size-4 text-gold shrink-0" />
+                <a href="tel:081295952279" className="text-slate-400 hover:text-gold transition-colors">0812-9595-2279</a>
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="size-4 text-green-500 shrink-0" />
-                <a href="tel:082211222989" className="text-slate-400 hover:text-green-500 transition-colors">0822-1122-2989</a>
+                <Phone className="size-4 text-gold shrink-0" />
+                <a href="tel:082211222989" className="text-slate-400 hover:text-gold transition-colors">0822-1122-2989</a>
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="size-4 text-green-500 shrink-0" />
-                <a href="mailto:innovationcaraudio@gmail.com" className="text-slate-400 hover:text-green-500 transition-colors">innovationcaraudio@gmail.com</a>
+                <Mail className="size-4 text-gold shrink-0" />
+                <a href="mailto:innovationcaraudio@gmail.com" className="text-slate-400 hover:text-gold transition-colors">innovationcaraudio@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ export function LandingFooter() {
                 href="https://www.instagram.com/innovationcar_audio/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center size-10 rounded-lg bg-slate-800 hover:bg-green-600 transition-colors"
+                className="flex items-center justify-center size-10 rounded-lg bg-slate-800 hover:bg-gold transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="size-5 text-slate-300" />
@@ -82,7 +82,7 @@ export function LandingFooter() {
                 href="https://www.facebook.com/Innovationcaraudiojakartabarat/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center size-10 rounded-lg bg-slate-800 hover:bg-green-600 transition-colors"
+                className="flex items-center justify-center size-10 rounded-lg bg-slate-800 hover:bg-gold transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="size-5 text-slate-300" />
@@ -91,7 +91,7 @@ export function LandingFooter() {
                 href="https://www.youtube.com/@innovationcaraudio"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center size-10 rounded-lg bg-slate-800 hover:bg-green-600 transition-colors"
+                className="flex items-center justify-center size-10 rounded-lg bg-slate-800 hover:bg-gold transition-colors"
                 aria-label="YouTube"
               >
                 <Youtube className="size-5 text-slate-300" />

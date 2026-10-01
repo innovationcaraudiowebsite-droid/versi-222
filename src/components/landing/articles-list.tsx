@@ -281,7 +281,7 @@ export function ArticlesList({ articles }: ArticlesListProps) {
       {/* End state — sudah sampai artikel terakhir */}
       {isLastBatch && (
         <div className="mt-4 flex items-center justify-center gap-1.5 text-xs text-muted-foreground">
-          <CheckCircle2 className="size-3.5 text-emerald-500" />
+          <CheckCircle2 className="size-3.5 text-gold" />
           Sampai artikel terakhir
         </div>
       )}

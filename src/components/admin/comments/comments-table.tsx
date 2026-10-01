@@ -110,7 +110,7 @@ const STATUS_BADGE: Record<
     icon: AlertCircle,
   },
   APPROVED: {
-    className: 'border-emerald-500/40 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300',
+    className: 'border-emerald-500/40 bg-gold/10 text-emerald-700 dark:text-emerald-300',
     label: 'Approved',
     icon: CheckCircle2,
   },
@@ -350,7 +350,7 @@ function RowActions({
         onClick={() => moderate('APPROVED')}
         disabled={isLoading}
         title="Approve komentar"
-        className="h-8 w-8 p-0 text-emerald-600 hover:bg-emerald-500/10 hover:text-emerald-700 dark:text-emerald-400"
+        className="h-8 w-8 p-0 text-gold hover:bg-gold/10 hover:text-emerald-700 dark:text-emerald-400"
       >
         {busy === 'APPROVED' ? (
           <Loader2 className="h-4 w-4 animate-spin" />

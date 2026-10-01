@@ -47,7 +47,7 @@ export function AdminShell({
           : 'User'
   const roleBadgeClass =
     role === 'admin'
-      ? 'bg-green-600 text-white'
+      ? 'bg-gold text-white'
       : role === 'editor'
         ? 'bg-emerald-500 text-white'
         : role === 'writer'
@@ -165,7 +165,7 @@ function SidebarAwareMain({
           <div className="flex items-center gap-1 sm:gap-2">
             <NotificationBell pendingCount={pendingCommentsCount} />
             <div
-              className="hidden h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-green-600 to-green-700 text-xs font-bold text-white sm:flex"
+              className="hidden h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold to-gold-dark text-xs font-bold text-white sm:flex"
               aria-hidden
             >
               {initials}

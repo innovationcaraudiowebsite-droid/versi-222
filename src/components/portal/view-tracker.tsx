@@ -122,7 +122,7 @@ export function ShareButtons({
         onClick={copyLink}
         className={`inline-flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${
           copied
-            ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300'
+            ? 'border-gold/40 bg-gold/10 text-emerald-700 dark:text-emerald-300'
             : 'border-border bg-background hover:bg-muted'
         }`}
         aria-label="Salin link"

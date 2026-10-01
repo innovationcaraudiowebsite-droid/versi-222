@@ -56,7 +56,7 @@ export default async function ProductsPage() {
         </div>
         <div className="rounded-lg border bg-card p-3">
           <div className="text-xs text-muted-foreground">Aktif</div>
-          <div className="mt-1 text-2xl font-bold text-emerald-600">
+          <div className="mt-1 text-2xl font-bold text-gold">
             {products.filter((p: any) => p.isActive).length}
           </div>
         </div>

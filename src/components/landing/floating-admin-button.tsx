@@ -72,7 +72,7 @@ export function FloatingAdminButton() {
     >
       {/* Tooltip label (hover di desktop) */}
       <span className="hidden sm:flex items-center gap-1.5 rounded-full bg-card border border-border px-3 py-1.5 text-xs font-medium text-foreground shadow-md">
-        <WhatsAppIcon className="size-3.5 text-emerald-600" />
+        <WhatsAppIcon className="size-3.5 text-gold" />
         Chat WA: {WA_DISPLAY}
       </span>
 
