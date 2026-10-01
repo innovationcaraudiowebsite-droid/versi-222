@@ -1,4 +1,4 @@
-import { Trophy, Award, Star, MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube, PlayCircle, HelpCircle, ChevronDown } from 'lucide-react'
+import { Trophy, Award, Star, MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube, PlayCircle, Play, HelpCircle, ChevronDown } from 'lucide-react'
 
 // ============================================================
 // Section: Brand Partners (#partners)
@@ -111,27 +111,87 @@ export function AwardsSection() {
 // Section: Video Showcase (#video)
 // ============================================================
 export function VideoSection() {
+  const slides = [
+    { src: '/gallery/slide-1.png', alt: 'Instalasi Audio Mobil 1' },
+    { src: '/gallery/slide-2.png', alt: 'Instalasi Audio Mobil 2' },
+    { src: '/gallery/slide-3.png', alt: 'Instalasi Audio Mobil 3' },
+    { src: '/gallery/slide-4.png', alt: 'Instalasi Audio Mobil 4' },
+  ]
+  const bawahslides = [
+    { src: '/gallery/bawahslide-1.png', alt: 'Dokumentasi workshop Innovation Car Audio 1' },
+    { src: '/gallery/bawahslide-2.png', alt: 'Dokumentasi workshop Innovation Car Audio 2' },
+    { src: '/gallery/bawahslide-3.png', alt: 'Dokumentasi workshop Innovation Car Audio 3' },
+    { src: '/gallery/bawahslide-4.png', alt: 'Dokumentasi workshop Innovation Car Audio 4' },
+    { src: '/gallery/bawahslide-5.png', alt: 'Dokumentasi workshop Innovation Car Audio 5' },
+  ]
   return (
-    <section id="video" className="bg-muted/30 py-12 sm:py-16">
-      <div className="container mx-auto max-w-5xl px-4 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-2" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
-          Galeri Instalasi & Workshop
-        </h2>
-        <p className="text-sm text-muted-foreground mb-8">
-          Lihat proses instalasi audio mobil & peredam suara di workshop kami
-        </p>
-        <div className="relative aspect-video rounded-xl overflow-hidden border border-border bg-card">
-          <a
-            href="https://www.youtube.com/@innovationcaraudio"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gold/20 to-gold-dark/40 hover:from-gold/30 hover:to-gold-dark/50 transition-colors"
-          >
-            <div className="flex flex-col items-center gap-3">
-              <PlayCircle className="size-16 text-white/80 hover:text-white transition-colors" />
-              <span className="text-white font-medium text-sm">Kunjungi Channel YouTube Kami</span>
+    <section id="video" className="py-16 bg-background border-t border-gold/10">
+      <div className="container mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-[10px] uppercase tracking-wider text-gold mb-4">
+            <PlayCircle className="h-3 w-3" />
+            Video Gallery
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
+            Workshop <span className="bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent">Documentation</span>
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm">
+            Galeri dokumentasi instalasi &amp; testimoni pelanggan Innovation Car Audio.
+          </p>
+        </div>
+
+        {/* 4 Slide images — grid 2x2 (md:4 cols) with play button */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-6">
+          {slides.map((slide, i) => (
+            <button
+              key={i}
+              type="button"
+              className="group relative aspect-video overflow-hidden rounded-lg border border-gold/20 bg-card/40"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={slide.src}
+                alt={slide.alt}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              />
+              {/* Dark gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              {/* Play button */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/90 group-hover:bg-gold transition-all group-hover:scale-110">
+                  <Play className="h-5 w-5 fill-black text-black" />
+                </div>
+              </div>
+              {/* Label */}
+              <div className="absolute bottom-2 left-3 right-3 text-left">
+                <div className="text-xs font-semibold text-white">{slide.alt}</div>
+              </div>
+            </button>
+          ))}
+        </div>
+
+        {/* 5 Bawahslide images — grid (md:5 cols) */}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-5xl mx-auto">
+          {bawahslides.map((slide, i) => (
+            <div
+              key={i}
+              className="group relative aspect-square overflow-hidden rounded-lg border border-gold/10 bg-card/40"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={slide.src}
+                alt={slide.alt}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute bottom-2 left-2 right-2 text-left">
+                <div className="text-[10px] text-white/80">{slide.alt.replace('Dokumentasi workshop Innovation Car Audio ', 'Dokumentasi ')}</div>
+              </div>
             </div>
-          </a>
+          ))}
         </div>
       </div>
     </section>
