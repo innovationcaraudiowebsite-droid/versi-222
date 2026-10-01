@@ -111,6 +111,7 @@ export function AwardsSection() {
 // Section: Video Showcase (#video)
 // ============================================================
 export function VideoSection() {
+  const ytChannel = 'https://www.youtube.com/@innovationcar_audio/videos'
   const slides = [
     { src: '/gallery/slide-1.png', alt: 'Instalasi Audio Mobil 1' },
     { src: '/gallery/slide-2.png', alt: 'Instalasi Audio Mobil 2' },
@@ -139,15 +140,26 @@ export function VideoSection() {
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm">
             Galeri dokumentasi instalasi &amp; testimoni pelanggan Innovation Car Audio.
           </p>
+          <a
+            href={ytChannel}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 mt-3 text-xs font-medium text-gold hover:text-gold-light transition-colors"
+          >
+            <Youtube className="size-4" />
+            Lihat semua video di YouTube
+          </a>
         </div>
 
-        {/* 4 Slide images — grid 2x2 (md:4 cols) with play button */}
+        {/* 4 Slide images — grid 2x2 (md:4 cols) with play button, clickable to YouTube */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-6">
           {slides.map((slide, i) => (
-            <button
+            <a
               key={i}
-              type="button"
-              className="group relative aspect-video overflow-hidden rounded-lg border border-gold/20 bg-card/40"
+              href={ytChannel}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative aspect-video overflow-hidden rounded-lg border border-gold/20 bg-card/40 cursor-pointer"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -160,7 +172,7 @@ export function VideoSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               {/* Play button */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/90 group-hover:bg-gold transition-all group-hover:scale-110">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/90 group-hover:bg-gold transition-all group-hover:scale-110 shadow-lg">
                   <Play className="h-5 w-5 fill-black text-black" />
                 </div>
               </div>
@@ -168,16 +180,19 @@ export function VideoSection() {
               <div className="absolute bottom-2 left-3 right-3 text-left">
                 <div className="text-xs font-semibold text-white">{slide.alt}</div>
               </div>
-            </button>
+            </a>
           ))}
         </div>
 
         {/* 5 Bawahslide images — grid (md:5 cols) */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-5xl mx-auto">
           {bawahslides.map((slide, i) => (
-            <div
+            <a
               key={i}
-              className="group relative aspect-square overflow-hidden rounded-lg border border-gold/10 bg-card/40"
+              href={ytChannel}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative aspect-square overflow-hidden rounded-lg border border-gold/10 bg-card/40 cursor-pointer"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -190,7 +205,7 @@ export function VideoSection() {
               <div className="absolute bottom-2 left-2 right-2 text-left">
                 <div className="text-[10px] text-white/80">{slide.alt.replace('Dokumentasi workshop Innovation Car Audio ', 'Dokumentasi ')}</div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
