@@ -1654,3 +1654,28 @@ Scripts:
 Next:
 - Commit & push ke GitHub untuk Vercel auto-deploy.
 - Untuk 10 brand yang masih AI text logos, bisa coba lagi nanti kalau website mereka online (atau cari di distributor car audio Indonesia yang jual brand itu).
+
+---
+Task ID: BRAND-LOGOS-GZ-GOLDHORN
+Agent: main (Z.ai Code)
+Task: User kasih 2 URL: ground-zero-audio.com/en/ (GZ) & goldhornaudio.com/product/dsp-amplifier/dspa810prov2.0.html (Goldhorn). Cari logo asli dari site ini.
+
+Work Log:
+- Ground Zero: fetch https://www.ground-zero-audio.com/en/ (HTTP 200, 723KB HTML).
+    Dapat: <img class="custom-logo" src=".../wp-content/uploads/2022/03/logo_groundzero1.png" alt="Ground Zero Audio" width="320" height="66">. Full size 420x86 PNG RGBA.
+    Download, optimize: 400x81 centered on 400x200 canvas, P16 mode, 4013 bytes, 11 colors.
+- Goldhorn: fetch https://www.goldhornaudio.com/ (HTTP 200, 41KB HTML, title "GOLDHORN -- Goldhorn DSD | Goldhorn DSP | audio sound").
+    Dapat: <img src=".../zb_users/upload/2023/07/202307261690330224552718.png" alt="Goldhorn Electronic"> (211x80 PNG RGBA).
+    Download, optimize: 400x75 centered on 400x200 canvas, P32 mode, 2325 bytes, 16 colors.
+- Emphaser: user juga kasih URL emphaser.com/en/product-category/lautsprecher/. Sudah dicek, logo di emphaser.com adalah SVG yang sama (logo.svg) — sudah ada di commit sebelumnya, tidak perlu update.
+- Regenerate contact sheet.
+- VLM verification (glm-5v-turbo):
+    * GOLDHORN: ✓ real — "GOLDHORN" bold black, 'O' stylized merah (horn icon).
+    * EMPHASER: ✓ real — bold "EM·PHASER" dengan interpunct.
+    * GROUND ZERO: ✓ real — "GROUND ZERO" + "GERMAN ENGINEERING" red italic tagline.
+
+Stage Summary:
+- 7/17 brand logos REAL terverifikasi: HARMAN, CRESCENDO, EMPHASER, FLUX, BLAM, GROUND ZERO, GOLDHORN.
+- ETON real tapi minimalis (VLM flagged sebagai text).
+- 9/17 masih AI text: infinity, rainbow, phd, gran-turismo, silent-coat, recoil, reverb, zevox, dl-audio-lab (parked/Cloudflare-blocked/Coming Soon).
+- Total size semua logo: ~22KB (vs original 956KB, -98%).
