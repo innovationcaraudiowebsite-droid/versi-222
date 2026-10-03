@@ -1611,3 +1611,46 @@ Stage Summary:
 - backup-sqlite.json juga punya 4 products (fallback kalau Supabase down).
 - .env dengan credentials TIDAK ter-commit (gitignored).
 - Push ke GitHub → Vercel auto-deploy.
+
+---
+Task ID: BRAND-LOGOS-FETCH
+Agent: main (Z.ai Code)
+Task: User minta cari logo brand yang BENAR dari website resmi masing-masing brand (17 brand). Sebelumnya semua logo adalah AI-generated text logos (400x200, ~63KB total).
+
+Work Log:
+- Cek existing logos: 17 PNG, semua 400x200 RGBA, semua ukuran sama → AI-generated text logos.
+- Image-search skill: FAIL (400 Bad Request dari upstream API).
+- Web-search skill: FAIL (429 / upstream API error).
+- Strategi: fetch HTML via curl/requests (SSL verify off), parse pakai BeautifulSoup, cari img dengan "logo" di src/alt/class. Filter social icons, favicons, WIX default placeholder.
+- Tulis scripts/fetch-brand-logos.py: fetch 17 brand websites, extract logo URLs, download (SVG → rasterize via cairosvg), optimize (autocrop + resize + palette mode).
+- Run pertama: 9/17 brands berhasil fetch logo (harman, blam, crescendo, eton, emphaser, flux, zevox, gran-turismo, dl-audio-lab). TAPI 4 di antaranya WRONG:
+    - blam: dapat favicon 300x300 (bukan logo utama)
+    - zevox: dapat WIX default placeholder
+    - gran-turismo: dapat logo racing game gran-turismo.com (BUKAN brand audio!)
+    - dl-audio-lab: dapat WIX favicon (site expired)
+- Restore 4 wrong logos dari git (HEAD): blam, zevox, gran-turismo, dl-audio-lab → kembali ke AI text logos.
+- Untuk 8 brands yang masih gagal, coba berbagai approach:
+    - agent-browser: infinitykappa.com (parked ParkLogic), rainbow-audio.de (Cloudflare), phdaudio.com (parked HugeDomains), groundzeroaudio.de (HTTP 500), goldhorn.com.cn (empty page), silentcoat.com (parked GoDaddy), recoilaudio.com (Cloudflare stuck), reverbaudio.com (Coming Soon, no logo).
+    - Wikipedia REST API: hanya Harman International punya logo di Wikipedia.
+- Re-attempt BLAM logo: scrape ulang HTML, temukan img class="default-logo" dengan URL https://www.blam-audio.com/wp-content/uploads/2024/11/Image_20241105125637.png (1352x1031 PNG). Download, optimize → 1.7KB P4 (2 unique colors: white text on transparent). ✓
+- Re-attempt ZEVOX logo via agent-browser JS render: page pakai lazy-loaded img dari CDN https://s.zkcdn.net/Advertisers/a85cbbf7d83b4f62af76af6625e13e90.svg (132x20). Download, rasterize via cairosvg (800x120), optimize → 1.7KB P8 (2 unique colors: black text on transparent). ✓
+- Optimization aggressive: P4/P8 palette mode + autocrop transparent borders + resize to fit 400x200 preserving aspect + center on canvas. Total semua logo: 18.1KB (vs sebelumnya 63KB AI-generated text, vs original 956KB).
+- Generate contact sheet: /home/z/my-project/download/brand-logos-contact-sheet.png (1920x980, 17 logos grid 4x5).
+
+Stage Summary:
+- 7/17 brand logos REAL dari official websites: harman, eton, crescendo, emphaser, flux, blam, zevox.
+- 10/17 brand logos masih AI text (preserved dari commit sebelumnya, brand-accurate text + color): infinity, rainbow, gz, phd, goldhorn, silent-coat, recoil, reverb, gran-turismo, dl-audio-lab.
+- Alasan 10 brand gagal fetch: website parked (3), Cloudflare-blocked (2), Coming Soon (1), DNS/server error (3), wrong site (1).
+- Total size: 18.1KB (vs target 63KB, -71% lebih kecil, -98% dari original 956KB).
+- Format: semua PNG 400x200, palette mode (P4/P8), transparent background, brand colors preserved.
+- Contact sheet: /home/z/my-project/download/brand-logos-contact-sheet.png untuk visual review.
+
+Scripts:
+- /home/z/my-project/scripts/fetch-brand-logos.py — script utama fetch + extract + download + optimize.
+- /home/z/my-project/scripts/fetch-logos-agent-browser.py — fallback pakai agent-browser untuk JS-rendered sites.
+- /home/z/my-project/scripts/optimize-logos-v2.py — re-optimize semua logo ke palette mode (P4/P8) untuk size minimum.
+- /home/z/my-project/scripts/contact-sheet.py — generate contact sheet PNG.
+
+Next:
+- Commit & push ke GitHub untuk Vercel auto-deploy.
+- Untuk 10 brand yang masih AI text logos, bisa coba lagi nanti kalau website mereka online (atau cari di distributor car audio Indonesia yang jual brand itu).
