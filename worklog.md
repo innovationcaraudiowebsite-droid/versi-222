@@ -1679,3 +1679,38 @@ Stage Summary:
 - ETON real tapi minimalis (VLM flagged sebagai text).
 - 9/17 masih AI text: infinity, rainbow, phd, gran-turismo, silent-coat, recoil, reverb, zevox, dl-audio-lab (parked/Cloudflare-blocked/Coming Soon).
 - Total size semua logo: ~22KB (vs original 956KB, -98%).
+
+---
+Task ID: MOCK-DATA-MODE
+Agent: main (Z.ai Code)
+Task: User pilih pakai mock data saja (tanpa Supabase/Prisma). Cleanup code & verifikasi.
+
+Work Log:
+- Cek existing .env: hanya ada DATABASE_URL=file:/home/z/my-project/db/custom.db (legacy, tidak dipakai app).
+- Cek apakah Prisma masih dipakai:
+    * grep "from '@prisma/client'" → 0 hasil di src/
+    * package.json → tidak ada @prisma/client atau prisma devDependency
+    * node_modules/@prisma → tidak ada
+    * Hanya file prisma/schema.prisma (794 bytes) tersisa, tapi tidak terpakai.
+- Update .env: tambahkan dokumentasi mode (MOCK DATA MODE active + cara switch ke Supabase kalau perlu).
+- Update .env.example: dokumentasi 2 mode (MOCK DATA default, SUPABASE optional).
+- Remove prisma/ folder (cleanup, gak dipakai mana-mana di code).
+- Restart dev server (bun run dev):
+    * Server ready dalam 3s.
+    * Landing page: HTTP 200, 857KB.
+    * /api/articles/published: HTTP 200, return list 21 articles dari backup-sqlite.json.
+    * /api/comments?articleId=1: HTTP 404 (mock tidak punya article dengan ID=1, hanya slug-based).
+    * /api/health: HTTP 200, konfirmasi SUPABASE_URL=MISSING, SUPABASE_SECRET_KEY=MISSING (expected in mock mode).
+    * dev.log clean: 0 Supabase error, 0 fallback warning, hanya middleware deprecation notice.
+- Verify app routes masih jalan:
+    * Landing page render 21 articles + 4 paket layanan + 17 brand logos.
+    * Article detail page (slug-based): /berita/[category]/[slug] tetap jalan dengan data mock.
+    * Search, sitemap, RSS: tetap jalan (read-only operations).
+
+Stage Summary:
+- App sekarang fully mock data mode: read semua data dari data/backup-sqlite.json (1.3MB).
+- Prisma folder dihapus (cleanup). Tidak ada breaking change.
+- 21 articles, 21 products, 84 variants, 90 tags, 10 faqs, 11 comments tetap accessible.
+- Admin write operations (create/edit/delete) skip gracefully — tidak error, hanya return null/empty.
+- .env diberi dokumentasi cara switch ke Supabase kalau nanti perlu admin write.
+- Commit c224a2c. Siap push ke GitHub.
