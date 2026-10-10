@@ -2,7 +2,8 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import { Menu, X, Home as HomeIcon } from 'lucide-react'
+import { usePathname } from 'next/navigation'
+import { Menu, X } from 'lucide-react'
 import {
   Sheet,
   SheetContent,
@@ -24,24 +25,31 @@ import { ICALogo } from '@/components/landing/ica-logo'
  * floating WA button di pojok kanan bawah (mencegah dobel CTA).
  */
 
-type NavLink = { href: string; label: string; isAnchor?: boolean }
+type NavLink = { anchor: string; label: string }
 
+// Hanya anchor (e.g. '#about') — full href di-resolve dinamis di komponen
+// berdasarkan pathname. Kalau di homepage → '#about' (smooth scroll).
+// Kalau di page lain (e.g. /produk/x) → '/#about' (route ke home dulu).
 const NAV_LINKS: NavLink[] = [
-  { href: '#about', label: 'About', isAnchor: true },
-  { href: '#awards', label: 'Award', isAnchor: true },
-  { href: '#why-us', label: 'Why Us', isAnchor: true },
-  { href: '#paket-audio', label: 'Paket Audio', isAnchor: true },
-  { href: '#peredam', label: 'Paket Peredam', isAnchor: true },
-  { href: '#video', label: 'Video', isAnchor: true },
-  { href: '#recommender', label: 'Recommender', isAnchor: true },
-  { href: '#area-jabodetabek', label: 'Area Servis', isAnchor: true },
-  { href: '#lokasi', label: 'Kontak', isAnchor: true },
-  { href: '#faq', label: 'FAQ', isAnchor: true },
+  { anchor: 'about', label: 'About' },
+  { anchor: 'awards', label: 'Award' },
+  { anchor: 'why-us', label: 'Why Us' },
+  { anchor: 'paket-audio', label: 'Paket Audio' },
+  { anchor: 'peredam', label: 'Paket Peredam' },
+  { anchor: 'video', label: 'Video' },
+  { anchor: 'recommender', label: 'Recommender' },
+  { anchor: 'area-jabodetabek', label: 'Area Servis' },
+  { anchor: 'lokasi', label: 'Kontak' },
+  { anchor: 'faq', label: 'FAQ' },
 ]
 
 export function LandingHeader() {
   const [mobileOpen, setMobileOpen] = React.useState(false)
   const [scrolled, setScrolled] = React.useState(false)
+  const pathname = usePathname()
+  // Kalau bukan di homepage, navbar link harus route ke '/' dulu baru scroll.
+  // usePathname() return path tanpa hash, jadi bandingkan dengan '/'.
+  const isHome = pathname === '/'
 
   React.useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8)
@@ -83,25 +91,19 @@ export function LandingHeader() {
               </div>
               <nav className="px-2 py-2">
                 {NAV_LINKS.map((l) => {
-                  const isExternal = !l.isAnchor
+                  // Di homepage: href='#about' (smooth scroll).
+                  // Di page lain: href='/?#about' → route ke / dulu, lalu scroll.
+                  // Next.js Link akan handle navigation + browser scroll ke hash.
+                  const href = isHome ? `#${l.anchor}` : `/#${l.anchor}`
                   return (
                     <Link
-                      key={l.href}
-                      href={l.href}
+                      key={l.anchor}
+                      href={href}
                       onClick={() => setMobileOpen(false)}
                       className="flex items-center gap-2 rounded-md px-3 py-2.5 text-sm font-medium hover:bg-muted transition-colors"
                     >
-                      {l.href === '#hero' ? (
-                        <HomeIcon className="size-4" />
-                      ) : (
-                        <span className="size-1.5 rounded-full bg-muted-foreground/40" />
-                      )}
+                      <span className="size-1.5 rounded-full bg-muted-foreground/40" />
                       {l.label}
-                      {isExternal && (
-                        <span className="ml-auto text-[10px] uppercase tracking-wide text-muted-foreground">
-                          /
-                        </span>
-                      )}
                     </Link>
                   )
                 })}
@@ -138,17 +140,20 @@ export function LandingHeader() {
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-1 ml-4">
-            {NAV_LINKS.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className={cn(
-                  'relative px-3 py-1.5 text-sm font-medium rounded-md transition-colors hover:bg-muted hover:text-brand text-foreground/80',
-                )}
-              >
-                {l.label}
-              </Link>
-            ))}
+            {NAV_LINKS.map((l) => {
+              const href = isHome ? `#${l.anchor}` : `/#${l.anchor}`
+              return (
+                <Link
+                  key={l.anchor}
+                  href={href}
+                  className={cn(
+                    'relative px-3 py-1.5 text-sm font-medium rounded-md transition-colors hover:bg-muted hover:text-brand text-foreground/80',
+                  )}
+                >
+                  {l.label}
+                </Link>
+              )
+            })}
           </nav>
 
           {/* Right side — hanya ThemeToggle.
