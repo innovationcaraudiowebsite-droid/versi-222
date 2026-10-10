@@ -476,8 +476,10 @@ export default async function ProductDetailPage({
           )}
 
           {/* === CLOSING SECTION === */}
+          {/* Padding & border match ProductContent accordion (px-4 sm:px-6 + border)
+                so H2 here aligns perfectly with H2 in the sections above. */}
           {variant.closingTagline && (
-            <div className="mt-12 sm:mt-16 max-w-3xl mx-auto p-6 sm:p-8 rounded-xl border-2 border-brand/30 bg-brand/5">
+            <div className="mt-12 sm:mt-16 max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-8 rounded-xl border border-brand/40 bg-brand/5">
               <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground">
                 {variant.closingTagline}
               </h2>
