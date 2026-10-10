@@ -1731,7 +1731,11 @@ Work Log:
     * 3110cf8..a6f9e74 main -> main ✓ SUKSES
 - Verify both remotes have latest commit: a6f9e74 (HEAD).
 - CLEANUP: hapus ~/.git-credentials + unset credential.helper.
+<<<<<<< Updated upstream
 - Token PAT yang dipakai: [REDACTED].
+=======
+- Token PAT yang dipakai: [REDACTED — removed to bypass GitHub Push Protection].
+>>>>>>> Stashed changes
   USER WAJIB REVOKE token ini di https://github.com/settings/tokens karena sudah ter-expose di chat.
 
 Stage Summary:
