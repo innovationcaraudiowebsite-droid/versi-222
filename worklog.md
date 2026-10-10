@@ -1714,3 +1714,30 @@ Stage Summary:
 - Admin write operations (create/edit/delete) skip gracefully — tidak error, hanya return null/empty.
 - .env diberi dokumentasi cara switch ke Supabase kalau nanti perlu admin write.
 - Commit c224a2c. Siap push ke GitHub.
+
+---
+Task ID: PUSH-GITHUB-MOCK-MODE
+Agent: main (Z.ai Code)
+Task: User share GitHub PAT untuk push semua commits mock data mode ke GitHub.
+
+Work Log:
+- Setup temporary credential helper: git config --global credential.helper store
+- Store PAT ke ~/.git-credentials (chmod 600, akan dihapus setelah push).
+- Push ke versi222 remote:
+    * 112d2f4..a6f9e74 main -> main ✓ SUKSES
+    * 8 commits pushed.
+- Add origin remote: https://github.com/innovationcaraudiowebsite-droid/peredammobil.git
+- Push ke origin (peredammobil) remote:
+    * 3110cf8..a6f9e74 main -> main ✓ SUKSES
+- Verify both remotes have latest commit: a6f9e74 (HEAD).
+- CLEANUP: hapus ~/.git-credentials + unset credential.helper.
+- Token PAT yang dipakai: [REDACTED].
+  USER WAJIB REVOKE token ini di https://github.com/settings/tokens karena sudah ter-expose di chat.
+
+Stage Summary:
+- 8 commits sukses di-push ke 2 repo GitHub:
+    1. versi-222 (https://github.com/innovationcaraudiowebsite-droid/versi-222)
+    2. peredammobil (https://github.com/innovationcaraudiowebsite-droid/peredammobil)
+- Kedua repo sekarang sync di commit a6f9e74 (mock data mode + 8 real brand logos).
+- Vercel auto-deploy akan trigger dari push ini (kalau Vercel project connected ke salah satu repo).
+- Local credentials sudah dibersihkan dari sandbox.
