@@ -457,7 +457,7 @@ export default async function ProductDetailPage({
 
           {/* === ARTICLE CONTENT === */}
           {(variant.introMarkdown || (variant.sections && variant.sections.length > 0)) && (
-            <div className="mt-12 sm:mt-16 max-w-3xl mx-auto">
+            <div className="mt-12 sm:mt-16">
               {/* Intro */}
               {variant.introMarkdown && (
                 <div className="text-base sm:text-lg text-foreground/90 leading-relaxed space-y-4 mb-10">
@@ -476,10 +476,10 @@ export default async function ProductDetailPage({
           )}
 
           {/* === CLOSING SECTION === */}
-          {/* Padding & border match ProductContent accordion (px-4 sm:px-6 + border)
-                so H2 here aligns perfectly with H2 in the sections above. */}
+          {/* Full-width (no max-w-3xl) so it aligns with header above and sibling variants below.
+                Padding & border match ProductContent accordion (px-4 sm:px-6 + border). */}
           {variant.closingTagline && (
-            <div className="mt-12 sm:mt-16 max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-8 rounded-xl border border-brand/40 bg-brand/5">
+            <div className="mt-12 sm:mt-16 px-4 sm:px-6 py-6 sm:py-8 rounded-xl border border-brand/40 bg-brand/5">
               <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground">
                 {variant.closingTagline}
               </h2>
