@@ -1,4 +1,11 @@
 import { Trophy, Award, Star, MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube, PlayCircle, Play, HelpCircle, ChevronDown } from 'lucide-react'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from '@/components/ui/carousel'
 
 // ============================================================
 // Section: Brand Partners (#partners)
@@ -32,18 +39,47 @@ export function BrandPartners() {
         <p className="text-center text-sm text-muted-foreground mb-8">
           Authorized dealer brand audio mobil & peredam premium
         </p>
-        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4">
-          {brands.map((brand, i) => (
-            <div key={i} className="flex items-center justify-center rounded-lg border border-border bg-card p-4 hover:shadow-md transition-shadow h-24">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={brand.logo}
-                alt={brand.name}
-                className="max-h-16 max-w-full object-contain"
-                loading="lazy"
-              />
-            </div>
-          ))}
+
+        {/* Carousel: 2 cards on mobile, 3 on sm, 4 on md, 6 on lg.
+            Each card has FIXED size (h-28) + consistent padding (p-4 sm:p-6) +
+            fixed inner image area (h-14 w-full) so all logos visually balanced. */}
+        <div className="relative">
+          <Carousel
+            opts={{
+              align: 'start',
+              loop: true,
+              dragFree: false,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 sm:-ml-3">
+              {brands.map((brand, i) => (
+                <CarouselItem
+                  key={i}
+                  className="pl-2 sm:pl-3 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6"
+                >
+                  <div className="flex flex-col items-center justify-center rounded-lg border border-border bg-card p-4 sm:p-5 h-28 sm:h-32 hover:shadow-md hover:border-brand/40 transition-all">
+                    {/* Fixed-height logo area — semua logo di-scale ke height yang sama,
+                        width auto via object-contain supaya aspect ratio tetap. */}
+                    <div className="flex items-center justify-center h-14 w-full">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={brand.logo}
+                        alt={brand.name}
+                        className="h-full w-auto max-w-full object-contain"
+                        loading="lazy"
+                      />
+                    </div>
+                    <p className="mt-2 text-[10px] sm:text-xs text-muted-foreground text-center truncate w-full">
+                      {brand.name}
+                    </p>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden sm:flex" />
+            <CarouselNext className="hidden sm:flex" />
+          </Carousel>
         </div>
       </div>
     </section>
