@@ -40,9 +40,10 @@ export function BrandPartners() {
           Authorized dealer brand audio mobil & peredam premium
         </p>
 
-        {/* Carousel: 2 cards on mobile, 3 on sm, 4 on md, 6 on lg.
-            Each card has FIXED size (h-28) + consistent padding (p-4 sm:p-6) +
-            fixed inner image area (h-14 w-full) so all logos visually balanced. */}
+        {/* Carousel: HANYA LOGO — no card, no border, no label.
+            Logo di-scale ke tinggi besar (h-20 sm:h-24) supaya prominent.
+            Oval-ish feel via rounded-full pada wrapper optik (kalo logo-nya square).
+            Background tetap transparent supaya logo blend dengan section bg. */}
         <div className="relative">
           <Carousel
             opts={{
@@ -52,27 +53,20 @@ export function BrandPartners() {
             }}
             className="w-full"
           >
-            <CarouselContent className="-ml-2 sm:-ml-3">
+            <CarouselContent className="-ml-3 sm:-ml-4">
               {brands.map((brand, i) => (
                 <CarouselItem
                   key={i}
-                  className="pl-2 sm:pl-3 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6"
+                  className="pl-3 sm:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6"
                 >
-                  <div className="flex flex-col items-center justify-center rounded-lg border border-border bg-card p-4 sm:p-5 h-28 sm:h-32 hover:shadow-md hover:border-brand/40 transition-all">
-                    {/* Fixed-height logo area — semua logo di-scale ke height yang sama,
-                        width auto via object-contain supaya aspect ratio tetap. */}
-                    <div className="flex items-center justify-center h-14 w-full">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={brand.logo}
-                        alt={brand.name}
-                        className="h-full w-auto max-w-full object-contain"
-                        loading="lazy"
-                      />
-                    </div>
-                    <p className="mt-2 text-[10px] sm:text-xs text-muted-foreground text-center truncate w-full">
-                      {brand.name}
-                    </p>
+                  <div className="flex items-center justify-center h-24 sm:h-28 md:h-32 group">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={brand.logo}
+                      alt={brand.name}
+                      className="h-full w-auto max-w-full object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
+                      loading="lazy"
+                    />
                   </div>
                 </CarouselItem>
               ))}
