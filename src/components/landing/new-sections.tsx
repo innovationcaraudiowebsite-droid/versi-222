@@ -6,24 +6,24 @@ import { Award, Users, Package, Star, Wrench, ShieldCheck, Headphones, Clock } f
  */
 export function StatsBar() {
   const stats = [
-    { icon: Award, value: '20+', label: 'Tahun Pengalaman', color: 'text-gold-light' },
-    { icon: Users, value: '1000+', label: 'Instalasi Selesai', color: 'text-gold-light' },
-    { icon: Package, value: '84', label: 'Paket Tersedia', color: 'text-gold-light' },
-    { icon: Star, value: '4.9★', label: 'Rating Google', color: 'text-yellow-300' },
+    { icon: Award, value: '20+', label: 'Tahun Pengalaman', color: 'text-gold' },
+    { icon: Users, value: '1000+', label: 'Instalasi Selesai', color: 'text-gold' },
+    { icon: Package, value: '84', label: 'Paket Tersedia', color: 'text-gold' },
+    { icon: Star, value: '4.9★', label: 'Rating Google', color: 'text-gold' },
   ]
   return (
-    <section className="bg-gradient-to-r from-gold to-gold-dark py-8">
+    <section className="bg-card border-y border-border py-10">
       <div className="container mx-auto max-w-7xl px-4">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
           {stats.map((s, i) => {
             const Icon = s.icon
             return (
               <div key={i} className="flex flex-col items-center text-center">
                 <Icon className={`size-8 mb-2 ${s.color}`} />
-                <div className="text-2xl sm:text-3xl font-bold text-white" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
+                <div className="text-2xl sm:text-3xl font-bold text-foreground" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                   {s.value}
                 </div>
-                <div className="text-xs sm:text-sm text-red-100 mt-1">{s.label}</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1">{s.label}</div>
               </div>
             )
           })}
@@ -73,12 +73,12 @@ export function WhyChooseUs() {
  */
 export function CTASection() {
   return (
-    <section className="bg-gradient-to-r from-gold to-gold-dark py-12 sm:py-16">
+    <section className="bg-card border-y border-border py-16 sm:py-20">
       <div className="container mx-auto max-w-4xl px-4 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground mb-4" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
           Siap Upgrade Audio Mobil Anda?
         </h2>
-        <p className="text-red-100 mb-6 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
           Konsultasi gratis dengan tim ahli kami. Dapatkan rekomendasi paket audio
           yang sesuai dengan kebutuhan dan budget mobil Anda.
         </p>
@@ -87,13 +87,13 @@ export function CTASection() {
             href="https://wa.me/6281295952279?text=Halo%20Innovation%20Car%20Audio%2C%20saya%20ingin%20konsultasi%20audio%20mobil"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-md bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 text-sm transition-colors"
+            className="inline-flex items-center gap-2 rounded-lg bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-3.5 text-sm transition-all shadow-lg shadow-red-600/30 hover:shadow-red-600/50 hover:scale-105"
           >
             💬 Konsultasi WhatsApp
           </a>
           <a
             href="tel:081295952279"
-            className="inline-flex items-center gap-2 rounded-md border-2 border-white/30 bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 text-sm transition-colors"
+            className="inline-flex items-center gap-2 rounded-lg border-2 border-border bg-background hover:bg-muted text-foreground font-semibold px-8 py-3.5 text-sm transition-colors"
           >
             📞 0812-9595-2279
           </a>

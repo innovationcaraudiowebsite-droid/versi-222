@@ -7,14 +7,22 @@
 /* Brand color — sesuai warna golden-brown di hero gambar (#c48e55).
    Dipakai untuk accent di seluruh landing page supaya konsisten
    dengan visual hero banner (bukan amber-500 yang orange).
-   Updated: warna kuning (gold) diganti dengan merah menyala sesuai request user. */
+
+   Color strategy (rev 2):
+   - --gold: KUNING EMAS (#d4af37) — untuk Awards, badges, hover, icons.
+     Dipakai sebagai background section yang butuh "premium feel".
+   - --red-* (inline): MERAH (#dc2626) — HANYA untuk CTA buttons, urgency,
+     counter glow, FOMO elements. Merah = aksen, bukan dominan. */
 @theme {
   --color-brand: #467C45;
   --color-brand-light: #5a9a5a;
   --color-brand-dark: #2d5a2d;
-  --color-gold: #dc2626;        /* red-600 — merah menyala */
-  --color-gold-light: #ef4444;   /* red-500 — lebih terang */
-  --color-gold-dark: #991b1b;   /* red-800 — lebih gelap */
+  --color-gold: #d4af37;        /* kuning emas — untuk awards & badges */
+  --color-gold-light: #f5c842;  /* kuning terang */
+  --color-gold-dark: #a37e2b;   /* kuning gelap */
+  --color-red-glow: #dc2626;   /* merah menyala — untuk CTA & urgency */
+  --color-red-glow-light: #ef4444;
+  --color-red-glow-dark: #991b1b;
 }
 
 @theme inline {
@@ -78,9 +86,9 @@
   --border: #ffffff1a;
   --input: #ffffff1a;
   --ring: #467C45;
-  --gold: #dc2626;
-  --gold-foreground: #fafafa;
-  --chart-1: #dc2626;
+  --gold: #d4af37;
+  --gold-foreground: #010101;
+  --chart-1: #d4af37;
   --chart-2: #467C45;
   --chart-3: #00bb7f;
   --chart-4: #3080ff;
@@ -115,9 +123,9 @@
   --border: #ffffff1a;
   --input: #ffffff1a;
   --ring: #467C45;
-  --gold: #dc2626;
-  --gold-foreground: #fafafa;
-  --chart-1: #dc2626;
+  --gold: #d4af37;
+  --gold-foreground: #010101;
+  --chart-1: #d4af37;
   --chart-2: #467C45;
   --chart-3: #00bb7f;
   --chart-4: #3080ff;
