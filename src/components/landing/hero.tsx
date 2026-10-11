@@ -33,11 +33,11 @@ export function Hero() {
             background: 'linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.85) 35%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.3) 100%)',
           }}
         />
-        {/* Gold radial glow */}
+        {/* Red radial glow */}
         <div
           className="absolute inset-0"
           style={{
-            background: 'radial-gradient(circle at 25% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%)',
+            background: 'radial-gradient(circle at 25% 50%, rgba(220, 38, 38, 0.18) 0%, transparent 50%)',
           }}
         />
       </div>
@@ -48,11 +48,11 @@ export function Hero() {
           {/* Logo + 25 Years badge */}
           <div className="flex items-center gap-4 mb-6">
             <div className="relative flex items-center justify-center">
-              {/* Gold glow effect */}
+              {/* Red glow effect */}
               <div
                 className="absolute inset-0 rounded-full"
                 style={{
-                  background: 'conic-gradient(from 0deg, #d4af37 0%, #f5c842 25%, transparent 50%, #a37e2b 75%, #d4af37 100%)',
+                  background: 'conic-gradient(from 0deg, #dc2626 0%, #ef4444 25%, transparent 50%, #991b1b 75%, #dc2626 100%)',
                   filter: 'blur(8px)',
                   opacity: 0.6,
                   transform: 'scale(1.4)',
@@ -145,7 +145,7 @@ export function Hero() {
                   className="relative text-4xl sm:text-5xl md:text-6xl font-extrabold text-gold leading-none tracking-tight"
                   style={{
                     fontFamily: 'var(--font-montserrat), sans-serif',
-                    textShadow: '0 0 30px rgba(212, 175, 55, 0.4)',
+                    textShadow: '0 0 30px rgba(220, 38, 38, 0.7), 0 0 60px rgba(239, 68, 68, 0.4)',
                   }}
                 >
                   <Counter
