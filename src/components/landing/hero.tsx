@@ -1,4 +1,5 @@
 import { Phone, Package, ChevronRight } from 'lucide-react'
+import { Counter } from '@/components/landing/counter'
 
 /**
  * Hero section — section id="home".
@@ -124,21 +125,44 @@ export function Hero() {
             </a>
           </div>
 
-          {/* Counter stats */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          {/* Counter stats — animated count-up with big bold font */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 mt-2">
             {[
-              { value: '84', label: 'Varian Paket' },
-              { value: '559+', label: 'Piala Kontes' },
-              { value: '17+', label: 'Asia Champion' },
-              { value: '25+', label: 'Tahun' },
+              { value: 84, suffix: '', label: 'Varian Paket' },
+              { value: 559, suffix: '+', label: 'Piala Kontes' },
+              { value: 17, suffix: '+', label: 'Asia Champion' },
+              { value: 25, suffix: '+', label: 'Tahun' },
             ].map((stat, i) => (
-              <div key={i} className="text-center sm:text-left">
-                <div className="text-2xl md:text-3xl font-bold text-gold" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
-                  {stat.value}
+              <div
+                key={i}
+                className="relative group text-center sm:text-left"
+              >
+                {/* Glow background behind number */}
+                <div className="absolute -inset-1 bg-gradient-to-br from-gold/20 via-gold/0 to-gold/20 rounded-lg blur-md opacity-60 group-hover:opacity-100 transition-opacity" />
+
+                {/* Number — animated count-up */}
+                <div
+                  className="relative text-4xl sm:text-5xl md:text-6xl font-extrabold text-gold leading-none tracking-tight"
+                  style={{
+                    fontFamily: 'var(--font-montserrat), sans-serif',
+                    textShadow: '0 0 30px rgba(212, 175, 55, 0.4)',
+                  }}
+                >
+                  <Counter
+                    value={stat.value}
+                    suffix={stat.suffix}
+                    duration={2.5}
+                    className="tabular-nums"
+                  />
                 </div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wide">
+
+                {/* Label */}
+                <div className="relative mt-2 text-xs sm:text-sm font-medium uppercase tracking-widest text-muted-foreground">
                   {stat.label}
                 </div>
+
+                {/* Gold underline accent */}
+                <div className="relative mt-2 h-0.5 w-12 bg-gradient-to-r from-gold to-transparent rounded-full" />
               </div>
             ))}
           </div>
