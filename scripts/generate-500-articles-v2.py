@@ -415,31 +415,31 @@ def generate_content(title, cat_raw):
     hook, topic = get_hook(title, keyword, keyword_alt)
     quotes = pick_quotes(title, cat_raw)
 
-    # Sub-headings based on topic
+    # Sub-headings based on topic (pakai ## bukan ### supaya lebih prominent)
     if topic == 'peredam':
-        sub1 = "### Peran peredam dalam audio car"
-        sub2 = "### Yang perlu ditanyakan sebelum pemasangan"
+        sub1 = "## Peran peredam dalam audio car"
+        sub2 = "## Yang perlu ditanyakan sebelum pemasangan"
     elif topic == 'speaker':
-        sub1 = "### Karakter speaker dan pengaruhnya pada audio car"
-        sub2 = "### Tips memilih speaker untuk kebutuhan Anda"
+        sub1 = "## Karakter speaker dan pengaruhnya pada audio car"
+        sub2 = "## Tips memilih speaker untuk kebutuhan Anda"
     elif topic == 'amplifier':
-        sub1 = "### Daya amplifier dan kebutuhan sistem"
-        sub2 = "### Kesalahan umum dalam pemilihan amplifier"
+        sub1 = "## Daya amplifier dan kebutuhan sistem"
+        sub2 = "## Kesalahan umum dalam pemilihan amplifier"
     elif topic == 'subwoofer':
-        sub1 = "### Subwoofer dan pengaturan bass"
-        sub2 = "### Pemilihan enclosure yang tepat"
+        sub1 = "## Subwoofer dan pengaturan bass"
+        sub2 = "## Pemilihan enclosure yang tepat"
     elif topic == 'dsp':
-        sub1 = "### DSP dan pengaturan suara"
-        sub2 = "### Kesalahan umum dalam tuning DSP"
+        sub1 = "## DSP dan pengaturan suara"
+        sub2 = "## Kesalahan umum dalam tuning DSP"
     elif topic == 'paket':
-        sub1 = "### Cara menyusun anggaran audio car"
-        sub2 = "### Yang perlu dicek sebelum membeli paket"
+        sub1 = "## Cara menyusun anggaran audio car"
+        sub2 = "## Yang perlu dicek sebelum membeli paket"
     elif topic == 'instalasi':
-        sub1 = "### Aspek penting dalam instalasi audio car"
-        sub2 = "### Detail kecil yang berdampak besar"
+        sub1 = "## Aspek penting dalam instalasi audio car"
+        sub2 = "## Detail kecil yang berdampak besar"
     else:
-        sub1 = "### Memahami dasar sistem audio car"
-        sub2 = "### Yang perlu dipertimbangkan"
+        sub1 = "## Memahami dasar sistem audio car"
+        sub2 = "## Yang perlu dipertimbangkan"
 
     # Build content
     content_parts = []
@@ -460,7 +460,13 @@ def generate_content(title, cat_raw):
         f"Ko Lukito Tjandra, teknisi senior Innovation Car Audio, menjelaskan bahwa {topic} "
         f"memerlukan perhatian khusus agar sistem audio car bekerja optimal."
     )
-    content_parts.append(f'**"{quotes[0][1]}"**, jelasnya.')
+    # Quote 1: pakai markdown blockquote (>) supaya render sebagai <blockquote>
+    # Format: > "quote text"
+    # >
+    # > *— Ko Lukito Tjandra, teknisi senior Innovation Car Audio*
+    content_parts.append(
+        f"> **\"{quotes[0][1]}\"**\n>\n> *— Ko Lukito Tjandra, teknisi senior Innovation Car Audio*"
+    )
 
     # Sub-heading 1 + body
     content_parts.append(sub1)
@@ -483,7 +489,10 @@ def generate_content(title, cat_raw):
         f"sangat bergantung pada instalasi dan penyetelan. Innovation Car Audio menekankan pentingnya "
         f"konsultasi sebelum menentukan paket, agar setiap komponen memiliki fungsi yang jelas."
     )
-    content_parts.append(f'**"{quotes[1][1]}"**, tambah Ko Lukito Tjandra.')
+    # Quote 2: pakai markdown blockquote (>)
+    content_parts.append(
+        f"> **\"{quotes[1][1]}\"**\n>\n> *— Ko Lukito Tjandra, Innovation Car Audio*"
+    )
 
     # Closing paragraph
     content_parts.append(

@@ -9,6 +9,7 @@ import {
   User,
   ChevronRight,
 } from 'lucide-react'
+import { marked } from 'marked'
 import { db } from '@/lib/db'
 import {
   getSiteSetting,
@@ -135,7 +136,10 @@ export default async function ArticleDetailPage({
     categorySlug: a.category.slug,
   }))
   // Apply internal linking to article content.
-  const processedContent = addInternalLinks(article.content || '', linkCandidates)
+  // Convert markdown → HTML via marked, then inject internal links.
+  // marked handles: ## headings, > blockquotes, **bold**, lists, links, etc.
+  const rawHtml = marked.parse(article.content || '', { async: false, breaks: true }) as string
+  const processedContent = addInternalLinks(rawHtml, linkCandidates)
 
   const badgeClass = categoryBadgeClass(article.category.color)
   const dateLabel = formatTanggalPanjang(article.publishedAt)
@@ -249,9 +253,17 @@ export default async function ArticleDetailPage({
                 <ShareButtons url={articleUrl} title={article.title} />
               </div>
 
-              {/* Content with internal links injected. */}
+              {/* Content with internal links injected.
+                  CSS optimized for media portal style (Kompas/Detik standard):
+                  - Paragraph spacing: my-5 (1.25rem) untuk breathing room
+                  - Line-height: leading-8 (2rem = 32px) untuk readability
+                  - Font-size: 17px optimal untuk online reading
+                  - Lead paragraph (first p): font-semibold + text-lg
+                  - Blockquote: border-left 4px, padding, bg subtle, italic — premium quote style
+                  - H2/H3: prominent dengan margin yang cukup
+              */}
               <div
-                className="portal-article mt-8 text-[17px] leading-8 text-foreground/90 [&_p]:my-4 [&_h2]:mt-8 [&_h2]:mb-3 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:tracking-tight [&_h3]:mt-6 [&_h3]:mb-2 [&_h3]:text-xl [&_h3]:font-semibold [&_h4]:mt-4 [&_h4]:mb-2 [&_h4]:text-lg [&_h4]:font-semibold [&_ul]:my-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:my-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:my-1 [&_blockquote]:my-4 [&_blockquote]:border-l-4 [&_blockquote]:border-amber-500 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-muted-foreground [&_a]:text-primary [&_a]:underline [&_a:hover]:no-underline [&_img]:my-4 [&_img]:rounded-lg [&_code]:rounded [&_code]:bg-muted [&_code]:px-1 [&_code]:py-0.5 [&_code]:text-sm [&_code]:font-mono [&_pre]:my-4 [&_pre]:overflow-x-auto [&_pre]:rounded-lg [&_pre]:bg-slate-900 [&_pre]:p-4 [&_pre_code]:bg-transparent [&_pre_code]:p-0 [&_pre_code]:text-slate-100 [&_hr]:my-6 [&_hr]:border-border [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_th]:border [&_th]:border-border [&_th]:bg-muted [&_th]:p-2 [&_th]:text-left [&_th]:font-semibold [&_td]:border [&_td]:border-border [&_td]:p-2"
+                className="portal-article mt-8 text-[17px] leading-8 text-foreground/90 max-w-none [&_p]:my-5 [&_p:first-of-type]:font-semibold [&_p:first-of-type]:text-lg [&_p:first-of-type]:text-foreground [&_p:first-of-type]:leading-8 [&_h2]:mt-10 [&_h2]:mb-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:tracking-tight [&_h2]:text-foreground [&_h2]:border-b [&_h2]:border-border [&_h2]:pb-2 [&_h3]:mt-8 [&_h3]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-foreground [&_h4]:mt-6 [&_h4]:mb-2 [&_h4]:text-lg [&_h4]:font-semibold [&_ul]:my-5 [&_ul]:list-disc [&_ul]:pl-6 [&_ul_li]:my-2 [&_ol]:my-5 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol_li]:my-2 [&_blockquote]:my-6 [&_blockquote]:border-l-4 [&_blockquote]:border-amber-500 [&_blockquote]:bg-amber-50/50 [&_blockquote]:dark:bg-amber-950/20 [&_blockquote]:pl-5 [&_blockquote]:pr-4 [&_blockquote]:py-4 [&_blockquote]:rounded-r-lg [&_blockquote]:text-base [&_blockquote]:italic [&_blockquote]:text-foreground/80 [&_blockquote_p]:my-0 [&_blockquote_p:first-of-type]:font-semibold [&_blockquote_p:first-of-type]:text-lg [&_blockquote_p:first-of-type]:italic [&_blockquote_p:first-of-type]:text-foreground [&_a]:text-primary [&_a]:underline [&_a:hover]:no-underline [&_a:hover]:text-primary/80 [&_img]:my-6 [&_img]:rounded-lg [&_code]:rounded [&_code]:bg-muted [&_code]:px-1 [&_code]:py-0.5 [&_code]:text-sm [&_code]:font-mono [&_pre]:my-4 [&_pre]:overflow-x-auto [&_pre]:rounded-lg [&_pre]:bg-slate-900 [&_pre]:p-4 [&_pre_code]:bg-transparent [&_pre_code]:p-0 [&_pre_code]:text-slate-100 [&_hr]:my-8 [&_hr]:border-border [&_table]:my-6 [&_table]:w-full [&_table]:border-collapse [&_th]:border [&_th]:border-border [&_th]:bg-muted [&_th]:p-2 [&_th]:text-left [&_th]:font-semibold [&_td]:border [&_td]:border-border [&_td]:p-2"
                 dangerouslySetInnerHTML={{ __html: processedContent }}
               />
 
