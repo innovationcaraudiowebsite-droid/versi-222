@@ -1,15 +1,14 @@
+'use client'
+
 import { Trophy, Award, Star, MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube, PlayCircle, Play, HelpCircle, ChevronDown } from 'lucide-react'
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-} from '@/components/ui/carousel'
 
 // ============================================================
 // Section: Brand Partners (#partners)
 // ============================================================
+// Auto-scrolling marquee — carousel jalan terus ke kanan otomatis.
+// Pakai CSS animation (animate-marquee) supaya semua brand terbaca.
+// 'use client' sudah ada di file ini (lihat top of file).
+
 export function BrandPartners() {
   const brands = [
     { name: 'Crescendo', logo: '/brand-logos/crescendo.png' },
@@ -30,8 +29,13 @@ export function BrandPartners() {
     { name: 'Silent Coat', logo: '/brand-logos/silent-coat.png' },
     { name: 'DL Audio Lab', logo: '/brand-logos/dl-audio-lab.png' },
   ]
+
+  // Duplicate brands untuk continuous loop effect (marquee seamless).
+  // Karena animasi translateX(-50%), kita butuh 2x list untuk loop mulus.
+  const loopBrands = [...brands, ...brands]
+
   return (
-    <section id="partners" className="bg-background py-12 sm:py-16">
+    <section id="partners" className="bg-background py-12 sm:py-16 overflow-hidden">
       <div className="container mx-auto max-w-7xl px-4">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-2" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
           Brand Partner Resmi
@@ -39,41 +43,34 @@ export function BrandPartners() {
         <p className="text-center text-sm text-muted-foreground mb-8">
           Authorized dealer brand audio mobil & peredam premium
         </p>
+      </div>
 
-        {/* Carousel: HANYA LOGO — no card, no border, no label.
-            Logo di-scale ke tinggi besar (h-20 sm:h-24) supaya prominent.
-            Oval-ish feel via rounded-full pada wrapper optik (kalo logo-nya square).
-            Background tetap transparent supaya logo blend dengan section bg. */}
-        <div className="relative">
-          <Carousel
-            opts={{
-              align: 'start',
-              loop: true,
-              dragFree: false,
-            }}
-            className="w-full"
-          >
-            <CarouselContent className="-ml-3 sm:-ml-4">
-              {brands.map((brand, i) => (
-                <CarouselItem
-                  key={i}
-                  className="pl-3 sm:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6"
-                >
-                  <div className="flex items-center justify-center h-24 sm:h-28 md:h-32 group">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={brand.logo}
-                      alt={brand.name}
-                      className="h-full w-auto max-w-full object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
-                      loading="lazy"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden sm:flex" />
-            <CarouselNext className="hidden sm:flex" />
-          </Carousel>
+      {/* Auto-scrolling marquee — logos jalan terus ke kiri.
+          Container overflow-hidden supaya logo di luar viewport terpotong.
+          Inner track pakai animate-marquee (CSS keyframe di globals.css).
+          Pause on hover supaya user bisa baca logo tertentu. */}
+      <div
+        className="relative overflow-hidden group"
+        style={{
+          maskImage: 'linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%)',
+        }}
+      >
+        <div className="flex items-center gap-8 sm:gap-12 animate-marquee group-hover:[animation-play-state:paused] w-max">
+          {loopBrands.map((brand, i) => (
+            <div
+              key={i}
+              className="flex items-center justify-center h-24 sm:h-28 md:h-32 shrink-0"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                className="h-full w-auto max-w-none object-contain opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300"
+                loading="lazy"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
