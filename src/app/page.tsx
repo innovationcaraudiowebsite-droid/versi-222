@@ -5,7 +5,7 @@ import { Packages } from '@/components/landing/packages'
 import { LatestArticles } from '@/components/landing/latest-articles'
 import { SectionDivider } from '@/components/landing/section-divider'
 import { LandingFooter } from '@/components/landing/landing-footer'
-import { StatsBar, WhyChooseUs, CTASection } from '@/components/landing/new-sections'
+import { WhyChooseUs, CTASection } from '@/components/landing/new-sections'
 import {
   BrandPartners,
   AwardsSection,
@@ -48,14 +48,11 @@ export default async function LandingPage() {
         {/* Section 1: Hero (#home) */}
         <Hero />
 
-        {/* Section 2: Stats Bar */}
-        <StatsBar />
-
-        {/* Section 3: About (#about) */}
+        {/* Section 2: About (#about) */}
         <SectionDivider variant="line" />
         <About />
 
-        {/* Section 4: Brand Partners (#partners) */}
+        {/* Section 2: Brand Partners (#partners) */}
         <SectionDivider variant="line" />
         <BrandPartners />
 
