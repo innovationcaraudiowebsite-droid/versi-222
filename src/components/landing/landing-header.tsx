@@ -37,7 +37,6 @@ const NAV_LINKS: NavLink[] = [
   { anchor: 'paket-audio', label: 'Paket Audio' },
   { anchor: 'video', label: 'Video' },
   { anchor: 'recommender', label: 'Recommender' },
-  { anchor: 'area-jabodetabek', label: 'Area Servis' },
   { anchor: 'lokasi', label: 'Kontak' },
   { anchor: 'faq', label: 'FAQ' },
 ]
