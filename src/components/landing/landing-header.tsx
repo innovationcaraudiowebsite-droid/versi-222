@@ -35,7 +35,6 @@ const NAV_LINKS: NavLink[] = [
   { anchor: 'awards', label: 'Award' },
   { anchor: 'why-us', label: 'Why Us' },
   { anchor: 'paket-audio', label: 'Paket Audio' },
-  { anchor: 'peredam', label: 'Paket Peredam' },
   { anchor: 'video', label: 'Video' },
   { anchor: 'recommender', label: 'Recommender' },
   { anchor: 'area-jabodetabek', label: 'Area Servis' },
