@@ -1,6 +1,7 @@
 'use client'
 
-import { Trophy, Award, Star, MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube, PlayCircle, Play, HelpCircle, ChevronDown } from 'lucide-react'
+import { useState, useEffect, useCallback } from 'react'
+import { Trophy, Award, Star, MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube, PlayCircle, Play, HelpCircle, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react'
 
 // ============================================================
 // Section: Brand Partners (#partners)
@@ -188,18 +189,13 @@ export function AwardsSection() {
 // ============================================================
 export function VideoSection() {
   const ytChannel = 'https://www.youtube.com/@innovationcar_audio/videos'
-  const slides = [
-    { src: '/gallery/slide-1.png', alt: 'Instalasi Audio Mobil 1' },
-    { src: '/gallery/slide-2.png', alt: 'Instalasi Audio Mobil 2' },
-    { src: '/gallery/slide-3.png', alt: 'Instalasi Audio Mobil 3' },
-    { src: '/gallery/slide-4.png', alt: 'Instalasi Audio Mobil 4' },
-  ]
-  const bawahslides = [
-    { src: '/gallery/bawahslide-1.png', alt: 'Dokumentasi workshop Innovation Car Audio 1' },
-    { src: '/gallery/bawahslide-2.png', alt: 'Dokumentasi workshop Innovation Car Audio 2' },
-    { src: '/gallery/bawahslide-3.png', alt: 'Dokumentasi workshop Innovation Car Audio 3' },
-    { src: '/gallery/bawahslide-4.png', alt: 'Dokumentasi workshop Innovation Car Audio 4' },
-    { src: '/gallery/bawahslide-5.png', alt: 'Dokumentasi workshop Innovation Car Audio 5' },
+  // 5 foto dokumentasi workshop (user uploaded webp)
+  const docs = [
+    { src: '/gallery-docs/doc-1.webp', alt: 'Dokumentasi instalasi audio mobil Innovation Car Audio 1' },
+    { src: '/gallery-docs/doc-2.webp', alt: 'Dokumentasi instalasi audio mobil Innovation Car Audio 2' },
+    { src: '/gallery-docs/doc-3.webp', alt: 'Dokumentasi instalasi audio mobil Innovation Car Audio 3' },
+    { src: '/gallery-docs/doc-4.webp', alt: 'Dokumentasi instalasi audio mobil Innovation Car Audio 4' },
+    { src: '/gallery-docs/doc-5.webp', alt: 'Dokumentasi instalasi audio mobil Innovation Car Audio 5' },
   ]
   return (
     <section id="video" className="py-16 bg-background border-t border-gold/10">
@@ -227,65 +223,131 @@ export function VideoSection() {
           </a>
         </div>
 
-        {/* 4 Slide images — grid 2x2 (md:4 cols) with play button, clickable to YouTube */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-6">
-          {slides.map((slide, i) => (
+        {/* Full-page carousel — 5 foto dokumentasi workshop.
+            Besar (full width container), aspect-video 16:9,
+            clickable ke YouTube channel.
+            Auto-advance setiap 4 detik + manual navigation (radio dots). */}
+        <FullPageCarousel docs={docs} ytChannel={ytChannel} />
+      </div>
+    </section>
+  )
+}
+
+// ============================================================
+// Sub-component: Full Page Carousel (auto-advance + dots)
+// ============================================================
+
+function FullPageCarousel({
+  docs,
+  ytChannel,
+}: {
+  docs: { src: string; alt: string }[]
+  ytChannel: string
+}) {
+  const [current, setCurrent] = useState(0)
+  const total = docs.length
+
+  const next = useCallback(() => {
+    setCurrent((c) => (c + 1) % total)
+  }, [total])
+
+  const prev = useCallback(() => {
+    setCurrent((c) => (c - 1 + total) % total)
+  }, [total])
+
+  // Auto-advance every 4 seconds
+  useEffect(() => {
+    const timer = setInterval(next, 4000)
+    return () => clearInterval(timer)
+  }, [next])
+
+  return (
+    <div className="relative max-w-6xl mx-auto">
+      {/* Main carousel viewport */}
+      <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-gold/20 bg-black shadow-2xl">
+        {/* Slides — render all, animate via transform translateX */}
+        <div
+          className="flex h-full transition-transform duration-700 ease-out"
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
+          {docs.map((doc, i) => (
             <a
               key={i}
               href={ytChannel}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative aspect-video overflow-hidden rounded-lg border border-gold/20 bg-card/40 cursor-pointer"
+              className="relative shrink-0 w-full h-full block group cursor-pointer"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={slide.src}
-                alt={slide.alt}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
+                src={doc.src}
+                alt={doc.alt}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading={i === 0 ? 'eager' : 'lazy'}
               />
               {/* Dark gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              {/* Play button */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/90 group-hover:bg-gold transition-all group-hover:scale-110 shadow-lg">
-                  <Play className="h-5 w-5 fill-black text-black" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
+              {/* Play button center */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gold/90 group-hover:bg-gold transition-all group-hover:scale-110 shadow-lg shadow-gold/30">
+                  <Play className="h-7 w-7 fill-black text-black ml-1" />
                 </div>
               </div>
-              {/* Label */}
-              <div className="absolute bottom-2 left-3 right-3 text-left">
-                <div className="text-xs font-semibold text-white">{slide.alt}</div>
+              {/* Label bottom */}
+              <div className="absolute bottom-4 left-4 right-4 text-left pointer-events-none">
+                <div className="text-sm font-semibold text-white drop-shadow-lg">
+                  {doc.alt}
+                </div>
+                <div className="text-[10px] text-white/70 mt-1">
+                  Klik untuk lihat di YouTube
+                </div>
+              </div>
+              {/* Slide counter */}
+              <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm text-xs font-medium text-white pointer-events-none">
+                {i + 1} / {total}
               </div>
             </a>
           ))}
         </div>
 
-        {/* 5 Bawahslide images — grid (md:5 cols) */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-5xl mx-auto">
-          {bawahslides.map((slide, i) => (
-            <a
-              key={i}
-              href={ytChannel}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative aspect-square overflow-hidden rounded-lg border border-gold/10 bg-card/40 cursor-pointer"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={slide.src}
-                alt={slide.alt}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              <div className="absolute bottom-2 left-2 right-2 text-left">
-                <div className="text-[10px] text-white/80">{slide.alt.replace('Dokumentasi workshop Innovation Car Audio ', 'Dokumentasi ')}</div>
-              </div>
-            </a>
-          ))}
-        </div>
+        {/* Prev button */}
+        <button
+          type="button"
+          onClick={prev}
+          aria-label="Slide sebelumnya"
+          className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center size-11 rounded-full bg-black/60 hover:bg-black/80 backdrop-blur-sm transition-colors z-10"
+        >
+          <ChevronLeft className="size-5 text-white" />
+        </button>
+
+        {/* Next button */}
+        <button
+          type="button"
+          onClick={next}
+          aria-label="Slide berikutnya"
+          className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center size-11 rounded-full bg-black/60 hover:bg-black/80 backdrop-blur-sm transition-colors z-10"
+        >
+          <ChevronRight className="size-5 text-white" />
+        </button>
       </div>
-    </section>
+
+      {/* Dot indicators */}
+      <div className="flex items-center justify-center gap-2 mt-4">
+        {docs.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            onClick={() => setCurrent(i)}
+            aria-label={`Ke slide ${i + 1}`}
+            className={`h-2 rounded-full transition-all ${
+              current === i
+                ? 'w-8 bg-gold'
+                : 'w-2 bg-gold/30 hover:bg-gold/60'
+            }`}
+          />
+        ))}
+      </div>
+    </div>
   )
 }
 
