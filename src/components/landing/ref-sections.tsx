@@ -82,24 +82,25 @@ export function BrandPartners() {
 // ============================================================
 export function AwardsSection() {
   const awards = [
-    { value: '559+', label: 'Piala Kontes Audio' },
+    { value: '559+', label: 'Juara Kontes Audio' },
+    { value: '17+', label: 'Asia Champion' },
     { value: 'MURI', label: 'SPL Recipient' },
-    { value: 'EMMA', label: 'Asia Champion' },
-    { value: 'USACI', label: 'Championship' },
-    { value: 'Euro Star', label: 'Award' },
-    { value: 'National', label: 'Champion' },
+    { value: '26+', label: 'National Champion' },
+    { value: '4×', label: 'Euro Star Award' },
+    { value: '8', label: 'Asian Pro Cup Countries' },
   ]
   const achievements = [
-    'MURI SPL Recipient',
-    'Asia Champion EMMA & USACI',
-    'Juara Kontes Audio',
-    'National Champion',
-    'EURO STAR Award',
-    'Asian Pro Cup EMMA',
-    'Champion EMMA Asia',
-    'Champion of the Year EMMA',
-    'King of Sound Indonesia',
-    'EMMA Best Sound Quality from IHEAC',
+    'The only MURI SPL Recipient',
+    '17+ Asia Champion EMMA & USACI',
+    '559+ Juara Kontes Audio',
+    'Grand Champion USACI',
+    '26+ National Champion IASCA, iCAN, MSF & EMMA',
+    'EURO STAR Award Champion 2019, 2023, 2024 & 2025',
+    'Champion Asian Pro Cup EMMA (8 Country Battle)',
+    'Champion EMMA Asia (Skilled Unlimited)',
+    'Champion of the Year EMMA (Master Limited)',
+    'King of Sound Indonesia EMMA',
+    'Best Sound Quality from IHEAC — 2025 (Fairmont Hotel Jakarta)',
   ]
   return (
     <section
@@ -161,17 +162,18 @@ export function AwardsSection() {
         </div>
 
         {/* Achievement list — TANPA CARD, minimalis */}
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {achievements.map((ach, i) => (
               <div
                 key={i}
-                className="flex items-center gap-2 px-3 py-2 group"
+                className="flex items-start gap-2.5 px-4 py-3 rounded-lg bg-black/5 hover:bg-black/10 transition-colors group"
               >
-                <Award
-                  className="size-4 shrink-0 text-black/70 group-hover:text-black transition-colors"
+                <Trophy
+                  className="size-4 shrink-0 mt-0.5 text-black/70 group-hover:text-black group-hover:scale-110 transition-all"
+                  strokeWidth={2}
                 />
-                <span className="text-sm font-medium text-black/80">{ach}</span>
+                <span className="text-sm font-medium text-black/80 leading-snug">{ach}</span>
               </div>
             ))}
           </div>
