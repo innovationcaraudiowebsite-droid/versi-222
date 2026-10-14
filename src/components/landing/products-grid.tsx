@@ -48,12 +48,12 @@ interface ProductsGridProps {
   categoryColor: 'slate' | 'blue' | 'amber' | 'emerald'
 }
 
-// Sort order: Recommended first (most popular), then Best Buy, Normal, Basic
+// Sort order: Basic → Normal → Best Buy → Recommended (dari termurah ke termahal)
 const TIER_ORDER: Record<string, number> = {
-  recommended: 0,
-  best_buy: 1,
-  normal: 2,
-  basic: 3,
+  basic: 0,
+  normal: 1,
+  best_buy: 2,
+  recommended: 3,
 }
 
 // Tier ribbon styles — miring, warna sesuai tier (match PaketSummary style)
