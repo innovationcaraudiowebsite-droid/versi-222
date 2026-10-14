@@ -800,6 +800,39 @@ export const db = {
   _articleTags: makeModel('_ArticleTags'),
 }
 
+// ============================================================
+// Peredam packages — read from backup-sqlite.json (top-level key)
+// ============================================================
+export async function getPeredamPackages(): Promise<unknown[]> {
+  try {
+    const fs = await import('node:fs')
+    const path = await import('node:path')
+    const backupFile = path.join(process.cwd(), 'data', 'backup-sqlite.json')
+    if (!fs.existsSync(backupFile)) return []
+    const raw = fs.readFileSync(backupFile, 'utf-8')
+    const data = JSON.parse(raw)
+    return data?.peredamPackages || []
+  } catch (err) {
+    console.error('[getPeredamPackages] error:', err)
+    return []
+  }
+}
+
+export async function getPeredamOptional(): Promise<unknown[]> {
+  try {
+    const fs = await import('node:fs')
+    const path = await import('node:path')
+    const backupFile = path.join(process.cwd(), 'data', 'backup-sqlite.json')
+    if (!fs.existsSync(backupFile)) return []
+    const raw = fs.readFileSync(backupFile, 'utf-8')
+    const data = JSON.parse(raw)
+    return data?.peredamOptional || []
+  } catch (err) {
+    console.error('[getPeredamOptional] error:', err)
+    return []
+  }
+}
+
 // Re-export types for convenience
 import type {
   Article,

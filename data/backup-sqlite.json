@@ -13,7 +13,8 @@
       "comments": 11,
       "articleVersions": 0,
       "siteSettings": 1,
-      "products": 4
+      "products": 4,
+      "peredamPackages": 4
     }
   },
   "categories": [
@@ -41411,6 +41412,281 @@
       "clickedAt": "2026-06-29T05:46:07.137267+00:00",
       "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "ipAddress": "47.200.64.183"
+    }
+  ],
+  "peredamPackages": [
+    {
+      "tier": "basic",
+      "name": "Basic",
+      "slug": "peredam-basic",
+      "priceOriginal": "Rp 7.440.000",
+      "priceFinal": "Rp 6.906.000",
+      "discount": "10%",
+      "discountAmount": "Rp 534.000",
+      "totalLayers": 30,
+      "image": "/paket-images/peredam-basic.png",
+      "areas": [
+        {
+          "area": "Pintu Depan L & R",
+          "layers": "Layer 1",
+          "subtotal": "Rp 740.000"
+        },
+        {
+          "area": "Pintu Tengah L & R",
+          "layers": "Layer 1",
+          "subtotal": "Rp 740.000"
+        },
+        {
+          "area": "Pintu Bagasi",
+          "layers": "Layer 1",
+          "subtotal": "Rp 280.000"
+        },
+        {
+          "area": "Fender Dalam Depan L & R",
+          "layers": "Layer 1",
+          "subtotal": "Rp 500.000"
+        },
+        {
+          "area": "Fender Dalam Belakang L & R",
+          "layers": "Layer 2",
+          "subtotal": "Rp 1.480.000"
+        },
+        {
+          "area": "Lantai",
+          "layers": "Layer 1",
+          "subtotal": "Rp 3.700.000"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Gran Turismo 2.0",
+          "qty": 28,
+          "unitPrice": "Rp 180.000",
+          "total": "Rp 5.040.000"
+        },
+        {
+          "name": "GT Isolator Carpet 6.0",
+          "qty": 2,
+          "unitPrice": "Rp 150.000",
+          "total": "Rp 300.000"
+        },
+        {
+          "name": "Nitto Spoon 5mm",
+          "qty": 0,
+          "unitPrice": "Rp 300.000",
+          "total": "-"
+        }
+      ],
+      "installCost": "Rp 2.100.000"
+    },
+    {
+      "tier": "normal",
+      "name": "Normal",
+      "slug": "peredam-normal",
+      "priceOriginal": "Rp 10.420.000",
+      "priceFinal": "Rp 9.277.000",
+      "discount": "15%",
+      "discountAmount": "Rp 1.143.000",
+      "totalLayers": 40,
+      "image": "/paket-images/peredam-normal.png",
+      "areas": [
+        {
+          "area": "Pintu Depan L & R",
+          "layers": "Layer 2",
+          "subtotal": "Rp 1.480.000"
+        },
+        {
+          "area": "Pintu Tengah L & R",
+          "layers": "Layer 2",
+          "subtotal": "Rp 1.480.000"
+        },
+        {
+          "area": "Pintu Bagasi",
+          "layers": "Layer 2",
+          "subtotal": "Rp 980.000"
+        },
+        {
+          "area": "Fender Dalam Depan L & R",
+          "layers": "Layer 1",
+          "subtotal": "Rp 500.000"
+        },
+        {
+          "area": "Fender Dalam Belakang L & R",
+          "layers": "Layer 3",
+          "subtotal": "Rp 2.060.000"
+        },
+        {
+          "area": "Lantai",
+          "layers": "Layer 1",
+          "subtotal": "Rp 3.700.000"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Gran Turismo 2.0",
+          "qty": 34,
+          "unitPrice": "Rp 180.000",
+          "total": "Rp 6.120.000"
+        },
+        {
+          "name": "GT Isolator Carpet 6.0",
+          "qty": 2,
+          "unitPrice": "Rp 150.000",
+          "total": "Rp 300.000"
+        },
+        {
+          "name": "Nitto Spoon 5mm",
+          "qty": 4,
+          "unitPrice": "Rp 300.000",
+          "total": "Rp 1.200.000"
+        }
+      ],
+      "installCost": "Rp 2.300.000"
+    },
+    {
+      "tier": "best_buy",
+      "name": "Best Buy",
+      "slug": "peredam-best-buy",
+      "priceOriginal": "Rp 13.420.000",
+      "priceFinal": "Rp 10.915.000",
+      "discount": "25%",
+      "discountAmount": "Rp 2.505.000",
+      "totalLayers": 52,
+      "image": "/paket-images/peredam-best-buy.png",
+      "areas": [
+        {
+          "area": "Pintu Depan L & R",
+          "layers": "Layer 3",
+          "subtotal": "Rp 2.220.000"
+        },
+        {
+          "area": "Pintu Tengah L & R",
+          "layers": "Layer 3",
+          "subtotal": "Rp 2.220.000"
+        },
+        {
+          "area": "Pintu Bagasi",
+          "layers": "Layer 2",
+          "subtotal": "Rp 980.000"
+        },
+        {
+          "area": "Fender Dalam Depan L & R",
+          "layers": "Layer 1",
+          "subtotal": "Rp 500.000"
+        },
+        {
+          "area": "Fender Dalam Belakang L & R",
+          "layers": "Layer 4",
+          "subtotal": "Rp 2.640.000"
+        },
+        {
+          "area": "Lantai",
+          "layers": "Layer 1",
+          "subtotal": "Rp 3.700.000"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Gran Turismo 2.0",
+          "qty": 44,
+          "unitPrice": "Rp 180.000",
+          "total": "Rp 7.920.000"
+        },
+        {
+          "name": "GT Isolator Carpet 6.0",
+          "qty": 2,
+          "unitPrice": "Rp 150.000",
+          "total": "Rp 300.000"
+        },
+        {
+          "name": "Nitto Spoon 5mm",
+          "qty": 6,
+          "unitPrice": "Rp 300.000",
+          "total": "Rp 1.800.000"
+        }
+      ],
+      "installCost": "Rp 2.600.000"
+    },
+    {
+      "tier": "recommended",
+      "name": "Recommended",
+      "slug": "peredam-recommended",
+      "priceOriginal": "Rp 18.220.000",
+      "priceFinal": "Rp 13.243.000",
+      "discount": "35%",
+      "discountAmount": "Rp 4.977.000",
+      "totalLayers": 66,
+      "image": "/paket-images/peredam-recommended.png",
+      "areas": [
+        {
+          "area": "Pintu Depan L & R",
+          "layers": "Layer 4",
+          "subtotal": "Rp 2.960.000"
+        },
+        {
+          "area": "Pintu Tengah L & R",
+          "layers": "Layer 4",
+          "subtotal": "Rp 2.960.000"
+        },
+        {
+          "area": "Pintu Bagasi",
+          "layers": "Layer 2",
+          "subtotal": "Rp 980.000"
+        },
+        {
+          "area": "Fender Dalam Depan L & R",
+          "layers": "Layer 1",
+          "subtotal": "Rp 500.000"
+        },
+        {
+          "area": "Fender Dalam Belakang L & R",
+          "layers": "Layer 5",
+          "subtotal": "Rp 3.220.000"
+        },
+        {
+          "area": "Lantai",
+          "layers": "Layer 1",
+          "subtotal": "Rp 3.700.000"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Gran Turismo 2.0",
+          "qty": 44,
+          "unitPrice": "Rp 180.000",
+          "total": "Rp 7.920.000"
+        },
+        {
+          "name": "GT Isolator Carpet 6.0",
+          "qty": 2,
+          "unitPrice": "Rp 150.000",
+          "total": "Rp 300.000"
+        },
+        {
+          "name": "Nitto Spoon 5mm",
+          "qty": 20,
+          "unitPrice": "Rp 300.000",
+          "total": "Rp 6.000.000"
+        }
+      ],
+      "installCost": "Rp 4.000.000"
+    }
+  ],
+  "peredamOptional": [
+    {
+      "name": "Front Fender Exterior L & R",
+      "description": "Rainbow SL-D 2.1 (Buttyl) + GT Isolator Carpet 6.0",
+      "price": "Rp 956.000"
+    },
+    {
+      "name": "Rear Fender Exterior L & R",
+      "description": "Rainbow SL-D 2.1 (Buttyl) + GT Isolator Carpet 6.0",
+      "price": "Rp 1.208.000"
+    },
+    {
+      "name": "Peredam Plafon",
+      "description": "Gran Turismo 2.0 × 6 lbr + biaya instalasi",
+      "price": "Rp 1.472.000"
     }
   ]
 }

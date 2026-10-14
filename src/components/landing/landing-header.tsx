@@ -31,7 +31,7 @@ import { ICALogo } from '@/components/landing/ica-logo'
 type NavLink = { anchor: string; label: string; submenu?: SubMenuItem[] }
 type SubMenuItem = { slug: string; label: string; shortLabel: string; description: string; color: string }
 
-// Submenu untuk "Paket Audio" — 4 kategori paket
+// Submenu untuk "Paket Audio" — 4 kategori paket + peredam
 const PAKET_SUBMENU: SubMenuItem[] = [
   {
     slug: 'simple-upgrade',
@@ -60,6 +60,13 @@ const PAKET_SUBMENU: SubMenuItem[] = [
     shortLabel: 'AHE',
     description: 'Rp 31jt - 80jt · 32 varian',
     color: 'text-emerald-500',
+  },
+  {
+    slug: 'peredam',
+    label: 'Paket Peredam',
+    shortLabel: 'Peredam',
+    description: 'Rp 6.9jt - 13.2jt · 4 varian',
+    color: 'text-red-500',
   },
 ]
 
