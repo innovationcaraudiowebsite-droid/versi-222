@@ -1,7 +1,7 @@
 import { LandingHeader } from '@/components/landing/landing-header'
 import { Hero } from '@/components/landing/hero'
 import { About } from '@/components/landing/about'
-import { Packages } from '@/components/landing/packages'
+import { PaketSummary } from '@/components/landing/paket-summary'
 import { LatestArticles } from '@/components/landing/latest-articles'
 import { SectionDivider } from '@/components/landing/section-divider'
 import { LandingFooter } from '@/components/landing/landing-footer'
@@ -65,9 +65,9 @@ export default async function LandingPage() {
         {/* Section 7: Video (#video) */}
         <VideoSection />
 
-        {/* Section 8: Paket Audio (#paket-audio) */}
+        {/* Section 8: Paket Audio (#paket-audio) — 4 card summary */}
         <SectionDivider variant="line" />
-        <Packages />
+        <PaketSummary />
 
         {/* Section 9: Artikel Terbaru */}
         <SectionDivider variant="line" />
