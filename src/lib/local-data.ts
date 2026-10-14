@@ -122,7 +122,15 @@ function matchWhere(row: any, where: WhereClause | undefined): boolean {
     if (typeof value === 'object' && !Array.isArray(value)) {
       const ops = value as Record<string, unknown>
       const cell = row[key]
-      if ('contains' in ops) {
+      if ('startsWith' in ops) {
+        const needle = String(ops.startsWith).toLowerCase()
+        const hay = cell == null ? '' : String(cell).toLowerCase()
+        if (!hay.startsWith(needle)) return false
+      } else if ('endsWith' in ops) {
+        const needle = String(ops.endsWith).toLowerCase()
+        const hay = cell == null ? '' : String(cell).toLowerCase()
+        if (!hay.endsWith(needle)) return false
+      } else if ('contains' in ops) {
         const needle = String(ops.contains).toLowerCase()
         const hay = cell == null ? '' : String(cell).toLowerCase()
         if (!hay.includes(needle)) return false

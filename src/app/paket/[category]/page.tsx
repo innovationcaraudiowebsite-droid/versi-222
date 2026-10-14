@@ -124,12 +124,16 @@ export async function generateMetadata({
 // ============================================================
 async function getCategoryVariants(cat: CategoryConfig): Promise<ProductVariantItem[]> {
   try {
-    const products = await db.product.findMany({
-      where: {
-        slug: { startsWith: cat.productSlugPrefix },
-        isActive: true,
-      },
+    // Ambil semua produk aktif, lalu filter manual dengan startsWith.
+    // (local-data.ts fallback tidak support startsWith di semua versi)
+    const allProducts = await db.product.findMany({
+      where: { isActive: true },
     })
+
+    // Filter manual berdasarkan slug prefix
+    const products = (allProducts || []).filter((p) =>
+      p.slug && p.slug.startsWith(cat.productSlugPrefix)
+    )
 
     if (!products || products.length === 0) return []
 
