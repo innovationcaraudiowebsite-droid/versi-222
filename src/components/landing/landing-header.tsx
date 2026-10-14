@@ -3,7 +3,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown, ChevronRight, Package } from 'lucide-react'
 import {
   Sheet,
   SheetContent,
@@ -20,21 +20,59 @@ import { ICALogo } from '@/components/landing/ica-logo'
  * Landing header — sticky top, backdrop blur, nav ke section landing + WA button.
  * Mobile: hamburger menu (Sheet).
  *
- * Catatan: link "Beranda" scroll ke #hero (landing), bukan root path.
- * Button WhatsApp dihapus dari navbar & mobile menu karena sudah ada
- * floating WA button di pojok kanan bawah (mencegah dobel CTA).
+ * Fitur:
+ *  - Navbar dengan submenu dropdown (Paket Audio → 4 kategori)
+ *  - Desktop: hover dropdown dengan kategori paket
+ *  - Mobile: expandable accordion di sheet menu
+ *  - Link "Paket Audio" utama scroll ke #paket-audio (section summary)
+ *  - Submenu link ke /paket/[slug] (halaman kategori)
  */
 
-type NavLink = { anchor: string; label: string }
+type NavLink = { anchor: string; label: string; submenu?: SubMenuItem[] }
+type SubMenuItem = { slug: string; label: string; shortLabel: string; description: string; color: string }
 
-// Hanya anchor (e.g. '#about') — full href di-resolve dinamis di komponen
-// berdasarkan pathname. Kalau di homepage → '#about' (smooth scroll).
-// Kalau di page lain (e.g. /produk/x) → '/#about' (route ke home dulu).
+// Submenu untuk "Paket Audio" — 4 kategori paket
+const PAKET_SUBMENU: SubMenuItem[] = [
+  {
+    slug: 'simple-upgrade',
+    label: 'Simple Upgrade',
+    shortLabel: 'Simple',
+    description: 'Rp 3.3jt - 9.3jt · 4 varian',
+    color: 'text-slate-500',
+  },
+  {
+    slug: 'entry',
+    label: 'Entry Level',
+    shortLabel: 'Entry',
+    description: 'Rp 10jt - 26.6jt · 16 varian',
+    color: 'text-blue-500',
+  },
+  {
+    slug: 'daily-use',
+    label: 'Daily Use',
+    shortLabel: 'Daily',
+    description: 'Rp 21.7jt - 54jt · 32 varian',
+    color: 'text-amber-500',
+  },
+  {
+    slug: 'affordable-high-end',
+    label: 'Affordable High End',
+    shortLabel: 'AHE',
+    description: 'Rp 31jt - 80jt · 32 varian',
+    color: 'text-emerald-500',
+  },
+]
+
+// Nav links — "Paket Audio" punya submenu
 const NAV_LINKS: NavLink[] = [
   { anchor: 'about', label: 'About' },
   { anchor: 'awards', label: 'Award' },
   { anchor: 'why-us', label: 'Why Us' },
-  { anchor: 'paket-audio', label: 'Paket Audio' },
+  {
+    anchor: 'paket-audio',
+    label: 'Paket Audio',
+    submenu: PAKET_SUBMENU,
+  },
   { anchor: 'video', label: 'Video' },
   { anchor: 'recommender', label: 'Recommender' },
   { anchor: 'lokasi', label: 'Kontak' },
@@ -44,9 +82,8 @@ const NAV_LINKS: NavLink[] = [
 export function LandingHeader() {
   const [mobileOpen, setMobileOpen] = React.useState(false)
   const [scrolled, setScrolled] = React.useState(false)
+  const [paketExpanded, setPaketExpanded] = React.useState(false)
   const pathname = usePathname()
-  // Kalau bukan di homepage, navbar link harus route ke '/' dulu baru scroll.
-  // usePathname() return path tanpa hash, jadi bandingkan dengan '/'.
   const isHome = pathname === '/'
 
   React.useEffect(() => {
@@ -77,7 +114,7 @@ export function LandingHeader() {
                 <Menu className="size-5" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-72 p-0">
+            <SheetContent side="left" className="w-80 p-0 overflow-y-auto">
               <SheetTitle className="sr-only">
                 Innovation Car Audio Jakarta — Navigasi
               </SheetTitle>
@@ -89,10 +126,62 @@ export function LandingHeader() {
               </div>
               <nav className="px-2 py-2">
                 {NAV_LINKS.map((l) => {
-                  // Di homepage: href='#about' (smooth scroll).
-                  // Di page lain: href='/?#about' → route ke / dulu, lalu scroll.
-                  // Next.js Link akan handle navigation + browser scroll ke hash.
                   const href = isHome ? `#${l.anchor}` : `/#${l.anchor}`
+
+                  // Jika ada submenu (Paket Audio), render sebagai expandable accordion
+                  if (l.submenu && l.submenu.length > 0) {
+                    return (
+                      <div key={l.anchor}>
+                        {/* Parent link — klik scroll ke #paket-audio, plus expand button */}
+                        <div className="flex items-center">
+                          <Link
+                            href={href}
+                            onClick={() => setMobileOpen(false)}
+                            className="flex items-center gap-2 rounded-md px-3 py-2.5 text-sm font-medium hover:bg-muted transition-colors flex-1"
+                          >
+                            <span className="size-1.5 rounded-full bg-muted-foreground/40" />
+                            {l.label}
+                          </Link>
+                          <button
+                            type="button"
+                            onClick={() => setPaketExpanded(!paketExpanded)}
+                            className="p-2 mr-1 rounded-md hover:bg-muted transition-colors"
+                            aria-label={paketExpanded ? 'Tutup submenu' : 'Buka submenu'}
+                            aria-expanded={paketExpanded}
+                          >
+                            <ChevronDown
+                              className={cn(
+                                'size-4 text-muted-foreground transition-transform',
+                                paketExpanded && 'rotate-180',
+                              )}
+                            />
+                          </button>
+                        </div>
+
+                        {/* Submenu items — expandable */}
+                        {paketExpanded && (
+                          <div className="ml-4 border-l border-border pl-2 mb-1">
+                            {l.submenu.map((sub) => (
+                              <Link
+                                key={sub.slug}
+                                href={`/paket/${sub.slug}`}
+                                onClick={() => setMobileOpen(false)}
+                                className="flex items-start gap-2 rounded-md px-3 py-2 text-sm hover:bg-muted transition-colors"
+                              >
+                                <span className={cn('size-2 rounded-full mt-1.5 shrink-0 bg-current', sub.color)} />
+                                <div className="flex-1 min-w-0">
+                                  <div className="font-medium">{sub.label}</div>
+                                  <div className="text-[10px] text-muted-foreground">{sub.description}</div>
+                                </div>
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )
+                  }
+
+                  // Normal link (no submenu)
                   return (
                     <Link
                       key={l.anchor}
@@ -107,8 +196,6 @@ export function LandingHeader() {
                 })}
               </nav>
               <div className="mt-auto px-4 py-3 border-t border-border space-y-2">
-                {/* Button WhatsApp dihapus dari mobile menu karena sudah ada
-                    floating WA button di pojok kanan bawah (mencegah dobel CTA). */}
                 <Link
                   href="/admin/login"
                   className="block rounded-md px-3 py-2 text-sm font-medium text-brand dark:text-brand-light hover:bg-brand/10 text-center"
@@ -140,6 +227,60 @@ export function LandingHeader() {
           <nav className="hidden lg:flex items-center gap-1 ml-4">
             {NAV_LINKS.map((l) => {
               const href = isHome ? `#${l.anchor}` : `/#${l.anchor}`
+
+              // Jika ada submenu (Paket Audio), render sebagai dropdown
+              if (l.submenu && l.submenu.length > 0) {
+                return (
+                  <div key={l.anchor} className="relative group">
+                    {/* Parent button */}
+                    <Link
+                      href={href}
+                      className={cn(
+                        'relative px-3 py-1.5 text-sm font-medium rounded-md transition-colors hover:bg-muted hover:text-brand text-foreground/80 flex items-center gap-1',
+                      )}
+                    >
+                      {l.label}
+                      <ChevronDown className="size-3.5 text-muted-foreground group-hover:rotate-180 transition-transform duration-200" />
+                    </Link>
+
+                    {/* Dropdown menu — show on hover */}
+                    <div className="absolute top-full left-0 mt-1 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                      <div className="rounded-xl border border-border bg-card shadow-xl overflow-hidden">
+                        {/* Dropdown header */}
+                        <div className="px-4 py-2.5 border-b border-border bg-muted/30">
+                          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-muted-foreground">
+                            <Package className="size-3.5" />
+                            Pilih Kategori Paket
+                          </div>
+                        </div>
+                        {/* Submenu items */}
+                        <div className="p-2">
+                          {l.submenu.map((sub) => (
+                            <Link
+                              key={sub.slug}
+                              href={`/paket/${sub.slug}`}
+                              className="flex items-start gap-3 rounded-lg px-3 py-2.5 hover:bg-muted transition-colors group/item"
+                            >
+                              <span className={cn('size-2.5 rounded-full mt-1.5 shrink-0 bg-current', sub.color)} />
+                              <div className="flex-1 min-w-0">
+                                <div className="text-sm font-bold text-foreground group-hover/item:text-brand transition-colors">
+                                  {sub.label}
+                                </div>
+                                <div className="text-[11px] text-muted-foreground mt-0.5">
+                                  {sub.description}
+                                </div>
+                              </div>
+                              <ChevronRight className="size-4 text-muted-foreground opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-0.5 transition-all shrink-0" />
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )
+              }
+
+              // Normal link
               return (
                 <Link
                   key={l.anchor}
@@ -154,10 +295,7 @@ export function LandingHeader() {
             })}
           </nav>
 
-          {/* Right side — hanya ThemeToggle.
-              Button WhatsApp dihapus dari navbar karena sudah ada
-              floating WA button di pojok kanan bawah (mencegah dobel CTA
-              yang bikin customer ambigu). */}
+          {/* Right side */}
           <div className="ml-auto flex items-center gap-1.5 sm:gap-2">
             <ThemeToggle />
           </div>
