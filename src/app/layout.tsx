@@ -35,7 +35,7 @@ const SITE_NAME_FALLBACK = "Innovation Car Audio Jakarta";
 const TAGLINE_FALLBACK = "Workshop Audio Mobil & Peredam Suara Terbaik Jakarta";
 
 const DESCRIPTION =
-  "Innovation Car Audio Jakarta — workshop audio mobil & peredam suara terbaik dengan pengalaman 20+ tahun. Spesialis upgrade audio mobil, DSP tuning, instalasi speaker, subwoofer, dan peredam suara. Paket audio Simple Upgrade, Entry, Daily Use, dan Affordable High End. Melayani Jabodetabek.";
+  "Innovation Car Audio Jakarta — workshop audio mobil & peredam suara terbaik dengan pengalaman 25+ tahun. Spesialis upgrade audio mobil, DSP tuning, instalasi speaker, subwoofer, dan peredam suara. Paket audio Simple Upgrade, Entry, Daily Use, dan Affordable High End. Melayani Jabodetabek.";
 
 const KEYWORDS = [
   // === Brand ===

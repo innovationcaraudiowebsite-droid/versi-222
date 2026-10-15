@@ -2,7 +2,7 @@
  * About section — section id="about".
  *
  * Innovation Car Audio Jakarta — workshop audio mobil & peredam suara
- * dengan pengalaman 20+ tahun. Spesialis upgrade audio mobil, DSP tuning,
+ * dengan pengalaman 25+ tahun. Spesialis upgrade audio mobil, DSP tuning,
  * instalasi speaker premium, dan peredam suara.
  *
  * Visual upgrades (per request user):
@@ -102,7 +102,7 @@ export function About() {
             <p className="text-lg sm:text-xl text-foreground/90 leading-relaxed font-medium">
               <strong className="text-red-500">Innovation Car Audio Jakarta</strong> adalah workshop
               spesialis upgrade audio mobil dan peredam suara yang telah melayani pelanggan di Jakarta
-              dan Jabodetabek selama lebih dari <strong className="text-red-500">20 tahun</strong>.
+              dan Jabodetabek selama lebih dari <strong className="text-red-500">25 tahun</strong>.
               Dengan pengalaman dan keahlian teknis yang mendalam, kami berkomitmen memberikan solusi
               audio mobil terbaik yang sesuai dengan kebutuhan dan budget setiap pelanggan.
             </p>

@@ -7,7 +7,7 @@ import { Counter } from '@/components/landing/counter'
  *  - Full background image with dark gradient overlay
  *  - Logo + 25 Years badge with gold glow
  *  - "Award Winning" gold gradient + "Car Audio And Soundproofing Store"
- *  - Description with "20+ tahun" gold highlight
+ *  - Description with "25+ tahun" gold highlight
  *  - Stats: 700 varian, 87 speaker, 12 brand, 559+ piala
  *  - CTA: "Lihat Paket Audio" (gold gradient) + "Konsultasi WhatsApp" (outline)
  *  - Counter stats: Varian, Piala, Asia Champion, Tahun
@@ -94,7 +94,7 @@ export function Hero() {
             Workshop audio mobil dan peredam suara terbaik Jakarta.
           </p>
           <p className="text-sm md:text-base text-muted-foreground mb-6 max-w-xl leading-relaxed">
-            Dengan pengalaman <span className="text-gold font-semibold">20+ tahun</span>, kami membantu Anda
+            Dengan pengalaman <span className="text-gold font-semibold">25+ tahun</span>, kami membantu Anda
             merancang solusi sistem audio mobil dengan pilihan produk merek internasional — dari entry level
             hingga competition grade.
           </p>

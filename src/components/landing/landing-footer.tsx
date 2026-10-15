@@ -20,7 +20,7 @@ export function LandingFooter() {
               Innovation Car Audio
             </h3>
             <p className="text-sm text-slate-400 leading-relaxed">
-              Workshop audio mobil & peredam suara terbaik di Jakarta dengan pengalaman 20+ tahun. Spesialis upgrade audio, DSP tuning, dan instalasi speaker premium.
+              Workshop audio mobil & peredam suara terbaik di Jakarta dengan pengalaman 25+ tahun. Spesialis upgrade audio, DSP tuning, dan instalasi speaker premium.
             </p>
             <div className="flex items-center gap-2 text-xs text-slate-500">
               <Clock className="size-3.5" />
