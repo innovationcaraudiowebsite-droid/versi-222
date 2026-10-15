@@ -1,3 +1,5 @@
+import Link from 'next/link'
+import { ChevronRight } from 'lucide-react'
 import { db } from '@/lib/db'
 import { ArticlesList, type ArticleItem } from '@/components/landing/articles-list'
 
@@ -5,20 +7,19 @@ import { ArticlesList, type ArticleItem } from '@/components/landing/articles-li
  * LatestArticles section landing — section id="artikel".
  *
  * CAROUSEL MODE (bukan pagination):
- *  - Server fetch ALL artikel PUBLISHED (limit 30) sekali saja di SSR.
+ *  - Server fetch 100 artikel PUBLISHED terbaru sekali saja di SSR.
  *  - Pass ke ArticlesList client component yang render semua artikel di DOM.
  *  - Container overflow:hidden, hanya 2 card visible.
  *  - Scroll/swipe → CSS transform translateY → slide ke 2 card berikutnya.
  *  - NO API reload — pure CSS animation, instant.
  *
- * Sesuai brief user revisi:
- *  - Tampil artikel maksimal 2.
- *  - Saat scroll = menggeser artikel selanjutnya (slide), BUKAN reload.
- *  - Aslinya banyak, tapi terlihat hanya 2 dan posisi sticky/fixed.
+ * Tambahan (Opsi D):
+ *  - Limit naik dari 30 → 100 (lebih banyak artikel untuk browse).
+ *  - Link "Lihat Semua Artikel →" di bawah carousel yang link ke /berita.
  */
 export const dynamic = 'force-dynamic'
 
-const MAX_ARTICLES = 30 // limit supaya tidak berat (kalau DB punya ratusan)
+const MAX_ARTICLES = 100 // naik dari 30 → 100 supaya user bisa browse lebih banyak
 
 type LatestArticle = ArticleItem
 
@@ -83,6 +84,17 @@ export async function LatestArticles() {
 
         {/* Articles carousel — pre-load all, slide animation (no reload) */}
         <ArticlesList articles={articles as ArticleItem[]} />
+
+        {/* Link to all articles page */}
+        <div className="mt-8 flex justify-center">
+          <Link
+            href="/berita"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-card px-5 py-2.5 text-sm font-bold text-gold hover:bg-gold/10 hover:border-gold/40 transition-colors"
+          >
+            Lihat Semua Artikel ({articles.length}+ artikel)
+            <ChevronRight className="size-4" />
+          </Link>
+        </div>
       </div>
     </section>
   )
